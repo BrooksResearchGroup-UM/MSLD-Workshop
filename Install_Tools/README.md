@@ -1,5 +1,5 @@
-## 0. Installing needed tools for FASTDock
-### In order to use FASTDock you will need to:
+## 0. Installing needed tools for CHARMM/pyCHARMM
+### In order to use CHARMM/pyCHARMM you will need to:
 - **Create a conda environment capable of building CHARMM and pyCHARMM**
 - **Install the MMTSB ToolSet from [MMTSB](https://feig.bch.msu.edu/mmtsb/Main_Page). Follow the instructions to install the package.**
 - **Obtain the CHARMM software (free to academics and government labs) from [AcademicCHARMM](https://academiccharmm.org/program). Follow the directions below to build a conda environment capable of installing CHARMM/pyCHARMM.**
