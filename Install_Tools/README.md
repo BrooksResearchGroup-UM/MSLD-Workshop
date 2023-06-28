@@ -1,7 +1,7 @@
 ## 0. Installing needed tools for CHARMM/pyCHARMM
 ### In order to use CHARMM/pyCHARMM you will need to:
 - **Create a conda environment capable of building CHARMM and pyCHARMM**
-- **Install the MMTSB ToolSet from [MMTSB](https://feig.bch.msu.edu/mmtsb/Main_Page). Follow the instructions to install the package.**
+- **Install the MMTSB ToolSet from [MMTSB](https://feig.bch.msu.edu/mmtsb/Main_Page). Follow the instructions to install the package.** RLH COMMENT: Does anyone actually need MMTSB or does this unnecessarily complicate matters?
 - **Obtain the CHARMM software (free to academics and government labs) from [AcademicCHARMM](https://academiccharmm.org/program). Follow the directions below to build a conda environment capable of installing CHARMM/pyCHARMM.**
 - **Install CHARMM and pyCHARMM**
 
@@ -56,7 +56,7 @@ Specifying that the Driver Version is 525.85.05. Thus, as seen from the table be
 |CUDA 9|>= 396.37|4.8.5|17.0
 |CUDA 8|>= 375.26|4.8.2|15, 16
 
-## 2. Building the CHARMM/pyCHARMM compatable environment with a YAML file
+## 2. Building the CHARMM/pyCHARMM compatable environment with a YAML file RLH COMMENT: Having two ways to do this is confusing. Delete one, or make it clearer they are two alternatives?
  
 `charmm_wcuda12.yml`
  
