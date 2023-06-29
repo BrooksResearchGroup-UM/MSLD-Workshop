@@ -160,7 +160,7 @@ setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib
 
 ## 3. pyALF installation
 - **Download [ALF version 3.2](https://github.com/ryanleehayes/alf) from github.**
-- **Go to pyALF source root and build as follows:**
+- **Go to pyALF source root and build as follows: (NOTE: RLH is currently restructuring ALF, you may need to go to <alf_root>/v3.2beta/ instead.)**
 
 <blockquote>
 
