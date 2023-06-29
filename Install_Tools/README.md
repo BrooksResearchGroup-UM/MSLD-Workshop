@@ -1,13 +1,15 @@
 ## 0. Installing needed tools for CHARMM/pyCHARMM
-### In order to use CHARMM/pyCHARMM you will need to:
-- **Create a conda environment capable of building CHARMM and pyCHARMM**
-- **Install the MMTSB ToolSet from [MMTSB](https://feig.bch.msu.edu/mmtsb/Main_Page). Follow the instructions to install the package.** RLH COMMENT: Does anyone actually need MMTSB or does this unnecessarily complicate matters?
+### In order to use CHARMM, pyCHARMM, and pyALF you will need to:
+- **Create a conda environment capable of building CHARMM, pyCHARMM, and pyALF (Part 1)**
+- **Install the MMTSB ToolSet from [MMTSB](https://feig.bch.msu.edu/mmtsb/Main_Page). Follow the instructions to install the package.**
 - **Obtain the CHARMM software (free to academics and government labs) from [AcademicCHARMM](https://academiccharmm.org/program). Follow the directions below to build a conda environment capable of installing CHARMM/pyCHARMM.**
-- **Install CHARMM and pyCHARMM**
+- **Install CHARMM and pyCHARMM (Part 2)**
+- **Install pyALF (Part 3)**
 
 ## 1. Creating conda environment to install and use CHARMM/pyCHARMM
-### Create a conda environment
 - **You will need a base anaconda/miniconda installation: see [anaconda installation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html).**
+- **Follow steps in 1a to create the conda environment manually OR follow steps in 1b to create the conda environment from a YAML file.**
+### 1a. Create a conda environment manually
 - **Make a conda environment (See below for a shortcut using `conda env create -f <name_of_environment>.yml`)**<p>
 `conda create -y -n <name_of_environment> python=3.9` # note python can be > 3.9
 - **Activate this environment**<p>
@@ -56,7 +58,7 @@ Specifying that the Driver Version is 525.85.05. Thus, as seen from the table be
 |CUDA 9|>= 396.37|4.8.5|17.0
 |CUDA 8|>= 375.26|4.8.2|15, 16
 
-## 2. Building the CHARMM/pyCHARMM compatable environment with a YAML file RLH COMMENT: Having two ways to do this is confusing. Delete one, or make it clearer they are two alternatives?
+### 1b. Building the CHARMM/pyCHARMM compatable environment with a YAML file
  
 `charmm_wcuda12.yml`
  
@@ -114,7 +116,7 @@ prefix: /home/brookscl/.conda/envs/charmm_wcuda12  # This corresponds to the pat
 `conda env create -f charmm_wcuda12.yml`
 
  
-## 3. CHARMM and pyCHARMM installation once conda environment is installed and active.
+## 2. CHARMM and pyCHARMM installation once conda environment is installed and active.
 - **Go to CHARMM source root and build CHARMM with configure**
 
 <blockquote>
@@ -156,3 +158,31 @@ setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib
     
 - **\<pycharmm_install_path\> is the path where you want the pyCHARMM installation to reside**
 
+## 3. pyALF installation
+- **Download [ALF version 3.2](https://github.com/ryanleehayes/alf) from github.**
+- **Go to pyALF source root and build as follows:**
+
+<blockquote>
+
+```bash
+conda activate charmm_wcuda12
+cd <alf_root>
+export ALF_SOURCE_DIR=`pwd`
+# Compile ALF executables in wham and dca
+cd $ALF_SOURCE_DIR/alf/wham
+bash Clean.sh
+cmake ./
+make wham
+cd $ALF_SOURCE_DIR/alf/dca
+bash Clean.sh
+cmake ./
+make all
+# Install pyALF in current conda virtual environment
+cd $ALF_SOURCE_DIR
+pip install -e .
+python -c "import alf"
+```
+
+</blockquote>
+
+- **\<alf_root\> is the path to the alf top level tree**
