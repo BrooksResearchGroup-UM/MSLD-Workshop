@@ -4,6 +4,7 @@
 - **Install the MMTSB ToolSet from [MMTSB](https://feig.bch.msu.edu/mmtsb/Main_Page). Follow the instructions to install the package.**
 - **Obtain the CHARMM software (free to academics and government labs) from [AcademicCHARMM](https://academiccharmm.org/program). Follow the directions below to build a conda environment capable of installing CHARMM/pyCHARMM.**
 - **Install CHARMM and pyCHARMM (Part 2)**
+- **Obtain [ALF version 3.2](https://github.com/ryanleehayes/alf) from github**
 - **Install pyALF (Part 3)**
 
 ## 1. Creating conda environment to install and use CHARMM/pyCHARMM
@@ -29,7 +30,7 @@
 <div class="alert alert-block alert-warning">
 <b>Note on CUDA Toolkit/Driver and Compiler Compatabilities:</b> In choosing the CUDA Toolkit you need to coordinate with the compatable CUDA Driver and compilers. The table below outlines these requirements. You should check with your systems manager regarding the installed CUDA Driver on the computer cluster/machine on which you plan to install CHARMM/pyCHARMM. However, you can also glean this information by running the command <i>nvidia-smi</i> on one of the nodes of your GPU-equipped computers. In this case the CUDA Driver will be displayed at the top of the output created from this command:</div>
 
-`nvidia-smi>`
+`nvidia-smi`
 
 ```
 +-----------------------------------------------------------------------------+
@@ -57,6 +58,15 @@ Specifying that the Driver Version is 525.85.05. Thus, as seen from the table be
 |CUDA 10|>= 440.33|10.2|18.0
 |CUDA 9|>= 396.37|4.8.5|17.0
 |CUDA 8|>= 375.26|4.8.2|15, 16
+
+<div class="alert alert-block alert-warning">
+<b>If your driver is older than 525.85.05, the oldest available CUDA version, 11.3.1, should be compatible with the largest number of drivers. You can install it using</b>
+</div>
+`mamba install -y -c "nvidia/label/cuda-11.3.1" cuda`
+<div class="alert alert-block alert-warning">
+<b>This CUDA version is incompatible with current versions of gcc, but version 10.4 works well so replace `gcc gxx gfortran` with `gcc==10.4 gxx==10.4 gfortran==10.4`</b>
+</div>
+`mamba install -y -c conda-forge gcc==10.4 gxx==10.4 gfortran==10.4 make cmake binutils fftw openmpi openmm mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj jsonpickle pymol-open-source`
 
 ### 1b. Building the CHARMM/pyCHARMM compatable environment with a YAML file
  
@@ -127,8 +137,10 @@ cd <charmm_root>
 mkdir build_charmm
 cd build_charmm
 # Build CHARMM with BLaDe, FFTDOCK,DOMDEC (-u) and OpenMM (default)
-setenv FFTW_HOME $CONDA_PREFIX;../configure --with-blade --with-fftdock -u  -D nvcc_ptx_target=52 -p <charmm_install_path>
-make j <n> install
+export FFTW_HOME=$CONDA_PREFIX # bash syntax
+setenv FFTW_HOME $CONDA_PREFIX # tcsh syntax
+../configure --with-blade --with-fftdock -u  -D nvcc_ptx_target=52 -p <charmm_install_path>
+make -j <n> install
 ```
 
 </blockquote>
@@ -147,11 +159,14 @@ cd <charmm_root>
 cd build_charmm
 rm -r *   # Clean the build directory
 # Build CHARMM with BLaDe, FFTDOCK,DOMDEC (-u) and OpenMM (default)
-setenv FFTW_HOME $CONDA_PREFIX;../configure --with-blade --with-fftdock --without-mpi --as-library  -D nvcc_ptx_target=52 -p <pycharmm_install_path>
-make j <n> install
+export FFTW_HOME=$CONDA_PREFIX # bash syntax
+setenv FFTW_HOME $CONDA_PREFIX # tcsh syntax
+../configure --with-blade --with-fftdock --without-mpi --as-library  -D nvcc_ptx_target=52 -p <pycharmm_install_path>
+make -j <n> install
 cd <charmm_root>
 pip install `pwd`/tool/pycharmm  # Installs the pyCHARMM modules in your current environment
-setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib
+export CHARMM_LIB_DIR=<pycharmm_install_path>/lib # bash syntax
+setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib # tcsh syntax
 ```
 
 </blockquote>
@@ -160,14 +175,15 @@ setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib
 
 ## 3. pyALF installation
 - **Download [ALF version 3.2](https://github.com/ryanleehayes/alf) from github.**
-- **Go to pyALF source root and build as follows: (NOTE: RLH is currently restructuring ALF, you may need to go to <alf_root>/v3.2beta/ instead. Also tracking a bug that just appeared)**
+- **Go to pyALF source root and build as follows:**
 
 <blockquote>
 
 ```bash
 conda activate charmm_wcuda12
 cd <alf_root>
-export ALF_SOURCE_DIR=`pwd`
+export ALF_SOURCE_DIR=`pwd` # bash syntax
+setenv ALF_SOURCE_DIR `pwd` # tcsh syntax
 # Compile ALF executables in wham and dca
 cd $ALF_SOURCE_DIR/alf/wham
 bash Clean.sh
