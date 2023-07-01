@@ -17,18 +17,14 @@
 `conda activate <name_of_environment>`
 - **Install mamba as a faster conda**<p>
 `conda install -y -c conda-forge mamba`
-- **Install CUDA from NVIDIA**<p>
+- **Install CUDA from NVIDIA. Pick one version compatible with your drivers as described below. You can see available [CUDA Toolkit packages (Table 3)](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#title-new-cuda-tools)**<p>
 `mamba install -y -c nvidia cuda` # note this should install CUDA 12.1.1<p>
-`mamba install -y -c "nvidia/label/cuda-12.0.0" cuda` # note this should install CUDA 12.0
-
-<code style="background:lightblue;color:black">You can see available [CUDA Toolkit packages (Table 3)](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#title-new-cuda-tools)
-
-
+`mamba install -y -c "nvidia/label/cuda-12.0.0" cuda` # note this should install CUDA 12.0<p>
  - **Install needed packages to build CHARMM and pyCHARMM**<p>
 `mamba install -y -c conda-forge gcc gxx gfortran make cmake binutils fftw openmpi openmm mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj jsonpickle pymol-open-source`
     
 <div class="alert alert-block alert-warning">
-<b>Note on CUDA Toolkit/Driver and Compiler Compatabilities:</b> In choosing the CUDA Toolkit you need to coordinate with the compatable CUDA Driver and compilers. The table below outlines these requirements. You should check with your systems manager regarding the installed CUDA Driver on the computer cluster/machine on which you plan to install CHARMM/pyCHARMM. However, you can also glean this information by running the command <i>nvidia-smi</i> on one of the nodes of your GPU-equipped computers. In this case the CUDA Driver will be displayed at the top of the output created from this command:</div>
+<b>Note on CUDA Toolkit/Driver and Compiler Compatabilities:</b> In choosing the CUDA Toolkit you need to coordinate with the compatable CUDA Driver and compilers. The table below outlines these requirements. You should check with your systems manager regarding the installed CUDA Driver on the computer cluster/machine on which you plan to install CHARMM/pyCHARMM. However, you can also glean this information by running the command <i>nvidia-smi</i> on one of the nodes of your GPU-equipped computers. In this case the CUDA Driver will be displayed at the top of the output created from this command:</div><p>
 
 `nvidia-smi`
 
@@ -60,12 +56,15 @@ Specifying that the Driver Version is 525.85.05. Thus, as seen from the table be
 |CUDA 8|>= 375.26|4.8.2|15, 16
 
 <div class="alert alert-block alert-warning">
-<b>If your driver is older than 525.85.05, the oldest available CUDA version, 11.3.1, should be compatible with the largest number of drivers. You can install it using</b>
-</div>
+<b>Newer drivers work with older CUDA versions, but older drivers do not work with newer CUDA version. Thus, if your driver is older than 525.85.05, the oldest available CUDA version, 11.3.1, should be compatible with the largest number of drivers. You can install it using
+</div><p>
+
 `mamba install -y -c "nvidia/label/cuda-11.3.1" cuda`
+
 <div class="alert alert-block alert-warning">
-<b>This CUDA version is incompatible with current versions of gcc, but version 10.4 works well so replace `gcc gxx gfortran` with `gcc==10.4 gxx==10.4 gfortran==10.4`</b>
-</div>
+<b>This CUDA version is incompatible with current versions of gcc, but version 10.4 works well so replace "gcc gxx gfortran" with "gcc==10.4 gxx==10.4 gfortran==10.4"
+</div><p>
+
 `mamba install -y -c conda-forge gcc==10.4 gxx==10.4 gfortran==10.4 make cmake binutils fftw openmpi openmm mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj jsonpickle pymol-open-source`
 
 ### 1b. Building the CHARMM/pyCHARMM compatable environment with a YAML file
@@ -120,7 +119,7 @@ dependencies:
 prefix: /home/brookscl/.conda/envs/charmm_wcuda12  # This corresponds to the path to this environment
 ```
 
-### You can edit this YAML file to add/change the cuda version as noted above. You can install this new conda environment with the command:
+- **You can edit this YAML file to add/change the cuda version as noted above. You can install this new conda environment with the command:**
     
 
 `conda env create -f charmm_wcuda12.yml`
@@ -138,16 +137,18 @@ mkdir build_charmm
 cd build_charmm
 # Build CHARMM with BLaDe, FFTDOCK,DOMDEC (-u) and OpenMM (default)
 export FFTW_HOME=$CONDA_PREFIX # bash syntax
-setenv FFTW_HOME $CONDA_PREFIX # tcsh syntax
+setenv FFTW_HOME $CONDA_PREFIX # csh syntax
 ../configure --with-blade --with-fftdock -u  -D nvcc_ptx_target=52 -p <charmm_install_path>
 make -j <n> install
 ```
 
 </blockquote>
 
+- **charmm_wcuda12 should be replaced with the name of your conda virtual environemnt**
 - **\<charmm_root\> is the path to the charmm top level tree**
 - **\<charmm_install_path\> is the path where you want the CHARMM installation to reside**
 - **\<n\> is the number of cores to use in compiling the code**
+- **-D nvcc_ptx_target=52 is required for older GPUs like GTX980s**
 
 ### pyCHARMM is built from the same source and can be built in the same build directory
 
@@ -160,13 +161,13 @@ cd build_charmm
 rm -r *   # Clean the build directory
 # Build CHARMM with BLaDe, FFTDOCK,DOMDEC (-u) and OpenMM (default)
 export FFTW_HOME=$CONDA_PREFIX # bash syntax
-setenv FFTW_HOME $CONDA_PREFIX # tcsh syntax
+setenv FFTW_HOME $CONDA_PREFIX # csh syntax
 ../configure --with-blade --with-fftdock --without-mpi --as-library  -D nvcc_ptx_target=52 -p <pycharmm_install_path>
 make -j <n> install
 cd <charmm_root>
 pip install `pwd`/tool/pycharmm  # Installs the pyCHARMM modules in your current environment
 export CHARMM_LIB_DIR=<pycharmm_install_path>/lib # bash syntax
-setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib # tcsh syntax
+setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib # csh syntax
 ```
 
 </blockquote>
@@ -183,7 +184,7 @@ setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib # tcsh syntax
 conda activate charmm_wcuda12
 cd <alf_root>
 export ALF_SOURCE_DIR=`pwd` # bash syntax
-setenv ALF_SOURCE_DIR `pwd` # tcsh syntax
+setenv ALF_SOURCE_DIR `pwd` # csh syntax
 # Compile ALF executables in wham and dca
 cd $ALF_SOURCE_DIR/alf/wham
 bash Clean.sh
@@ -201,4 +202,5 @@ python -c "import alf"
 
 </blockquote>
 
+- **charmm_wcuda12 should be replaced with the name of your conda virtual environemnt**
 - **\<alf_root\> is the path to the alf top level tree**
