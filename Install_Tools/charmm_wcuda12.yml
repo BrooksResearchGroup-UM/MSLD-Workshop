@@ -41,6 +41,7 @@ dependencies:
   - biopython
   - py3dmol
   - mdtraj
+  - nglview
   - jsonpickle
   - pymol-open-source
 prefix: /home/brookscl/.conda/envs/charmm_wcuda12  # This corresponds to the path to this environment
