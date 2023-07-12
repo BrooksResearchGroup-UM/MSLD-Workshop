@@ -10,3 +10,11 @@ _Note, I have added a file with a template for building a conda environment from
 _Also, I just added two examples from the pyCHARMM-Workshop github, the basic building of an alanine dipeptide then solvating it, and the set-up of a protein system (w/o paying attention to ionizable groups) and running dynamics with OpenMM or BLaDe. All visualization is now done with nglview._
 
 ![Workshop flyer](https://github.com/BrooksResearchGroup-UM/MSLD-Workshop/blob/main/flyer.jpg)
+
+### Workshop schedule
+| Date        | Program                                                                                                                                     |
+|:-----------:|:--------------------------------------------------------------------------------------------------------------------------------------------|
+| Aug-1, 2023 | Overview of the theories behind free energy methods Overview of theory behind MSLD and ALF Basic steps of writing a CHARMM/pyCHARMM scripts |
+| Aug-2, 2023 | Running ALF Preparing inputs for ALF using `mslf_py_prep` tool.                                                                             |
+| Aug-3, 2023 | Using ALF/MSLD to perform Ligand perturbation and compute relative free energies                                                            |
+| Aug-4, 2023 | Using ALF/MSLD to perform protein residue perturbation and perform Constant pH MD simulations                                               |
