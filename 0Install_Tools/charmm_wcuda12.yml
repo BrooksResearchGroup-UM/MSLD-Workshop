@@ -29,6 +29,7 @@ dependencies:
   - rdkit
   - openbabel
   - pandas
+  - pytorch
   - jupyter_core
   - jupyter_client
   - jupyterlab
