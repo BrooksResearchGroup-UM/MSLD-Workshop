@@ -21,7 +21,7 @@
 `mamba install -y -c nvidia cuda` # note this should install CUDA 12.1.1<p>
 `mamba install -y -c "nvidia/label/cuda-12.0.0" cuda` # note this should install CUDA 12.0<p>
  - **Install needed packages to build CHARMM and pyCHARMM**<p>
-`mamba install -y -c conda-forge gcc gxx gfortran make cmake binutils fftw openmpi openmm mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj nglview jsonpickle pymol-open-source`
+`mamba install -y -c conda-forge gcc gxx gfortran make cmake binutils fftw openmpi openmm mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas pytorch jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj nglview jsonpickle pymol-open-source`
     
 <div class="alert alert-block alert-warning">
 <b>Note on CUDA Toolkit/Driver and Compiler Compatabilities:</b> In choosing the CUDA Toolkit you need to coordinate with the compatable CUDA Driver and compilers. The table below outlines these requirements. You should check with your systems manager regarding the installed CUDA Driver on the computer cluster/machine on which you plan to install CHARMM/pyCHARMM. However, you can also glean this information by running the command <i>nvidia-smi</i> on one of the nodes of your GPU-equipped computers. In this case the CUDA Driver will be displayed at the top of the output created from this command:</div><p>
@@ -65,7 +65,7 @@ Specifying that the Driver Version is 525.85.05. Thus, as seen from the table be
 <b>This CUDA version is incompatible with current versions of gcc, but version 10.4 works well so replace "gcc gxx gfortran" with "gcc==10.4 gxx==10.4 gfortran==10.4"
 </div><p>
 
-`mamba install -y -c conda-forge gcc==10.4 gxx==10.4 gfortran==10.4 make cmake binutils fftw openmpi openmm mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj nglview jsonpickle pymol-open-source`
+`mamba install -y -c conda-forge gcc==10.4 gxx==10.4 gfortran==10.4 make cmake binutils fftw openmpi openmm mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas pytorch jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj nglview jsonpickle pymol-open-source`
 
 ### 1b. Building the CHARMM/pyCHARMM compatable environment with a YAML file
  
@@ -102,6 +102,7 @@ dependencies:
   - rdkit
   - openbabel
   - pandas
+  - pytorch
   - jupyter_core
   - jupyter_client
   - jupyterlab
