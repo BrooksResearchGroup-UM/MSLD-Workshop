@@ -1,7 +1,6 @@
 # MSLD-Workshop
 ## Materials for five day workshop on using MSLD (including ALF and MSLD_py_prep) for drug discovery and protein engineering
 ### List of to dos before making public
-- add brief agenda
 - describe requirements for participation
 - other stuff?
 
