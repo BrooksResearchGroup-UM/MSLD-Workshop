@@ -13,8 +13,8 @@ _Also, I just added two examples from the pyCHARMM-Workshop github, the basic bu
 ### Workshop schedule
 | Date         | Program                                                                                                     |
 |:------------:|:------------------------------------------------------------------------------------------------------------|
-| Jul-31, 2023 | Installing CHARMM, pyCHARMM, and pyALF                                                                      |
-| Aug-1, 2023  | Overview of the theories behind free energy methods<br/>Overview of theory behind MSLD and ALF<br/> Basic steps of writing CHARMM/pyCHARMM scripts |
-| Aug-2, 2023  | Running ALF<br/> Preparing inputs for ALF using `msld_py_prep` tool.                                        |
-| Aug-3, 2023  | Using ALF/MSLD to perform ligand perturbation and compute relative free energies                            |
-| Aug-4, 2023  | Using ALF/MSLD to perform protein residue mutation<br/>Using ALF/MSLD to perform constant pH MD simulations |
+| July 31, 2023 | Installing CHARMM, pyCHARMM, and pyALF                                                                      |
+| August 1, 2023  | Overview of the theories behind free energy methods<br/>Overview of theory behind MSLD and ALF<br/> Basic steps of writing CHARMM/pyCHARMM scripts |
+| August 2, 2023  | Running ALF<br/> Preparing inputs for ALF using `msld_py_prep` tool.                                        |
+| August 3, 2023  | Using ALF/MSLD to perform ligand perturbation and compute relative free energies                            |
+| August 4, 2023  | Using ALF/MSLD to perform protein residue mutation<br/>Using ALF/MSLD to perform constant pH MD simulations |
