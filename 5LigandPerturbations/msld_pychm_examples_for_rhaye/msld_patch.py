@@ -38,7 +38,7 @@ def load_alchem_toppar(nsite,nsubs,pert,builddir):
     return
 
 
-def load_alchem_patches(nsite,nsubs,pert,builddir)
+def load_alchem_patches(nsite,nsubs,pert,builddir):
     """ Load perturbation patches for MSLD """
 
     for site in range(nsites):
