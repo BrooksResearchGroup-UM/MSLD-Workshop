@@ -1,0 +1,83 @@
+* Lame Title - try to protonate it?
+*
+
+set bomlev = ?bomlev
+bomlev -1
+read rtf card name toppar/top_all36_prot.rtf
+read param card flex name toppar/par_all36m_prot.prm
+read rtf card append name "toppar/top_all36_cgenff.rtf"
+read param card flex append name "toppar/par_all36_cgenff.prm"
+stream "toppar/toppar_water_ions.str"
+bomlev @bomlev
+
+read sequ coor resid segid PROT name "scratch0/system.crd"
+generate PROT first NTER last CTER setup
+
+! patch disu prot 323 prot 348
+
+! Protonation
+! patch aspp PROT 10 setup
+! patch glup PROT 48 setup
+
+read coor card resid name "scratch0/system.crd"
+ic fill
+ic param
+ic build
+! protonate
+! hbuild sele all end
+hbuild sele hydrogen end
+
+! read sequ coor resid segid LIG name "scratch0/system.crd"
+! generate LIG setup
+read sequ coor resid segid WT00 name "scratch0/system.crd"
+generate WT00 first none last none setup noangl nodihe
+
+read coor card resid name "scratch0/system.crd"
+
+ic fill
+ic param
+ic build
+! protonate
+! hbuild sele all end
+hbuild sele hydrogen end
+
+! delete waters far from protein
+define BAD_O select ( atom WT00 * OH2 ) .and. .not. ( ( .not. segid WT00 ) .around. 5.0 ) show end
+define BAD_H select ( segid WT00 .and. hydrogen ) .and. ( BAD_O .around. 1.0) show end
+bomlev -1
+delete atom select ( BAD_O .or. BAD_H ) end
+bomlev 0
+
+! Make sure all atoms have coordinates
+PRINt COORdinate SELEct .NOT. INITialized END
+
+! Set nonbonded options
+nbonds atom -
+fswitch -                !! Use force switch for elec-nb interactions
+cdie eps 1 -             !! Set constant dielectric value of 1
+vdw vfswitch -            !! Set nb VDW using switching function
+cutnb 15.0 -             !! Set nb list cut off to 15A
+cutim 15.0 -             !! Set image nb list cut off to 15A
+ctonnb 10.0 ctofnb 12.0   !! Switching function used from 10A to 12A for VDW interaction
+
+faster on
+
+cons fix selection ( .not. hydrogen ) .and. ( .not. type OT2 ) show end
+mini sd nstep 200 nprint 10 step 0.005
+
+system "mkdir scratch1"
+
+write psf card name scratch1/system.psf
+* patch psf file
+*
+! write coor pdb name scratch1/system.pdb 
+! * patch pdb file
+! *
+write coor card name scratch1/system.crd
+* crd file
+*
+
+! show buil
+open unit 40 write card name scratch1/charge.dat
+echu 40
+echo ?CGTOT

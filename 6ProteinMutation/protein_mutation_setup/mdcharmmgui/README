@@ -1,0 +1,24 @@
+Set up on CHARMM-GUI using the solution builder with pdb 1pga. Used all 56 residues and the crystallographic waters as well. There were no protonation state changes on HIS, ASP, or GLU. A standard cubic box with 10 A spacing from the protein to the box edge was used, along with 100 mM NaCl salt and default PME parameters.
+
+The results of this setup are in charmm-gui-8435590782, and my modifications are in charmm-gui-changes, you can run
+diff -r charmm-gui-8435590782 charmm-gui-changes
+to see what changed. charmm-gui-results contains the restart file step5_1.rst produced by the procedure below:
+
+Several changes were made to step4_equilibration.inp and step5_production.inp to allow them to run faster with blade. Place a scalar command setting fbeta, the friction coefficient immediately before dynamics in both scripts
+scalar fbeta set 0.1 sele all end
+Change the dynamics command in step4_equilibration.inp to
+DYNA leap start timestep 0.001 nstep @nstep -
+     blade -
+     nprint 1000 iprfrq 1000 ntrfrq 0 -
+     iunread -1 iunwri 12 iuncrd -1 iunvel -1 kunit -1 -
+     nsavc 0 nsavv 0 -
+     tref @temp firstt @temp
+and change the dynamics command in step5_production.inp to
+DYNA CPT leap restart time 0.002 nstep @nstep -
+     blade prmc iprs 100 pref 1 prdv 100 -
+     nprint 1000 iprfrq 1000 ntrfrq 0 -
+     iunread 11 iunwri 12 iuncrd 13 iunvel -1 kunit -1 -
+     nsavc 50000 nsavv 0 -
+     reft @temp firstt @temp
+
+runstep45.sh is a slurm script to run step4_equilibration.inp and step5_production.inp on slurm. You will need to alter it to point to your installation of CHARMM and run on your cluster.

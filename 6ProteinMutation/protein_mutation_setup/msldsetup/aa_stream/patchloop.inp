@@ -1,0 +1,258 @@
+bomlev -2
+
+set procount = 0
+
+calc ii = @aainitl + 1
+label patchsiteloop
+if @ii .le. @aafinal then
+
+   set segid = @segid@@ii
+   set resid = @resid@@ii
+   ! Switch to iresid from resid based checks because of resid names in antibodies
+   define test select segid @segid .and. resid @resid end
+   set iresid = ?selires
+   set iresid@ii = @iresid
+   calc iresidminus2 = @iresid - 2
+   calc iresidminus1 = @iresid - 1
+   calc iresidplus1 = @iresid + 1
+   define test select segid @segid .and. ires @iresidminus2 end
+   set residminus2 = ?selresi
+   define test select segid @segid .and. ires @iresidminus1 end
+   set residminus1 = ?selresi
+   define test select segid @segid .and. ires @iresidplus1 end
+   set residplus1 = ?selresi
+   define test select segid @segid .and. resid @{nterres_@@segid} end
+   set nterires_@segid = ?selires
+   define test select segid @segid .and. resid @{cterres_@@segid} end
+   set cterires_@segid = ?selires
+   calc iiminus2 = @ii - 2
+   calc iiminus1 = @ii - 1
+
+   ! determine proline in current position
+   define testpro select segid @segid .and. resid @resid .and. resname PRO end
+   if ?nsel .gt. 0 then
+      calc procount = @procount + 1
+   endif
+   ! determine proline in residplus1 position
+   define testpro select segid @segid .and. resid @residplus1 .and. resname PRO end
+   set ptag = 0
+   if ?nsel .gt. 0 then
+      set ptag = 1
+   endif
+
+   set jj = 2
+   label patchloop
+   if @jj .le. @nsubs@@ii then
+
+      set seqjj = @{s@@{ii}seq@@jj}
+      patch aa_@{seqjj} @segid @resid@@ii setup warn ! setup for IC table
+
+      if @{seqjj} .eq. p then
+         calc procount = @procount + 1
+      endif
+
+      if @ii .eq. @{nterdel_@@segid} then
+         ! delete connectivity, not just bond
+         dele conn sele ( atom @segid @residminus1 C ) show end -
+            sele ( atom @segid @resid@@ii N@{seqjj}_A ) show end
+         patch cap_@{seqjj}@{nterc_@@segid} @segid @resid@@ii setup ! setup for IC table
+      endif
+      if @iresid .eq. @{nterires_@@segid} then
+         ! connectivity deletion necessary for multiple chains
+         dele conn sele ( ires @iresidminus1 .and. type C ) show end -
+            sele ( atom @segid @resid@@ii N@{seqjj}_A ) show end
+         patch cap_@{seqjj}@{nterc_@@segid} @segid @resid@@ii setup ! setup for IC table
+      endif
+      if @ii .eq. @{cterdel_@@segid} then
+         ! delete connectivity, not just bond
+         dele conn sele ( atom @segid @resid@@ii C@{seqjj}_B ) show end -
+            sele ( atom @segid @residplus1 N ) show end
+         patch cap_@{seqjj}@{cterc_@@segid} @segid @resid@@ii setup ! setup for IC table
+      endif
+      if @iresid .eq. @{cterires_@@segid} then
+         ! connectivity deletion necessary for multiple chains
+         dele conn sele ( atom @segid @resid@@ii C@{seqjj}_B ) show end -
+            sele ( ires @iresidplus1 .and. type N ) show end
+         patch cap_@{seqjj}@{cterc_@@segid} @segid @resid@@ii setup ! setup for IC table
+      endif
+
+      ! add links
+      if @iresidminus1 .gt. @{nterires_@@segid} then
+         patch l_00@{seqjj} @segid @residminus1 ! setup
+      endif
+      if @iresidminus1 .eq. @{nterires_@@segid} then
+         patch l_@{nterc_@@segid}0@{seqjj} @segid @residminus1 ! setup
+      endif
+      if @iresidplus1 .lt. @{cterires_@@segid} then
+         patch l_@{seqjj}@{ptag}0 @segid @residplus1 ! setup
+      endif
+      if @iresidplus1 .eq. @{cterires_@@segid} then
+         patch l_@{seqjj}@{ptag}@{cterc_@@segid} @segid @residplus1 ! setup
+      endif
+
+      calc aainitlp1 = @aainitl + 1
+      ! add pairwise links
+      if @ii .gt. @aainitlp1 then
+       if @segid@@iiminus1 .eq. @segid then
+         if @iresid@@iiminus1 .eq. @iresidminus1 then
+            set kk = 2
+            label linkloop1
+            if @kk .le. @nsubs@@iiminus1 then
+               set seqkk = @{s@@{iiminus1}seq@@kk}
+               if @iresidminus1 .eq. @{nterires_@@segid} then
+                  patch l_@{nterc_@@segid}@{seqkk}@{seqjj} @segid @residminus1
+               else
+                  if @{nterdel_@@segid} .eq. @iiminus1 then
+                     patch l_@{nterc_@@segid}@{seqkk}@{seqjj} @segid @residminus1
+                  else
+                     patch l_0@{seqkk}@{seqjj} @segid @residminus1
+                  endif
+               endif
+               if @iresidplus1 .eq. @{cterires_@@segid} then
+                  patch l_@{seqkk}@{seqjj}@{cterc_@@segid} @segid @resid
+               else
+                  if @{cterdel_@@segid} .eq. @ii then
+                     patch l_@{seqkk}@{seqjj}@{cterc_@@segid} @segid @resid
+                  else
+                     patch l_@{seqkk}@{seqjj}0 @segid @resid
+                  endif
+               endif
+               calc kk = @kk + 1
+               goto linkloop1
+            endif
+         endif
+         if @iresid@@iiminus1 .eq. @iresidminus2 then
+            set kk = 2
+            label linkloop2
+            if @kk .le. @nsubs@@iiminus1 then
+               set seqkk = @{s@@{iiminus1}seq@@kk}
+               patch l_@{seqkk}0@{seqjj} @segid @residminus1
+               calc kk = @kk + 1
+               goto linkloop2
+            endif
+         endif
+       endif
+      endif
+
+      calc aainitlp2 = @aainitl + 2
+      ! add three-way links
+      if @ii .gt. @aainitlp2 then
+       if @segid@@iiminus2 .eq. @segid then
+         if @iresid@@iiminus1 .eq. @iresidminus1 then
+            if @iresid@@iiminus2 .eq. @iresidminus2 then
+               set ll = 2
+               label linkloop3
+               if @ll .le. @nsubs@@iiminus2 then
+                  set seqll = @{s@@{iiminus2}seq@@ll}
+                  patch l_@{seqll}0@{seqjj} @segid @residminus1
+                  set kk = 2
+                  label linkloop4
+                  if @kk .le. @nsubs@@iiminus1 then
+                     set seqkk = @{s@@{iiminus1}seq@@kk}
+                     patch l_@{seqll}@{seqkk}@{seqjj} @segid @residminus1
+                     calc kk = @kk + 1
+                     goto linkloop4
+                  endif
+                  calc ll = @ll + 1
+                  goto linkloop3
+               endif
+            endif
+         endif
+       endif
+      endif
+
+      ! Copy backbone positions and move them slightly to prevent EWEX = NAN
+      calc moveit = ( @jj - 1 ) * 0.01
+      coor dupl sele atom @segid @resid N end sele atom @segid @resid N@{seqjj}_A end
+      scalar Z add @moveit sele atom @segid @resid N@{seqjj}_A end
+      coor dupl sele atom @segid @resid CA end sele atom @segid @resid C@{seqjj}_A end
+      scalar Z add @moveit sele atom @segid @resid C@{seqjj}_A end
+      coor dupl sele atom @segid @resid C end sele atom @segid @resid C@{seqjj}_B end
+      scalar Z add @moveit sele atom @segid @resid C@{seqjj}_B end
+
+      calc jj = @jj + 1
+      goto patchloop
+   endif
+
+   calc ii = @ii + 1
+   goto patchsiteloop
+endif
+
+ic param
+ic build
+
+
+calc ii = @aainitl + 1
+label selesiteloop
+if @ii .le. @aafinal then
+   set segid = @segid@@ii
+   set resid = @resid@@ii
+   set site = @ii
+
+   define site@{site}suball - 
+      select ( -
+      segid @segid .and. resid @resid ) show end
+
+   ! Use cats (1) unless site is a terminal residue or terminal deletion
+   set site@{ii}cats = 1
+   if @resid .eq. @{nterres_@@segid} then
+      set site@{ii}cats = 0
+   endif
+   if @resid .eq. @{cterres_@@segid} then
+      set site@{ii}cats = 0
+   endif
+
+   ! include residues in a possible terminal deletion
+   if @ii .eq. @{nterdel_@@segid} then
+      define site@{site}suball -
+         select ( -
+         segid @segid .and. resid @{nterres_@@segid}:@resid ) show end
+      set site@{ii}cats = 0
+   endif
+   if @ii .eq. @{cterdel_@@segid} then
+      define site@{site}suball -
+         select ( -
+         segid @segid .and. resid @resid:@{cterres_@@segid} ) show end
+      set site@{ii}cats = 0
+   endif
+
+   define site@{site}sub1 -
+      select ( site@{site}suball ) show end
+
+   set jj = 2
+   label seleloop
+   if @jj .le. @nsubs@@ii then
+
+      set sub = @jj
+      set seqjj = @{s@@{ii}seq@@jj}
+      stream prep/aa_stream/sele_@{seqjj}.str
+
+      ! account for cap in case of terminal deletion
+      if @ii .eq. @{nterdel_@@segid} then
+         stream prep/aa_stream/sele_@{seqjj}@{nterc_@@segid}.str
+         define site@{site}sub@{sub} select ( site@{site}sub@{sub} .or. site@{site}cap@{sub} ) show end
+      endif
+      if @resid .eq. @{nterres_@@segid} then
+         stream prep/aa_stream/sele_@{seqjj}@{nterc_@@segid}.str
+         define site@{site}sub@{sub} select ( site@{site}sub@{sub} .or. site@{site}cap@{sub} ) show end
+      endif
+      if @ii .eq. @{cterdel_@@segid} then
+         stream prep/aa_stream/sele_@{seqjj}@{cterc_@@segid}.str
+         define site@{site}sub@{sub} select ( site@{site}sub@{sub} .or. site@{site}cap@{sub} ) show end
+      endif
+      if @resid .eq. @{cterres_@@segid} then
+         stream prep/aa_stream/sele_@{seqjj}@{cterc_@@segid}.str
+         define site@{site}sub@{sub} select ( site@{site}sub@{sub} .or. site@{site}cap@{sub} ) show end
+      endif
+
+      define site@{site}sub1 -
+         select ( -
+         site@{site}sub1 .and. .not. site@{site}sub@{sub} ) show end
+
+      calc jj = @jj + 1
+      goto seleloop
+   endif
+
+   calc ii = @ii + 1
+   goto selesiteloop
+endif

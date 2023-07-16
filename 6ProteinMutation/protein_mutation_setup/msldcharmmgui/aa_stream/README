@@ -1,0 +1,22 @@
+You should be able to add stream files at several points in your system setup file to set up calculations appropriately. There are two ways to set up your system, either by reading in a previously defined psf file (this is how CHARMM-GUI is set up) or by reading in sequences and generating the psf yourself. The instructions differ slightly depeding on which option you choose.
+
+First you will need to define variables to control these scripts. This can be done by streaming a file like alchemical_definitions.inp
+stream "prep/alchemical_definitions.inp"
+or by including the variable definitions at the start of the system setup CHARMM script. These variables define the alchemical region. They include nsites and nsubs1 up to nsubsN for the number of sites N. s1seq1 up to sNseq1 should all be 0 for the native sequence and contain single letter amino acid codes for the remaining substituents like s1seq2 for the second substituent at the first site. (For one letter codes, h is hsd, b is hse, j is hsp.) The variables should also include segid1 to segidN for the segment id of the N sites. Should also contain nterdel_prot and cterdel_prot to note any terminal deletions. Use an integer to denote which site index the deletion occurs at, otherwise use 0 to denote there is no terminal deletion. Use nterres_prot and cterres_prot to denote the resid of the first and last residue of the segment, and use ntercap_prot and ctercap_prot to give the full name of the capping group on each end (only nter, cter, ace, and ct3 are supported, and use nterc_prot and cterc_prot to denote a one letter code for the cap (2-5, respectively for the previous list.) Replace prot at the end of these variable names with the mutating segids in your system.
+
+The next stream file to place is
+stream "prep/aa_stream/msldpatch.str"
+This file contains the thousands of patches for amino acid perturbations, including a patch for each natural amino acid and patches to link up pairs and triples of neighboring mutating amino acids with appropriate improper dihedrals and CMAP terms. It should be placed immediately after the other rtf and prm files are read in.
+
+The next stream file to include is
+stream "prep/aa_stream/patchloop.inp"
+If loading the psf all at once, this stream file should be placed after the psf has been loaded or if generating the psf with sequence commands, this stream file should be placed after the solute has been generated with sequence commands, but before the waters have been generated and before any patches removing angle and dihedral terms (e.g. heme coordination patches) have been applied. The stream file should also be after coordinates for the solute have been read in. This stream file applies the patches in msldpatch.str according to the info in alchemical_definitions.inp. It generates coordinates for the alchemical atoms using the positions of the existing atoms, so these atoms must have defined positions. It also generates angles and dihedrals, thus, if the entire psf is loaded all at once, angles on the waters and other angles and dihedrals you have deleted may be regenerated, so you will have to delete these angles and dihedrals again immediately after streaming this file. You can delete water angles that may have been generated with the syntax
+dele angle sele resname TIP3 end sele resname TIP3 end
+
+The next stream file to include is
+stream "prep/aa_stream/deleteloop.inp"
+This file should be placed after patchloop.inp, and immediately after the last call to "auto angle dihe" if using sequence setup or immediately after deleting the added water angles if reading an entire psf. This stream file will delete all the spurious angles and dihedrals that were generated between atoms of different substituents at the same site by "auto angle dihe".
+
+The final stream file to include is
+stream "prep/aa_stream/blocksetup.inp"
+It should be placed after periodic boundary conditions are set up and before the nonbonded interactions are set up. It reads the alchemical regions and other information into the block module of CHARMM.

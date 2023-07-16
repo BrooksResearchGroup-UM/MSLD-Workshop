@@ -1,0 +1,4 @@
+set fftx 64
+set ffty 64
+set fftz 64
+
