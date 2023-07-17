@@ -1,0 +1,7 @@
+ID,SMILES
+1,c1ccccc1C([O@@])CNc2ncnc(c3ccccc3)c2
+2,c1ccccc1C([O@@])CNc2ncnc(c3ccc(C)cc3)c2
+3,c1ccccc1C([O@@])CNc2ncnc(c3ccc(CC)cc3)c2
+4,c1ccccc1C([O@@])CNc2ncnc(c3ccc(C(C)C)cc3)c2
+5,c1ccccc1C([O@@])CNc2ncnc(c3ccc(C(C)(C)C)cc3)c2
+6,c1ccccc1C([O@@])CNc2ncnc(c3ccc(C(F)(F)F)cc3)c2
