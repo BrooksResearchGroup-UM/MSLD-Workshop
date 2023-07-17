@@ -94,7 +94,7 @@ prefix: /Users/brookscl/opt/anaconda3/envs/charmm_env
 
 
 ## 2. Install gfortran and OpenMPI using MacPorts or Home.
-### Uou have two choices, if you are already using either MacPorts or HomeBrew, skip down to installing gfortran and OpenMPI  below.
+### You have two choices, if you are already using either MacPorts or HomeBrew, skip down to installing gfortran and OpenMPI  below.
 ### MacPorts install:
 > - **[Install](https://www.macports.org/install.php) MacPorts for your operating system Follow the directions at the link above.**
 ### `gfortran` and `OpenMPI` install
