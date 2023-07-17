@@ -102,6 +102,10 @@ prefix: /Users/brookscl/opt/anaconda3/envs/charmm_env
 
 > `sudo port install openmpi-gcc12`
 
+> `sudo port select --set gcc mp-gcc12`
+
+> `sudo port select --set mpi openmpi-gcc12-fortran`
+
 
 ### Homebrew install:
 > - **[Install](https://brew.sh/) Homebrew for your operating system Follow the directions at the link above.**
