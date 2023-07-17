@@ -15,3 +15,7 @@ CMake Error at CMakeLists.txt:480 (message):
   MPI was not found and is required for DOMDEC_GPU.
 ```
 - It is possible that the right version of gcc was not installed. You can check the version of gcc by typing `gcc --version`. Ask your HPCC admin to locate the right version of GCC. In satyr/gollum, one can explicitly load module gcc/12.1.0 using `module load gcc/12.1.0` with cuda/12.0 or try a bunch of other gcc versions that are available (and compatible with the cuda toolkit).
+
+#### 3. When I build the CHARMM/pyCHARMM compatible environment with YAML file (Steps 1b), it takes extremely long. Is there an alternative?
+
+- Take the steps listed under 1a instead of 1b to expedite installation. Installation of so many packages using conda is known to take a long time. That is why installing packages using mamba is recommended. 
