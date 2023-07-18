@@ -143,8 +143,6 @@ prefix: /Users/brookscl/opt/anaconda3/envs/charmm_env
 ## 3. CHARMM and pyCHARMM installation once conda environment is installed and active and gfortran and OpenMPI are installed with MacPorts/Homebrew.
 ### Go to CHARMM source root and build CHARMM with configure
 
-<blockquote>
-
 ```csh
 conda activate charmm_env
 cd <charmm_root>
@@ -155,16 +153,12 @@ cd build_charmm
 make -j <n> install
 ```
 
-</blockquote>
-
 - **_charmm_env_ should be replaced with the name of your conda virtual environment**
 - **\<charmm_root\> is the path to the charmm top level tree**
 - **\<charmm_install_path\> is the path where you want the CHARMM installation to reside**
 - **\<n\> is the number of cores to use in compiling the code**
 
 ### pyCHARMM is built from the same source and can be built in the same build directory
-
-<blockquote>
 
 ```csh
 conda activate charmm_wcuda12
@@ -180,7 +174,5 @@ export CHARMM_LIB_DIR=<pycharmm_install_path>/lib # bash syntax
 setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib # csh syntax
 conda env config vars set CHARMM_LIB_DIR=<pycharmm_install_path>/lib  # every time when this conda environment (charmm_env) is activated, the environmental variable CHARMM_LIB_DIR is there automatically.
 ```
-
-</blockquote>
 
 <h3><b>Note:</b> <i>\<pycharmm_install_path\></i> is the path where you want the pyCHARMM installation to reside. <br><b>Note</b> that <i>\<pycharmm_install_path></i> can be the same as <i>\<charmm_install_path></i>, i.e., you can install both charmm and pyCHARMM in the same install folder.</charmm_install_path>h3>
