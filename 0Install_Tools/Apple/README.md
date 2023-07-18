@@ -183,4 +183,4 @@ conda env config vars set CHARMM_LIB_DIR=<pycharmm_install_path>/lib  # every ti
 
 </blockquote>
 
-<h3><b>Note:</b> <i><pycharmm_install_path></i> is the path where you want the pyCHARMM installation to reside. <br><b>Note</b> that <i>\<pycharmm_install_path></i> can be the same as <i>\<charmm_install_path></i>, i.e., you can install both charmm and pyCHARMM in the same install folder.</charmm_install_path>h3>
+<h3><b>Note:</b> <i>\<pycharmm_install_path\></i> is the path where you want the pyCHARMM installation to reside. <br><b>Note</b> that <i>\<pycharmm_install_path></i> can be the same as <i>\<charmm_install_path></i>, i.e., you can install both charmm and pyCHARMM in the same install folder.</charmm_install_path>h3>
