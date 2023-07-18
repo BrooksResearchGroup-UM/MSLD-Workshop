@@ -39,7 +39,7 @@
     
 
 <div class="alert alert-block alert-warning">
-<b>Note:</b> Our experience has been that using a YAML file leads to very long times to establish the enviornment. Recommendation is to use the mamba route noted above.
+<h4><b>Note:</b> Our experience has been that using a YAML file leads to very long times to establish the enviornment. Recommendation is to use the mamba route noted above.</h4>h4>
 </div>
 
 ### 1b. Building the CHARMM/pyCHARMM compatable environment with a YAML file
@@ -110,7 +110,7 @@ prefix: /Users/brookscl/opt/anaconda3/envs/charmm_env
 > `sudo port select --set mpi openmpi-gcc12-fortran`
 
 <div class="alert alert-block alert-warning">
-<b>Note:</b> We have been unable to build CHARMM/pyCHARMM with the latest gcc from Homebrew (gcc 13.1), therefore we strongly suggest you use the installation instructions for gcc 12.2 given below.
+<h4><b>Note:</b> We have been unable to build CHARMM/pyCHARMM with the latest gcc from Homebrew (gcc 13.1), therefore we strongly suggest you use the installation instructions for gcc 12.2 given below.</h4>
 </div>
 
 ### Homebrew install:
@@ -122,7 +122,7 @@ prefix: /Users/brookscl/opt/anaconda3/envs/charmm_env
 > `brew install open-mpi`
 
 <div class="alert alert-block alert-info">
-<h3><b>Note:</b> If you want to use a particular gcc (current default seems to be gcc 13.1), then it appears you need the following instead.</h3>
+<h4><b>Note:</b> If you want to use a particular gcc (current default seems to be gcc 13.1), then it appears you need the following instead.</h4>
 </div>  
 
 #### In bash
