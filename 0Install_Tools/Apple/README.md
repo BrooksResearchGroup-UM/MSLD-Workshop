@@ -38,6 +38,9 @@
 `mamba install -y -c conda-forge make cmake fftw clfft openmpi openmm mpi4py readline==8.2 rdkit openbabel pandas pytorch jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj nglview jsonpickle pymol-open-source pip`
     
 
+<div class="alert alert-block alert-warning">
+<b>Note:</b> Our experience has been that using a YAML file leads to very long times to establish the enviornment. Recommendation is to use the mamba route noted above.
+</div>
 
 ### 1b. Building the CHARMM/pyCHARMM compatable environment with a YAML file
  
@@ -93,8 +96,8 @@ prefix: /Users/brookscl/opt/anaconda3/envs/charmm_env
 `conda env create -f charmm_env.yml`
 
 
-## 2. Install gfortran and OpenMPI using MacPorts or Home.
-### You have two choices, if you are already using either MacPorts or HomeBrew, skip down to installing gfortran and OpenMPI  below.
+## 2. Install gfortran and OpenMPI using MacPorts or Homebrew.
+### You have two choices, if you are already using either MacPorts or Homebrew, skip down to installing gfortran and OpenMPI  below.
 ### MacPorts install:
 > - **[Install](https://www.macports.org/install.php) MacPorts for your operating system Follow the directions at the link above.**
 ### `gfortran` and `OpenMPI` install
@@ -106,6 +109,9 @@ prefix: /Users/brookscl/opt/anaconda3/envs/charmm_env
 
 > `sudo port select --set mpi openmpi-gcc12-fortran`
 
+<div class="alert alert-block alert-warning">
+<b>Note:</b> We have been unable to build CHARMM/pyCHARMM with the latest gcc from Homebrew (gcc 13.1), therefore we strongly suggest you use the installation instructions for gcc 12.2 given below.
+</div>
 
 ### Homebrew install:
 > - **[Install](https://brew.sh/) Homebrew for your operating system Follow the directions at the link above.**
