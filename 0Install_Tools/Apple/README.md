@@ -39,7 +39,7 @@
     
 
 <div class="alert alert-block alert-warning">
-<h4><b>Note:</b> Our experience has been that using a YAML file leads to very long times to establish the enviornment. Recommendation is to use the mamba route noted above.</h4>h4>
+<h4><b>Note:</b> Our experience has been that using a YAML file leads to very long times to establish the enviornment. Recommendation is to use the mamba route noted above.</h4>
 </div>
 
 ### 1b. Building the CHARMM/pyCHARMM compatable environment with a YAML file
