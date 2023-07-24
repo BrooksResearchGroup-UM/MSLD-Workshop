@@ -1,7 +1,0 @@
-I think we can basically chop off the bottom half of the pycharmm_msld.py file 
-(after the block module setup) and replace it with the pycharmm equivalent 
-of routines in pyALF (?)
-
-The msld_patch.py file loads in the toppar specs, alchemical patches, and 
-defines the alchemical selections
-
