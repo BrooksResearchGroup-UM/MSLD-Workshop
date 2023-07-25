@@ -89,71 +89,95 @@ stream @builddir/lpsites.inp
 !! Define MSLD substituent selections
 define site1_sub1 - 
    select ( - 
-   atom @ligseg @resnum C038 .or. -
+   atom @ligseg @resnum C034 .or. -
+   atom @ligseg @resnum H035 .or. -
+   atom @ligseg @resnum C036 .or. -
    atom @ligseg @resnum H037 .or. -
+   atom @ligseg @resnum C038 .or. -
+   atom @ligseg @resnum H039 .or. -
    none ) end
 
 define site1_sub2 - 
    select ( - 
-   atom @ligseg @resnum C039 .or. -
-   atom @ligseg @resnum H040 .or. -
+   atom @ligseg @resnum C040 .or. -
    atom @ligseg @resnum H041 .or. -
-   atom @ligseg @resnum H042 .or. -
+   atom @ligseg @resnum C042 .or. -
    atom @ligseg @resnum C043 .or. -
+   atom @ligseg @resnum H044 .or. -
+   atom @ligseg @resnum C045 .or. -
+   atom @ligseg @resnum H046 .or. -
+   atom @ligseg @resnum H047 .or. -
+   atom @ligseg @resnum H048 .or. -
    none ) end
 
 define site1_sub3 - 
    select ( - 
-   atom @ligseg @resnum C044 .or. -
-   atom @ligseg @resnum H046 .or. -
-   atom @ligseg @resnum H047 .or. -
-   atom @ligseg @resnum C045 .or. -
-   atom @ligseg @resnum H048 .or. -
-   atom @ligseg @resnum H049 .or. -
+   atom @ligseg @resnum C049 .or. -
    atom @ligseg @resnum H050 .or. -
    atom @ligseg @resnum C051 .or. -
+   atom @ligseg @resnum C052 .or. -
+   atom @ligseg @resnum H053 .or. -
+   atom @ligseg @resnum C054 .or. -
+   atom @ligseg @resnum H055 .or. -
+   atom @ligseg @resnum H056 .or. -
+   atom @ligseg @resnum C057 .or. -
+   atom @ligseg @resnum H058 .or. -
+   atom @ligseg @resnum H059 .or. -
+   atom @ligseg @resnum H060 .or. -
    none ) end
 
 define site1_sub4 - 
    select ( - 
-   atom @ligseg @resnum C052 .or. -
-   atom @ligseg @resnum H055 .or. -
-   atom @ligseg @resnum C053 .or. -
-   atom @ligseg @resnum H056 .or. -
-   atom @ligseg @resnum H057 .or. -
-   atom @ligseg @resnum H058 .or. -
-   atom @ligseg @resnum C054 .or. -
-   atom @ligseg @resnum H059 .or. -
-   atom @ligseg @resnum H060 .or. -
-   atom @ligseg @resnum H061 .or. -
-   atom @ligseg @resnum C062 .or. -
+   atom @ligseg @resnum C061 .or. -
+   atom @ligseg @resnum H062 .or. -
+   atom @ligseg @resnum C063 .or. -
+   atom @ligseg @resnum C064 .or. -
+   atom @ligseg @resnum H065 .or. -
+   atom @ligseg @resnum C066 .or. -
+   atom @ligseg @resnum H067 .or. -
+   atom @ligseg @resnum C068 .or. -
+   atom @ligseg @resnum H069 .or. -
+   atom @ligseg @resnum H070 .or. -
+   atom @ligseg @resnum H071 .or. -
+   atom @ligseg @resnum C072 .or. -
+   atom @ligseg @resnum H073 .or. -
+   atom @ligseg @resnum H074 .or. -
+   atom @ligseg @resnum H075 .or. -
    none ) end
 
 define site1_sub5 - 
    select ( - 
-   atom @ligseg @resnum C063 .or. -
-   atom @ligseg @resnum C064 .or. -
-   atom @ligseg @resnum H067 .or. -
-   atom @ligseg @resnum H068 .or. -
-   atom @ligseg @resnum H069 .or. -
-   atom @ligseg @resnum C065 .or. -
-   atom @ligseg @resnum H070 .or. -
-   atom @ligseg @resnum H071 .or. -
-   atom @ligseg @resnum H072 .or. -
-   atom @ligseg @resnum C066 .or. -
-   atom @ligseg @resnum H073 .or. -
-   atom @ligseg @resnum H074 .or. -
-   atom @ligseg @resnum H075 .or. -
    atom @ligseg @resnum C076 .or. -
+   atom @ligseg @resnum H077 .or. -
+   atom @ligseg @resnum C078 .or. -
+   atom @ligseg @resnum C079 .or. -
+   atom @ligseg @resnum H080 .or. -
+   atom @ligseg @resnum C081 .or. -
+   atom @ligseg @resnum C082 .or. -
+   atom @ligseg @resnum H083 .or. -
+   atom @ligseg @resnum H084 .or. -
+   atom @ligseg @resnum H085 .or. -
+   atom @ligseg @resnum C086 .or. -
+   atom @ligseg @resnum H087 .or. -
+   atom @ligseg @resnum H088 .or. -
+   atom @ligseg @resnum H089 .or. -
+   atom @ligseg @resnum C090 .or. -
+   atom @ligseg @resnum H091 .or. -
+   atom @ligseg @resnum H092 .or. -
+   atom @ligseg @resnum H093 .or. -
    none ) end
 
 define site1_sub6 - 
    select ( - 
-   atom @ligseg @resnum C077 .or. -
-   atom @ligseg @resnum F078 .or. -
-   atom @ligseg @resnum F079 .or. -
-   atom @ligseg @resnum F080 .or. -
-   atom @ligseg @resnum C081 .or. -
+   atom @ligseg @resnum C094 .or. -
+   atom @ligseg @resnum H095 .or. -
+   atom @ligseg @resnum C096 .or. -
+   atom @ligseg @resnum C097 .or. -
+   atom @ligseg @resnum H098 .or. -
+   atom @ligseg @resnum C099 .or. -
+   atom @ligseg @resnum F100 .or. -
+   atom @ligseg @resnum F101 .or. -
+   atom @ligseg @resnum F102 .or. -
    none ) end
 
 auto angle dihe  !! do not call after deleting sub-sub terms or loading in water
