@@ -5,11 +5,7 @@
 - We highly encourage you work in a Linux environment, since CUDA is no longer supported using the Apple installation.
 
 - While note explicitly required, please try to have a CHARMM-GUI account, which is free of charge at: charmm-gui.org
-
-  
-_Note, I have added a file with a template for building a conda environment from which CHARMM/pyCHARMM can be run and a number of other Python packages are included. This can be added to, but should certainly be tested._
-
-_Also, I just added two examples from the pyCHARMM-Workshop github, the basic building of an alanine dipeptide then solvating it, and the set-up of a protein system (w/o paying attention to ionizable groups) and running dynamics with OpenMM or BLaDe. All visualization is now done with nglview._
+- 
 
 ### Workshop schedule
 | Date         | Program                                                                                                     |
