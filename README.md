@@ -1,6 +1,6 @@
 # MSLD-Workshop
 ## Materials for five day workshop on using MSLD (including ALF and MSLD_py_prep) for drug discovery and protein engineering
-### List of to dos before making public
+### General Requirements:
 - Most of these scripts will be run using the Slurm Workload Manager.
 - We highly encourage you work in a Linux environment, since CUDA is no longer supported using the Apple installation.
 
