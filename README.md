@@ -5,7 +5,7 @@
 - We highly encourage you work in a Linux environment, since CUDA is no longer supported using the Apple installation.
 
 - While note explicitly required, please try to have a CHARMM-GUI account, which is free of charge at: charmm-gui.org
-- 
+  
 
 ### Workshop schedule
 | Date         | Program                                                                                                     |
