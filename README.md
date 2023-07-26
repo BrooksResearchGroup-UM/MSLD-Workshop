@@ -1,7 +1,8 @@
 # MSLD-Workshop
 ## Materials for five day workshop on using MSLD (including ALF and MSLD_py_prep) for drug discovery and protein engineering
 ### List of to dos before making public
-- describe requirements for participation
+- Most of these scripts will be run using the Slurm Workload Manager.
+- We highly encourage you work in a Linux environment, since CUDA is no longer supported using the Apple installation.
 
 - While note explicitly required, please try to have a CHARMM-GUI account, which is free of charge at: charmm-gui.org
 
