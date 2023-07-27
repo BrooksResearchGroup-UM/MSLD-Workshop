@@ -137,7 +137,7 @@ prefix: /home/brookscl/.conda/envs/charmm_wcuda12  # This corresponds to the pat
 
 <blockquote>
 
-```
+```csh #or bash
 conda activate charmm_wcuda12
 cd <charmm_root>
 mkdir build_charmm
@@ -163,7 +163,7 @@ conda env config vars set CHARMMEXEC=<charmm_install_path>/bin/charmm
 
 <blockquote>
 
-```
+```csh #or bash
 conda activate charmm_wcuda12
 cd <charmm_root>
 cd build_charmm
