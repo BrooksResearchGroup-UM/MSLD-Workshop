@@ -19,3 +19,27 @@ CMake Error at CMakeLists.txt:480 (message):
 #### 3. When I build the CHARMM/pyCHARMM compatible environment with YAML file (Steps 1b), it takes extremely long. Is there an alternative?
 
 - Take the steps listed under 1a instead of 1b to expedite installation. Installation of so many packages using conda is known to take a long time. That is why installing packages using mamba is recommended. 
+
+#### 4. When I try to activate the conda environment I built for CHARMM, I get the following error:
+```
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+```
+- Choose a shell of your choice. BASH or ZSH (for mac) are preferred.
+- Type `conda init bash` or `conda init zsh` depending on your choice. You could also use one of the other shells your computer may have.
+- Open a new terminal window/tab and activate the shell. Type `bash` or `zsh` depending on which shell you chose.
+- Then activate the conda environment your built
