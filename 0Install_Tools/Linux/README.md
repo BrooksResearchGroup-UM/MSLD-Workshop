@@ -133,8 +133,9 @@ prefix: /home/brookscl/.conda/envs/charmm_wcuda12  # This corresponds to the pat
 ## 2. CHARMM and pyCHARMM installation once conda environment is installed and active.
 - **Go to CHARMM source root and build CHARMM with configure**
 
+**_NOTE:_** \<charmm_install_path\> is the path where you want the pyCHARMM installation to reside**
+
 <blockquote>
-**_NOTE:_** \<pycharmm_install_path\> is the path where you want the pyCHARMM installation to reside**
 
 ```
 conda activate charmm_wcuda12
@@ -146,6 +147,7 @@ export FFTW_HOME=$CONDA_PREFIX # bash syntax
 setenv FFTW_HOME $CONDA_PREFIX # csh syntax
 ../configure --with-blade --with-fftdock -u  -D nvcc_ptx_target=52 -p <charmm_install_path>
 make -j <n> install
+conda env config vars set CHARMMEXEC=<charmm_install_path>/bin/charmm
 ```
 
 </blockquote>
@@ -157,9 +159,9 @@ make -j <n> install
 - **-D nvcc_ptx_target=52 is required for older GPUs like GTX980s**
 
 ### pyCHARMM is built from the same source and can be built in the same build directory
+**_NOTE:_** \<pycharmm_install_path\> is the path where you want the pyCHARMM installation to reside**
 
 <blockquote>
-**_NOTE:_** \<pycharmm_install_path\> is the path where you want the pyCHARMM installation to reside**
 
 ```
 conda activate charmm_wcuda12
