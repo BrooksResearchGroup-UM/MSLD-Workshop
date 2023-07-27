@@ -7,19 +7,21 @@
 - **Obtain [ALF version 3.2](https://github.com/ryanleehayes/alf) from github**
 - **Install pyALF (Part 3)**
 
+**_NOTE:_**  It is advised that you read the entire README file before you start typing in the commands in the sequence they are written. Reading the file first will help you maneuver the installation process more easily.
+
 ## 1. Creating conda environment to install and use CHARMM/pyCHARMM
 - **You will need a base anaconda/miniconda installation: see [anaconda installation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html).**
 - **Follow steps in 1a to create the conda environment manually OR follow steps in 1b to create the conda environment from a YAML file.**
 ### 1a. Create a conda environment manually
-- **Make a conda environment (See below for a shortcut using `conda env create -f <name_of_environment>.yml`)**<p>
+- **Make a conda environment**<p>
 `conda create -y -n <name_of_environment> python=3.9` # note python can be > 3.9
 - **Activate this environment**<p>
 `conda activate <name_of_environment>`
 - **Install mamba as a faster conda**<p>
 `conda install -y -c conda-forge mamba`
 - **Install CUDA from NVIDIA. Pick one version compatible with your drivers as described below. You can see available [CUDA Toolkit packages (Table 3)](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#title-new-cuda-tools)**<p>
-`mamba install -y -c nvidia cuda` # note this should install CUDA 12.1.1<p>
-`mamba install -y -c "nvidia/label/cuda-12.0.0" cuda` # note this should install CUDA 12.0<p>
+`conda install -y -c nvidia cuda` # note this should install CUDA 12.1.1<p>
+`conda install -y -c "nvidia/label/cuda-12.0.0" cuda` # note this should install CUDA 12.0<p>
  - **If you use the `cuda-12.0.0` noted above, then you need to use `gcc=12.1 gcc=12.1 gfortran=12.1` in the command below.**
  - **Install needed packages to build CHARMM and pyCHARMM**<p>
 `mamba install -y -c conda-forge gcc gxx gfortran make cmake binutils fftw openmpi openmm mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas pytorch jupyter_core jupyter_client jupyterlab jupyterlab_widgets jupyter_server jupyterlab_server jupyter_console jupyter jupytext biopython py3dmol mdtraj nglview jsonpickle pymol-open-source`
@@ -132,8 +134,9 @@ prefix: /home/brookscl/.conda/envs/charmm_wcuda12  # This corresponds to the pat
 - **Go to CHARMM source root and build CHARMM with configure**
 
 <blockquote>
+**_NOTE:_** \<pycharmm_install_path\> is the path where you want the pyCHARMM installation to reside**
 
-```csh
+```
 conda activate charmm_wcuda12
 cd <charmm_root>
 mkdir build_charmm
@@ -156,8 +159,9 @@ make -j <n> install
 ### pyCHARMM is built from the same source and can be built in the same build directory
 
 <blockquote>
+**_NOTE:_** \<pycharmm_install_path\> is the path where you want the pyCHARMM installation to reside**
 
-```csh
+```
 conda activate charmm_wcuda12
 cd <charmm_root>
 cd build_charmm
@@ -175,8 +179,7 @@ conda env config vars set CHARMM_LIB_DIR=<pycharmm_install_path>/lib  # every ti
 ```
 
 </blockquote>
-    
-- **\<pycharmm_install_path\> is the path where you want the pyCHARMM installation to reside**
+
 
 ## 3. pyALF installation
 - **Download [ALF version 3.2](https://github.com/ryanleehayes/alf) from github.**
