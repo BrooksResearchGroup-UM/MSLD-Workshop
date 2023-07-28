@@ -43,3 +43,10 @@ IMPORTANT: You may need to close and restart your shell after running 'conda ini
 - Type `conda init bash` or `conda init zsh` depending on your choice. You could also use one of the other shells your computer may have.
 - Open a new terminal window/tab and activate the shell. Type `bash` or `zsh` depending on which shell you chose.
 - Then activate the conda environment your built
+
+#### 5. I cannot get MacPorts to install openmpi. It says the port was not found.
+- It is possible that your ports tree is not updated to reflect the latest MacPorts repository. Try running
+``` port selfupdate```
+or
+```sudo port selfupdate ```
+to update the ports tree and try installing again using the `port install` command.
