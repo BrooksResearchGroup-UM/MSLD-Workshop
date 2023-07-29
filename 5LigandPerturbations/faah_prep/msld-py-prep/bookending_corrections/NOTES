@@ -1,0 +1,66 @@
+LFC 5/2023
+
+NOTES for the user
+
+This set of scripts are used to run and analyze charge perturbation
+simulations needed to get the charge correction from
+renormalized to force field charge free energies of binding per
+molecule (as specified in the block section of your prep/{sysname}.inp
+script. 
+
+*** Copy these scripts into the ALF directory you want to get 
+corrections for, then cd into the ALF directory. ***
+
+1. Split the system into the different end states by running:
+
+    `python 1_split_system.py`
+
+    - Change the initial parameters listed after the
+    package imports to reflect those of your system.
+    - This sets up a physical_ligands directory with
+    each block combination and the corresponding system being
+    simulated (can be ligand in water, prot, vac depending
+    on your {sysname}.inp script specifications)
+    - It assigns a ff_charges.txt and crn_charges.txt 
+    file that has the necessary CHARMM scalar commands
+    to interconvert between the two charge sets. Make
+    sure these are different. If they are the same then 
+    you don't have to do the correction! (dG=0)
+
+2. Run each MD simulation per ligand (each end state corresponds
+    to a particular charge set, either ff or crn) by running:
+
+    `sbatch 2_run_md.sh`
+
+    - This will deploy every pair of MD simulations per ligand/block
+    end state. 
+    - You can modify the number of equilibration/production steps
+    in `charge_correction.py` in lines :198-200. Make sure your
+    initial parameters lited after the package imports reflect
+    those of your system
+    - Once the sims are done, they will output the dcd, res files, 
+    as well as {ff/crn}_{e1/e2}.csv corresponding to the charge set
+    simulation with the snapshot energies evaluated for both charge sets
+    (e1 or e2 specify energy1, or the energy for the charge set that
+    was used to run the simulation, and energy2, the energy for
+    those same snapshot evaluated using the other charge set)
+
+3. You can get the free energies per molecule by running:
+ 
+    `python 3_get_all_free_energies.py`
+
+    - This creates an overlap.pdf file that shows the potential
+    differences between the two simulations run with different
+    charge states. It also reports an overlap which should be
+    around 85-100% if everything is converged.
+    - It also creates a Result.txt file that shows the free
+    energy value and its associated uncertainty from bootstrapping.
+
+--------------
+--------------
+DEV NOTES
+This is how I ran the charge renormalization corrections for MSLD.
+Attempted parallelizing with pympi but it seems like there are some
+issues with this package if mpi is being used at the Fortran level
+based on how pyCHARMM was compiled.
+

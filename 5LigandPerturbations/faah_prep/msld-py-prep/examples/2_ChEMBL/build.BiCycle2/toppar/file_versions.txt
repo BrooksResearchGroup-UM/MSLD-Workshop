@@ -1,0 +1,2 @@
+These files were copied from the CHARMM git repository on 6/15/18 after a successful "git pull"
+(~/charmm/toppar)

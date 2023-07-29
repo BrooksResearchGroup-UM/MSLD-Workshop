@@ -1,0 +1,84 @@
+chk finished
+Large RMSD for CORE atom C005 - RMSD > 0.8 (1.532).
+MCS results printed to MCS_for_MSLD.txt
+Reference Ligand is 11896
+
+inFrag is not specified correctly!! It should look like this: [[],[]]
+A default (empty) value will be used, but this may not yield the results you want
+
+inCore is not specified correctly!! It should look like this: [[],[]]
+A default (empty) value will be used, but this may not yield the results you want
+
+Fragment Charge Differences Following Charge ReNormalization:
+Charge Change Chk: old sitesum [0.51, 0.51, 0.51, 0.508, 0.51, 0.506, 0.51, 0.506, 0.51, 0.51, 0.506, 0.506, 0.51, 0.51, 0.51, 0.506, 0.51, 0.506, 0.53]
+Charge Change Chk: Qs round to these integers [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Charge Change Chk: new sitesum [-0.49, -0.49, -0.49, -0.492, -0.49, -0.494, -0.49, -0.494, -0.49, -0.49, -0.494, -0.494, -0.49, -0.49, -0.49, -0.494, -0.49, -0.494, -0.47]
+ 
+Site 1 Q(avg) = -0.490316
+  11896 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  9538 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  9842 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  10322 Q(diff from avg) = 0.001684 Q(orig) = 0.508 (a -0.34% diff from orig charges)
+  10833 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  10870 Q(diff from avg) = 0.003684 Q(orig) = 0.506 (a -0.75% diff from orig charges)
+  11408 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  11434 Q(diff from avg) = 0.003684 Q(orig) = 0.506 (a -0.75% diff from orig charges)
+  11738 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  13061 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  13140 Q(diff from avg) = 0.003684 Q(orig) = 0.506 (a -0.75% diff from orig charges)
+  13327 Q(diff from avg) = 0.003684 Q(orig) = 0.506 (a -0.75% diff from orig charges)
+  13409 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  13770 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  13852 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  14525 Q(diff from avg) = 0.003684 Q(orig) = 0.506 (a -0.75% diff from orig charges)
+  14683 Q(diff from avg) = -0.000316 Q(orig) = 0.51 (a 0.06% diff from orig charges)
+  16835 Q(diff from avg) = 0.003684 Q(orig) = 0.506 (a -0.75% diff from orig charges)
+  17451 Q(diff from avg) = -0.020316 Q(orig) = 0.53 (a 4.32% diff from orig charges)
+
+Charge Change Chk: old sitesum [0.504, 0.554, 0.499, 0.503, 0.504, 0.58, 0.503, 0.503, 0.503, 0.504, 0.545, 0.498, 0.499, 0.559, 0.504, 0.499, 0.504, 0.549, 0.51, 0.504, 0.503, 0.463, 0.7, 0.504]
+Charge Change Chk: Qs round to these integers [1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1]
+Charge Change Chk: new sitesum [-0.496, -0.44599999999999995, 0.499, -0.497, -0.496, -0.42000000000000004, -0.497, -0.497, -0.497, -0.496, -0.45499999999999996, 0.498, 0.499, -0.44099999999999995, -0.496, 0.499, -0.496, -0.45099999999999996, -0.49, -0.496, -0.497, 0.463, -0.30000000000000004, -0.496]
+ 
+Site 2 Q(avg) = -0.270917
+  11896 Q(diff from avg) = 0.225083 Q(orig) = 0.504 (a -45.38% diff from orig charges) ** CHECK
+  9538 Q(diff from avg) = 0.175083 Q(orig) = 0.554 (a -39.26% diff from orig charges) ** CHECK
+  9842 Q(diff from avg) = -0.769917 Q(orig) = 0.499 (a -154.29% diff from orig charges) ** CHECK
+  10322 Q(diff from avg) = 0.226083 Q(orig) = 0.503 (a -45.49% diff from orig charges) ** CHECK
+  10749 Q(diff from avg) = 0.225083 Q(orig) = 0.504 (a -45.38% diff from orig charges) ** CHECK
+  10870 Q(diff from avg) = 0.149083 Q(orig) = 0.58 (a -35.5% diff from orig charges) ** CHECK
+  11408 Q(diff from avg) = 0.226083 Q(orig) = 0.503 (a -45.49% diff from orig charges) ** CHECK
+  11738 Q(diff from avg) = 0.226083 Q(orig) = 0.503 (a -45.49% diff from orig charges) ** CHECK
+  11774 Q(diff from avg) = 0.226083 Q(orig) = 0.503 (a -45.49% diff from orig charges) ** CHECK
+  13061 Q(diff from avg) = 0.225083 Q(orig) = 0.504 (a -45.38% diff from orig charges) ** CHECK
+  13140 Q(diff from avg) = 0.184083 Q(orig) = 0.545 (a -40.46% diff from orig charges) ** CHECK
+  13327 Q(diff from avg) = -0.768917 Q(orig) = 0.498 (a -154.4% diff from orig charges) ** CHECK
+  13409 Q(diff from avg) = -0.769917 Q(orig) = 0.499 (a -154.29% diff from orig charges) ** CHECK
+  14924 Q(diff from avg) = 0.170083 Q(orig) = 0.559 (a -38.57% diff from orig charges) ** CHECK
+  15097 Q(diff from avg) = 0.225083 Q(orig) = 0.504 (a -45.38% diff from orig charges) ** CHECK
+  15342 Q(diff from avg) = -0.769917 Q(orig) = 0.499 (a -154.29% diff from orig charges) ** CHECK
+  15405 Q(diff from avg) = 0.225083 Q(orig) = 0.504 (a -45.38% diff from orig charges) ** CHECK
+  15723 Q(diff from avg) = 0.180083 Q(orig) = 0.549 (a -39.93% diff from orig charges) ** CHECK
+  16102 Q(diff from avg) = 0.219083 Q(orig) = 0.51 (a -44.71% diff from orig charges) ** CHECK
+  16499 Q(diff from avg) = 0.225083 Q(orig) = 0.504 (a -45.38% diff from orig charges) ** CHECK
+  16835 Q(diff from avg) = 0.226083 Q(orig) = 0.503 (a -45.49% diff from orig charges) ** CHECK
+  16892 Q(diff from avg) = -0.733917 Q(orig) = 0.463 (a -158.51% diff from orig charges) ** CHECK
+  17185 Q(diff from avg) = 0.029083 Q(orig) = 0.7 (a -9.69% diff from orig charges) ** CHECK
+  17206 Q(diff from avg) = 0.225083 Q(orig) = 0.504 (a -45.38% diff from orig charges) ** CHECK
+
+Core Q(sum) = -1.238767
+  Q(orig) = -1.025709 (a 20.77% diff from orig charges) ** CHECK
+
+
+Old to New Atom Name Translations found in: translation.txt
+MSLD Files Written Into: build.BiCycle2
+
+maxnum from site1_sub1_frag.pdb
+maxnum from site1_sub4_frag.pdb
+maxnum from site1_sub6_frag.pdb
+maxnum from site1_sub8_frag.pdb
+maxnum from site1_sub16_frag.pdb
+maxnum from site2_sub1_frag.pdb
+maxnum from site2_sub2_frag.pdb
+maxnum from site2_sub8_frag.pdb
+
+default TOPPAR parameters copied into build.BiCycle2. Check to make sure these work for your system!

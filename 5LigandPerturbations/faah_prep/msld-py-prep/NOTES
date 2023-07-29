@@ -1,0 +1,50 @@
+
+===================================================================================
+"msld_py_prep" = a suite of python scripts to automate MSLD ligand file preparation
+===================================================================================
+
+== (07/31/2023) == J. Vilseck & L. Cervantes
+
+System Requirements:
+ - msld_py_prep needs python, numpy, and pandas (or alternatively Anaconda)
+ - msld_mcs_rdecomp.py uses RDKit
+ - Lg_Solvate.sh needs convpdb.pl from the MMTSB toolset (https://github.com/mmtsb/toolset)
+ - vis_check.py uses PyMOL 
+
+What's Needed:
+ - a mol2 file and rtf/prm (or cgenff str) toppar files for every ligand you want to study with MSLD
+ - a sdf file (if using msld_mcs_rdecomp.py for MCS searching with RDKit) for every ligand
+ - edit "msld_py_prep.py" with information about the current series of ligands
+ - update "mol_list.txt" with mol2 filenames (without the .mol2 suffix)
+
+
+What's Done:
+ (1) A "Maximum Common Substructure"-like search is performed to identify common cores & 
+     alchemical fragment atoms in each molecule
+	- MCS can be found using atom-type connectivies (with msld_py_prep)
+	  USAGE: python ./msld_py_prep.py
+
+	- or alternatively with RDKit (with msld_mcs_rdecomp.py)
+	  USAGE: python ./msld_mcs_rdecomp.py
+
+	- the MCS output can be checked visually with PyMOL via the vis_check.py script
+	  USAGE: open PyMOL, run vis_check.py
+
+ (2) Each Molecule is then divided up into core + fragment(s) and each component is subjected to
+     Charge Renormalization to make MSLD suitable rtf file
+	- (after running the initial MCS search above)
+	  USAGE: python ./msld_py_prep.py
+
+ (3) Then pdb, rtf, and prm files are printed
+
+ (4) Finally, charmm scripts are printed (these work with the current verions of ALF)
+	- files are copied into a "build.[system_name]" directory
+
+ (5) After the initial build files are generate, Lg_Solvate.sh can be run to create files for
+     a ligand-solvated simulation (no protein, just ligand in water)
+
+A few notes of interest:
+- LP (lonepair) sites should be accepted and handled appropriately
+- Lg_Solvate.sh is not automatically called by msld_py_prep.py
+- Lg_Solvate.sh requires up-to-date CHARMM toppar files in a directory called "toppar"
+

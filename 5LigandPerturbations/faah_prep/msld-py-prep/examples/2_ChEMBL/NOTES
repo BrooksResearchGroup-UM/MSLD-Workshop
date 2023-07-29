@@ -1,0 +1,12 @@
+FAAH Test Case
+
+Output is in `build.name` directory
+
+Run commands are in `run_crn` file.
+You can run it using:
+`./run_crn`
+
+First call to msld_py_prep.py outputs
+MCS_for_MSLD.txt file.
+Second call performs charge renormalization 
+and generates the build.name directory.
