@@ -146,6 +146,9 @@ cd build_charmm
 export FFTW_HOME=$CONDA_PREFIX # bash syntax
 setenv FFTW_HOME $CONDA_PREFIX # csh syntax
 ../configure --with-blade --with-fftdock -u  -D nvcc_ptx_target=52 -p <charmm_install_path>
+# If you don't have cuda on your architecture use:
+../configure  -p <charmm_install_path>
+# Note this will only allow you to do tutorials 1,2,4. For the others you will need an architecture supporting CUDA
 make -j <n> install
 conda env config vars set CHARMMEXEC=<charmm_install_path>/bin/charmm
 ```
