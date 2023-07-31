@@ -11,7 +11,6 @@
 ### File description:
 
 - CpHMD.ipynb: jupyter notebook of this tutorial
-- fig: a directory containing figures used in CpHMD.ipynb
 - toppar_c36_jul21: force field parameters used for this tutorial
 - lys: initial structures and input files required for running a simulation of Lys in water
 - glu: initial structures and input files required for running a simulation of Glu in water
