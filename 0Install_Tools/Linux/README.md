@@ -182,6 +182,7 @@ pip install `pwd`/tool/pycharmm  # Installs the pyCHARMM modules in your current
 export CHARMM_LIB_DIR=<pycharmm_install_path>/lib # bash syntax
 setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib # csh syntax
 conda env config vars set CHARMM_LIB_DIR=<pycharmm_install_path>/lib  # every time when this conda environment (charmm_wcuda12) is activated, the environmental variable CHARMM_LIB_DIR is there automatically.
+python -c 'import pycharmm' # to check if pycharmm installation is successful
 ```
 
 </blockquote>
