@@ -16,6 +16,11 @@
 | Thu, August 3, 2023  | Using ALF/MSLD to perform ligand perturbation and compute relative free binding energies                            |
 | Fri, August 4, 2023  | Using ALF/MSLD to perform protein perturbation to <br>compute relative folding free energies<br>Using ALF/MSLD to <br>perform constant pH MD simulations |
 
+### Video Recordings
+Zoom video recordings of each day's program will be posted online here:
+https://iu.mediaspace.kaltura.com/channel/MSLD+Workshop+2023/309046192
+
+
 ![Workshop flyer](https://github.com/BrooksResearchGroup-UM/MSLD-Workshop/blob/main/flyer.jpg)
 
 
