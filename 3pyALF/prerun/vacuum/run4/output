@@ -1,0 +1,3531 @@
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/top_all36_msld.rtf
+ VOPEN> Attempting to open::prep/top_all36_msld.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> *>>>>>>>>CHARMM36 ALL-HYDROGEN TOPOLOGY FILE FOR PROTEINS <<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>>>>>> MAY 2011 <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *             PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/full_ligand.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/full_ligand.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * CHARMM RTF BUILT BY MATCH
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read param card -
+ CHARMM>     name prep/par_all36_msld.prm -
+ CHARMM>     flex
+ VOPEN> Attempting to open::prep/par_all36_msld.prm::
+
+          PARAMETER FILE BEING READ FROM UNIT 91
+ TITLE> *>>>> CHARMM36 ALL-HYDROGEN PARAMETER FILE FOR PROTEINS <<<<<<<<<<
+ TITLE> *>>>>> INCLUDES PHI, PSI CROSS TERM MAP (CMAP) CORRECTION <<<<<<<<
+ TITLE> *>>>>>>>>>>>>>>>>>>>>>>>>>> FEB. 2012 <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ TITLE> * ALL COMMENTS TO THE CHARMM WEB SITE: WWW.CHARMM.ORG
+ TITLE> *             PARAMETER SET DISCUSSION FORUM
+ TITLE> *
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ C
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ C
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ C
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ H
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ C
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ H
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ C
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ C
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ C
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ C
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ H
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ H
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ H
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ O
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ H
+ **** Warning ****  The following extraneous characters
+ were found while command processing in PARRDR
+ O
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  86  C261
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  87  C321
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  88  C331
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  89  HGA3
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  90  C267
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  91  HGA1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  92  C311
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  93  C2O4
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  94  C2O5
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  95  C2O2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  96  HGA2
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  97  HG52
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  98  HGP1
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type:  99  O311
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 100  HG61
+ NO nonbond interactions will be computed for this atom type.
+*****  WARNING  ***** PARRDR no nonbond parameters for atom type: 101  O2D1
+ NO nonbond interactions will be computed for this atom type.
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read param card -
+ CHARMM>     name prep/full_ligand.prm -
+ CHARMM>     flex -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/full_ligand.prm::
+
+          PARAMETER FILE BEING READ FROM UNIT 91
+ TITLE> * PRM FILES BUILT BY MATCH
+ TITLE> * PRM FILES COLLATED INTO A SINGLE FILE BY PROCESS.PY
+ TITLE> * A SCRIPT WRITTEN BY RYAN HAYES 2016-06-18
+ TITLE> *
+ PARMIO> NONBOND, HBOND lists and IMAGE atoms cleared.
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read sequence pdb -
+ CHARMM>     name prep/full_ligand.pdb
+ VOPEN> Attempting to open::prep/full_ligand.pdb::
+ MAINIO> Sequence information being read from unit  91.
+ TITLE>  *
+
+          RESIDUE SEQUENCE --     1 RESIDUES
+          UNK 
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+ NO PATCHING WILL BE DONE ON THE FIRST RESIDUE
+ NO PATCHING WILL BE DONE ON THE LAST  RESIDUE
+ AUTGEN: Autogenerating specified angles and dihedrals.
+ GENPSF> Segment   1 has been generated. Its identifier is LIG.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       12   Number of groups     =        3
+         Number of bonds         =       12   Number of angles     =       18
+         Number of dihedrals     =       24   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =        0
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =    0.00000
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/full_ligand.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/full_ligand.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site1_sub1_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site1_sub1_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site1_sub2_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site1_sub2_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site1_sub3_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site1_sub3_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site1_sub4_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site1_sub4_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site1_sub5_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site1_sub5_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site2_sub1_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site2_sub1_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site2_sub2_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site2_sub2_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site2_sub3_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site2_sub3_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site2_sub4_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site2_sub4_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site2_sub5_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site2_sub5_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     read rtf card -
+ CHARMM>     name prep/site2_sub6_pres.rtf -
+ CHARMM>     append
+ VOPEN> Attempting to open::prep/site2_sub6_pres.rtf::
+ MAINIO> Residue topology file being read from unit  91.
+ TITLE> * FRAGMENT PRES BUILT BY PROCESS.PY
+ TITLE> *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     ic generate
+
+               Generation complete. New IC table entries:
+
+   N     I       J       K       L   R(I(J/K)) T(I(JK/KJ)) PHI   T(JKL)   R(KL)
+
+    1   1 C4    1 C1    1 *C0   1 H0     0.0000    0.00  180.00    0.00   0.0000
+    2   1 H0    1 C0    1 C1    1 C5     0.0000    0.00  180.00    0.00   0.0000
+    3   1 C5    1 C0    1 *C1   1 H1     0.0000    0.00  180.00    0.00   0.0000
+    4   1 C0    1 C1    1 C5    1 C2     0.0000    0.00  180.00    0.00   0.0000
+    5   1 C2    1 C1    1 *C5   1 H5     0.0000    0.00  180.00    0.00   0.0000
+    6   1 C1    1 C5    1 C2    1 C3     0.0000    0.00  180.00    0.00   0.0000
+    7   1 C3    1 C5    1 *C2   1 H2     0.0000    0.00  180.00    0.00   0.0000
+    8   1 C4    1 C2    1 *C3   1 H3     0.0000    0.00  180.00    0.00   0.0000
+    9   1 C3    1 C0    1 *C4   1 H4     0.0000    0.00  180.00    0.00   0.0000
+  
+  
+ CHARMM>     autogen nopatch
+  AUTOGEN: turned off for patches.
+  
+  
+ CHARMM>     patch p1_1 LIG 1 setup
+ ATOM  LIG  UNK  1    C100 ADDED.
+ ATOM  LIG  UNK  1    H101 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       14   Number of groups     =        4
+         Number of bonds         =       15   Number of angles     =       25
+         Number of dihedrals     =       36   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =       19
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =    0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site1_sub1_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site1_sub1_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p1_2 LIG 1 setup
+ ATOM  LIG  UNK  1    O103 ADDED.
+ ATOM  LIG  UNK  1    H104 ADDED.
+ ATOM  LIG  UNK  1    C102 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       17   Number of groups     =        5
+         Number of bonds         =       19   Number of angles     =       33
+         Number of dihedrals     =       50   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =       41
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site1_sub2_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site1_sub2_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p1_3 LIG 1 setup
+ ATOM  LIG  UNK  1    C105 ADDED.
+ ATOM  LIG  UNK  1    C106 ADDED.
+ ATOM  LIG  UNK  1    H107 ADDED.
+ ATOM  LIG  UNK  1    H108 ADDED.
+ ATOM  LIG  UNK  1    H109 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       22   Number of groups     =        6
+         Number of bonds         =       25   Number of angles     =       46
+         Number of dihedrals     =       68   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =       72
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site1_sub3_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site1_sub3_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p1_4 LIG 1 setup
+ ATOM  LIG  UNK  1    C111 ADDED.
+ ATOM  LIG  UNK  1    H113 ADDED.
+ ATOM  LIG  UNK  1    H114 ADDED.
+ ATOM  LIG  UNK  1    C112 ADDED.
+ ATOM  LIG  UNK  1    H115 ADDED.
+ ATOM  LIG  UNK  1    H116 ADDED.
+ ATOM  LIG  UNK  1    H117 ADDED.
+ ATOM  LIG  UNK  1    C110 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       30   Number of groups     =        7
+         Number of bonds         =       34   Number of angles     =       65
+         Number of dihedrals     =       95   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =      118
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site1_sub4_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site1_sub4_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p1_5 LIG 1 setup
+ ATOM  LIG  UNK  1    C119 ADDED.
+ ATOM  LIG  UNK  1    H123 ADDED.
+ ATOM  LIG  UNK  1    H124 ADDED.
+ ATOM  LIG  UNK  1    C118 ADDED.
+ ATOM  LIG  UNK  1    C122 ADDED.
+ ATOM  LIG  UNK  1    H126 ADDED.
+ ATOM  LIG  UNK  1    H127 ADDED.
+ ATOM  LIG  UNK  1    H128 ADDED.
+ ATOM  LIG  UNK  1    C120 ADDED.
+ ATOM  LIG  UNK  1    H125 ADDED.
+ ATOM  LIG  UNK  1    C121 ADDED.
+ ATOM  LIG  UNK  1    H129 ADDED.
+ ATOM  LIG  UNK  1    H130 ADDED.
+ ATOM  LIG  UNK  1    H131 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       44   Number of groups     =        8
+         Number of bonds         =       49   Number of angles     =       96
+         Number of dihedrals     =      140   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =      194
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site1_sub5_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site1_sub5_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p2_1 LIG 1 setup
+ ATOM  LIG  UNK  1    C132 ADDED.
+ ATOM  LIG  UNK  1    H133 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       46   Number of groups     =        9
+         Number of bonds         =       52   Number of angles     =      103
+         Number of dihedrals     =      152   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =      213
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site2_sub1_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site2_sub1_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p2_2 LIG 1 setup
+ ATOM  LIG  UNK  1    C134 ADDED.
+ ATOM  LIG  UNK  1    O135 ADDED.
+ ATOM  LIG  UNK  1    H136 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       49   Number of groups     =       10
+         Number of bonds         =       56   Number of angles     =      111
+         Number of dihedrals     =      166   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =      235
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site2_sub2_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site2_sub2_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p2_3 LIG 1 setup
+ ATOM  LIG  UNK  1    C137 ADDED.
+ ATOM  LIG  UNK  1    C138 ADDED.
+ ATOM  LIG  UNK  1    H139 ADDED.
+ ATOM  LIG  UNK  1    H140 ADDED.
+ ATOM  LIG  UNK  1    H141 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       54   Number of groups     =       11
+         Number of bonds         =       62   Number of angles     =      124
+         Number of dihedrals     =      184   Number of impropers  =        0
+         Number of cross-terms   =        0   Number of autogens   =      266
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site2_sub3_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site2_sub3_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p2_4 LIG 1 setup
+ ATOM  LIG  UNK  1    C142 ADDED.
+ ATOM  LIG  UNK  1    C143 ADDED.
+ ATOM  LIG  UNK  1    H145 ADDED.
+ ATOM  LIG  UNK  1    O144 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       58   Number of groups     =       12
+         Number of bonds         =       67   Number of angles     =      134
+         Number of dihedrals     =      200   Number of impropers  =        1
+         Number of cross-terms   =        0   Number of autogens   =      292
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site2_sub4_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site2_sub4_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p2_5 LIG 1 setup
+ ATOM  LIG  UNK  1    C146 ADDED.
+ ATOM  LIG  UNK  1    C147 ADDED.
+ ATOM  LIG  UNK  1    C148 ADDED.
+ ATOM  LIG  UNK  1    H150 ADDED.
+ ATOM  LIG  UNK  1    H151 ADDED.
+ ATOM  LIG  UNK  1    H152 ADDED.
+ ATOM  LIG  UNK  1    O149 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       65   Number of groups     =       13
+         Number of bonds         =       75   Number of angles     =      150
+         Number of dihedrals     =      222   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      330
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site2_sub5_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site2_sub5_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     patch p2_6 LIG 1 setup
+ ATOM  LIG  UNK  1    C153 ADDED.
+ ATOM  LIG  UNK  1    C157 ADDED.
+ ATOM  LIG  UNK  1    H162 ADDED.
+ ATOM  LIG  UNK  1    C156 ADDED.
+ ATOM  LIG  UNK  1    H161 ADDED.
+ ATOM  LIG  UNK  1    C155 ADDED.
+ ATOM  LIG  UNK  1    H160 ADDED.
+ ATOM  LIG  UNK  1    C154 ADDED.
+ ATOM  LIG  UNK  1    C159 ADDED.
+ ATOM  LIG  UNK  1    H164 ADDED.
+ ATOM  LIG  UNK  1    C158 ADDED.
+ ATOM  LIG  UNK  1    H163 ADDED.
+
+ Message from MAPIC: Atom numbers are changed.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       77   Number of groups     =       14
+         Number of bonds         =       89   Number of angles     =      175
+         Number of dihedrals     =      262   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      395
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     read coor pdb -
+ CHARMM>     name prep/site2_sub6_frag.pdb -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/site2_sub6_frag.pdb::
+  read CHARMM-pdb format
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE>  *
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+  
+ CHARMM>     auto angle dihe sele .bonded. .bonded. .bonded. togenerate end
+ SELRPN>     77 atoms have been selected out of     77
+ AUTGEN: Autogenerating specified angles and dihedrals.
+ AUTOGEN:   175 angles are removed before regeneration for selected atoms.
+ AUTOGEN:   262 dihedrals are removed before regeneration for selected atoms.
+ Requested angle for addition already exists:           5           7          13  Nothing done.
+ Requested angle for addition already exists:           3           1          13  Nothing done.
+ Requested angle for addition already exists:           8           7          13  Nothing done.
+ Requested angle for addition already exists:           1          13          14  Nothing done.
+ Requested angle for addition already exists:           1          13           7  Nothing done.
+ Requested angle for addition already exists:           2           1          13  Nothing done.
+ Requested angle for addition already exists:           7          13          14  Nothing done.
+ Requested angle for addition already exists:           7          17          15  Nothing done.
+ Requested angle for addition already exists:           5           7          17  Nothing done.
+ Requested angle for addition already exists:           8           7          17  Nothing done.
+ Requested angle for addition already exists:           3           1          17  Nothing done.
+ Requested angle for addition already exists:           1          17          15  Nothing done.
+ Requested angle for addition already exists:           1          17           7  Nothing done.
+ Requested angle for addition already exists:          17          15          16  Nothing done.
+ Requested angle for addition already exists:           2           1          17  Nothing done.
+ Requested angle for addition already exists:           1          18           7  Nothing done.
+ Requested angle for addition already exists:           7          18          19  Nothing done.
+ Requested angle for addition already exists:          18          19          21  Nothing done.
+ Requested angle for addition already exists:           3           1          18  Nothing done.
+ Requested angle for addition already exists:          21          19          22  Nothing done.
+ Requested angle for addition already exists:           8           7          18  Nothing done.
+ Requested angle for addition already exists:           1          18          19  Nothing done.
+ Requested angle for addition already exists:          18          19          22  Nothing done.
+ Requested angle for addition already exists:           5           7          18  Nothing done.
+ Requested angle for addition already exists:          18          19          20  Nothing done.
+ Requested angle for addition already exists:           2           1          18  Nothing done.
+ Requested angle for addition already exists:          20          19          22  Nothing done.
+ Requested angle for addition already exists:          20          19          21  Nothing done.
+ Requested angle for addition already exists:           3           1          30  Nothing done.
+ Requested angle for addition already exists:           8           7          30  Nothing done.
+ Requested angle for addition already exists:          30          23          26  Nothing done.
+ Requested angle for addition already exists:           1          30          23  Nothing done.
+ Requested angle for addition already exists:          25          23          26  Nothing done.
+ Requested angle for addition already exists:           5           7          30  Nothing done.
+ Requested angle for addition already exists:           2           1          30  Nothing done.
+ Requested angle for addition already exists:           7          30          23  Nothing done.
+ Requested angle for addition already exists:          27          26          28  Nothing done.
+ Requested angle for addition already exists:          27          26          29  Nothing done.
+ Requested angle for addition already exists:          24          23          26  Nothing done.
+ Requested angle for addition already exists:          28          26          29  Nothing done.
+ Requested angle for addition already exists:          23          26          27  Nothing done.
+ Requested angle for addition already exists:          23          26          29  Nothing done.
+ Requested angle for addition already exists:          24          23          25  Nothing done.
+ Requested angle for addition already exists:          23          26          28  Nothing done.
+ Requested angle for addition already exists:           1          30           7  Nothing done.
+ Requested angle for addition already exists:          30          23          24  Nothing done.
+ Requested angle for addition already exists:          30          23          25  Nothing done.
+ Requested angle for addition already exists:           7          34          31  Nothing done.
+ Requested angle for addition already exists:           3           1          34  Nothing done.
+ Requested angle for addition already exists:           1          34           7  Nothing done.
+ Requested angle for addition already exists:          39          41          44  Nothing done.
+ Requested angle for addition already exists:          39          41          43  Nothing done.
+ Requested angle for addition already exists:          39          35          37  Nothing done.
+ Requested angle for addition already exists:          39          35          36  Nothing done.
+ Requested angle for addition already exists:          42          41          44  Nothing done.
+ Requested angle for addition already exists:          32          31          33  Nothing done.
+ Requested angle for addition already exists:          43          41          44  Nothing done.
+ Requested angle for addition already exists:          39          35          38  Nothing done.
+ Requested angle for addition already exists:          31          39          40  Nothing done.
+ Requested angle for addition already exists:           8           7          34  Nothing done.
+ Requested angle for addition already exists:          37          35          38  Nothing done.
+ Requested angle for addition already exists:          42          41          43  Nothing done.
+ Requested angle for addition already exists:           2           1          34  Nothing done.
+ Requested angle for addition already exists:          36          35          37  Nothing done.
+ Requested angle for addition already exists:          36          35          38  Nothing done.
+ Requested angle for addition already exists:          32          31          39  Nothing done.
+ Requested angle for addition already exists:           5           7          34  Nothing done.
+ Requested angle for addition already exists:          31          39          41  Nothing done.
+ Requested angle for addition already exists:          31          39          35  Nothing done.
+ Requested angle for addition already exists:           1          34          31  Nothing done.
+ Requested angle for addition already exists:          41          39          35  Nothing done.
+ Requested angle for addition already exists:          34          31          39  Nothing done.
+ Requested angle for addition already exists:          39          41          42  Nothing done.
+ Requested angle for addition already exists:          35          39          40  Nothing done.
+ Requested angle for addition already exists:          41          39          40  Nothing done.
+ Requested angle for addition already exists:          34          31          33  Nothing done.
+ Requested angle for addition already exists:          34          31          32  Nothing done.
+ Requested angle for addition already exists:          33          31          39  Nothing done.
+ Requested angle for addition already exists:           4           3          45  Nothing done.
+ Requested angle for addition already exists:           7           5          45  Nothing done.
+ Requested angle for addition already exists:           3          45           5  Nothing done.
+ Requested angle for addition already exists:           5          45          46  Nothing done.
+ Requested angle for addition already exists:           3          45          46  Nothing done.
+ Requested angle for addition already exists:           6           5          45  Nothing done.
+ Requested angle for addition already exists:           1           3          45  Nothing done.
+ Requested angle for addition already exists:          47          48          49  Nothing done.
+ Requested angle for addition already exists:           7           5          47  Nothing done.
+ Requested angle for addition already exists:           4           3          47  Nothing done.
+ Requested angle for addition already exists:           5          47          48  Nothing done.
+ Requested angle for addition already exists:           3          47          48  Nothing done.
+ Requested angle for addition already exists:           1           3          47  Nothing done.
+ Requested angle for addition already exists:           6           5          47  Nothing done.
+ Requested angle for addition already exists:           3          47           5  Nothing done.
+ Requested angle for addition already exists:          52          51          54  Nothing done.
+ Requested angle for addition already exists:          52          51          53  Nothing done.
+ Requested angle for addition already exists:           7           5          50  Nothing done.
+ Requested angle for addition already exists:           6           5          50  Nothing done.
+ Requested angle for addition already exists:           5          50          51  Nothing done.
+ Requested angle for addition already exists:          50          51          53  Nothing done.
+ Requested angle for addition already exists:          50          51          54  Nothing done.
+ Requested angle for addition already exists:           3          50           5  Nothing done.
+ Requested angle for addition already exists:           3          50          51  Nothing done.
+ Requested angle for addition already exists:           1           3          50  Nothing done.
+ Requested angle for addition already exists:          50          51          52  Nothing done.
+ Requested angle for addition already exists:           4           3          50  Nothing done.
+ Requested angle for addition already exists:          53          51          54  Nothing done.
+ Requested angle for addition already exists:          58          56          57  Nothing done.
+ Requested angle for addition already exists:          55          56          58  Nothing done.
+ Requested angle for addition already exists:           4           3          55  Nothing done.
+ Requested angle for addition already exists:           6           5          55  Nothing done.
+ Requested angle for addition already exists:           3          55           5  Nothing done.
+ Requested angle for addition already exists:           3          55          56  Nothing done.
+ Requested angle for addition already exists:           1           3          55  Nothing done.
+ Requested angle for addition already exists:           7           5          55  Nothing done.
+ Requested angle for addition already exists:           5          55          56  Nothing done.
+ Requested angle for addition already exists:          55          56          57  Nothing done.
+ Requested angle for addition already exists:          62          61          64  Nothing done.
+ Requested angle for addition already exists:          62          61          63  Nothing done.
+ Requested angle for addition already exists:           3          59           5  Nothing done.
+ Requested angle for addition already exists:          59          60          65  Nothing done.
+ Requested angle for addition already exists:          60          61          64  Nothing done.
+ Requested angle for addition already exists:           4           3          59  Nothing done.
+ Requested angle for addition already exists:          59          60          61  Nothing done.
+ Requested angle for addition already exists:          63          61          64  Nothing done.
+ Requested angle for addition already exists:          65          60          61  Nothing done.
+ Requested angle for addition already exists:           3          59          60  Nothing done.
+ Requested angle for addition already exists:           6           5          59  Nothing done.
+ Requested angle for addition already exists:          60          61          63  Nothing done.
+ Requested angle for addition already exists:          60          61          62  Nothing done.
+ Requested angle for addition already exists:           5          59          60  Nothing done.
+ Requested angle for addition already exists:           1           3          59  Nothing done.
+ Requested angle for addition already exists:           7           5          59  Nothing done.
+ Requested angle for addition already exists:          67          74          76  Nothing done.
+ Requested angle for addition already exists:          72          71          67  Nothing done.
+ Requested angle for addition already exists:          71          67          68  Nothing done.
+ Requested angle for addition already exists:           3          66          73  Nothing done.
+ Requested angle for addition already exists:          73          69          70  Nothing done.
+ Requested angle for addition already exists:          74          76          77  Nothing done.
+ Requested angle for addition already exists:           6           5          66  Nothing done.
+ Requested angle for addition already exists:          76          74          75  Nothing done.
+ Requested angle for addition already exists:          66          73          71  Nothing done.
+ Requested angle for addition already exists:          66          73          69  Nothing done.
+ Requested angle for addition already exists:           7           5          66  Nothing done.
+ Requested angle for addition already exists:          74          67          68  Nothing done.
+ Requested angle for addition already exists:          71          67          74  Nothing done.
+ Requested angle for addition already exists:           1           3          66  Nothing done.
+ Requested angle for addition already exists:          69          76          77  Nothing done.
+ Requested angle for addition already exists:          69          76          74  Nothing done.
+ Requested angle for addition already exists:           3          66           5  Nothing done.
+ Requested angle for addition already exists:          67          74          75  Nothing done.
+ Requested angle for addition already exists:          73          71          72  Nothing done.
+ Requested angle for addition already exists:          71          73          69  Nothing done.
+ Requested angle for addition already exists:           5          66          73  Nothing done.
+ Requested angle for addition already exists:          70          69          76  Nothing done.
+ Requested angle for addition already exists:          73          69          76  Nothing done.
+ Requested angle for addition already exists:           4           3          66  Nothing done.
+ Requested angle for addition already exists:          73          71          67  Nothing done.
+ Requested dihedral for addition already exists:          13           1           3           4  Nothing done.
+ Requested dihedral for addition already exists:           8           7          13           1  Nothing done.
+ Requested dihedral for addition already exists:          13           7           5          11  Nothing done.
+ Requested dihedral for addition already exists:           7          13           1           2  Nothing done.
+ Requested dihedral for addition already exists:          14          13           1           3  Nothing done.
+ Requested dihedral for addition already exists:          14          13           7           5  Nothing done.
+ Requested dihedral for addition already exists:          13           7           5           6  Nothing done.
+ Requested dihedral for addition already exists:           5           7          13           1  Nothing done.
+ Requested dihedral for addition already exists:           3           1          13           7  Nothing done.
+ Requested dihedral for addition already exists:          14          13           1           2  Nothing done.
+ Requested dihedral for addition already exists:          13           1           3          11  Nothing done.
+ Requested dihedral for addition already exists:          14          13           7           8  Nothing done.
+ Requested dihedral for addition already exists:          17           7           5          11  Nothing done.
+ Requested dihedral for addition already exists:          15          17           1           3  Nothing done.
+ Requested dihedral for addition already exists:          17           1           3           4  Nothing done.
+ Requested dihedral for addition already exists:           3           1          17           7  Nothing done.
+ Requested dihedral for addition already exists:          15          17           7           5  Nothing done.
+ Requested dihedral for addition already exists:          16          15          17           7  Nothing done.
+ Requested dihedral for addition already exists:           5           7          17           1  Nothing done.
+ Requested dihedral for addition already exists:          15          17           1           2  Nothing done.
+ Requested dihedral for addition already exists:          17           7           5           6  Nothing done.
+ Requested dihedral for addition already exists:          16          15          17           1  Nothing done.
+ Requested dihedral for addition already exists:           8           7          17           1  Nothing done.
+ Requested dihedral for addition already exists:          15          17           7           8  Nothing done.
+ Requested dihedral for addition already exists:          17           1           3          11  Nothing done.
+ Requested dihedral for addition already exists:           7          17           1           2  Nothing done.
+ Requested dihedral for addition already exists:          22          19          18           7  Nothing done.
+ Requested dihedral for addition already exists:          21          19          18           7  Nothing done.
+ Requested dihedral for addition already exists:          18           1           3          11  Nothing done.
+ Requested dihedral for addition already exists:          19          18           7           8  Nothing done.
+ Requested dihedral for addition already exists:          20          19          18           7  Nothing done.
+ Requested dihedral for addition already exists:          18           1           3           4  Nothing done.
+ Requested dihedral for addition already exists:          20          19          18           1  Nothing done.
+ Requested dihedral for addition already exists:          18           7           5          11  Nothing done.
+ Requested dihedral for addition already exists:          22          19          18           1  Nothing done.
+ Requested dihedral for addition already exists:           7          18           1           2  Nothing done.
+ Requested dihedral for addition already exists:          19          18           1           3  Nothing done.
+ Requested dihedral for addition already exists:           1          18           7           8  Nothing done.
+ Requested dihedral for addition already exists:           7          18           1           3  Nothing done.
+ Requested dihedral for addition already exists:          21          19          18           1  Nothing done.
+ Requested dihedral for addition already exists:          19          18           1           2  Nothing done.
+ Requested dihedral for addition already exists:          18           7           5           6  Nothing done.
+ Requested dihedral for addition already exists:          19          18           7           5  Nothing done.
+ Requested dihedral for addition already exists:           1          18           7           5  Nothing done.
+ Requested dihedral for addition already exists:          26          23          30           1  Nothing done.
+ Requested dihedral for addition already exists:          26          23          30           7  Nothing done.
+ Requested dihedral for addition already exists:           2           1          30           7  Nothing done.
+ Requested dihedral for addition already exists:           3           1          30           7  Nothing done.
+ Requested dihedral for addition already exists:          30           7           5           6  Nothing done.
+ Requested dihedral for addition already exists:          24          23          26          28  Nothing done.
+ Requested dihedral for addition already exists:          27          26          23          30  Nothing done.
+ Requested dihedral for addition already exists:          29          26          23          30  Nothing done.
+ Requested dihedral for addition already exists:          28          26          23          30  Nothing done.
+ Requested dihedral for addition already exists:          24          23          26          29  Nothing done.
+ Requested dihedral for addition already exists:           8           7          30           1  Nothing done.
+ Requested dihedral for addition already exists:          30           1           3           4  Nothing done.
+ Requested dihedral for addition already exists:          24          23          26          27  Nothing done.
+ Requested dihedral for addition already exists:          23          30           7           8  Nothing done.
+ Requested dihedral for addition already exists:           5           7          30           1  Nothing done.
+ Requested dihedral for addition already exists:          30           7           5          11  Nothing done.
+ Requested dihedral for addition already exists:          23          30           1           2  Nothing done.
+ Requested dihedral for addition already exists:          25          23          30           7  Nothing done.
+ Requested dihedral for addition already exists:          23          30           1           3  Nothing done.
+ Requested dihedral for addition already exists:          24          23          30           1  Nothing done.
+ Requested dihedral for addition already exists:          23          30           7           5  Nothing done.
+ Requested dihedral for addition already exists:          25          23          30           1  Nothing done.
+ Requested dihedral for addition already exists:          24          23          30           7  Nothing done.
+ Requested dihedral for addition already exists:          30           1           3          11  Nothing done.
+ Requested dihedral for addition already exists:          25          23          26          28  Nothing done.
+ Requested dihedral for addition already exists:          25          23          26          29  Nothing done.
+ Requested dihedral for addition already exists:          25          23          26          27  Nothing done.
+ Requested dihedral for addition already exists:           1          34           7           5  Nothing done.
+ Requested dihedral for addition already exists:          34           1           3          11  Nothing done.
+ Requested dihedral for addition already exists:          32          31          39          40  Nothing done.
+ Requested dihedral for addition already exists:          31          39          41          42  Nothing done.
+ Requested dihedral for addition already exists:          32          31          39          41  Nothing done.
+ Requested dihedral for addition already exists:          34           7           5          11  Nothing done.
+ Requested dihedral for addition already exists:          34          31          39          40  Nothing done.
+ Requested dihedral for addition already exists:           3           1          34           7  Nothing done.
+ Requested dihedral for addition already exists:          32          31          34           1  Nothing done.
+ Requested dihedral for addition already exists:          40          39          41          42  Nothing done.
+ Requested dihedral for addition already exists:          31          39          41          43  Nothing done.
+ Requested dihedral for addition already exists:          36          35          39          41  Nothing done.
+ Requested dihedral for addition already exists:           1          34           7           8  Nothing done.
+ Requested dihedral for addition already exists:          34           7           5           6  Nothing done.
+ Requested dihedral for addition already exists:           7          34           1           2  Nothing done.
+ Requested dihedral for addition already exists:          31          34           7           8  Nothing done.
+ Requested dihedral for addition already exists:          31          39          35          37  Nothing done.
+ Requested dihedral for addition already exists:          34           1           3           4  Nothing done.
+ Requested dihedral for addition already exists:          34          31          39          41  Nothing done.
+ Requested dihedral for addition already exists:          31          39          41          44  Nothing done.
+ Requested dihedral for addition already exists:          39          31          34           7  Nothing done.
+ Requested dihedral for addition already exists:          35          39          41          44  Nothing done.
+ Requested dihedral for addition already exists:          36          35          39          40  Nothing done.
+ Requested dihedral for addition already exists:          32          31          39          35  Nothing done.
+ Requested dihedral for addition already exists:          33          31          39          35  Nothing done.
+ Requested dihedral for addition already exists:          31          34           1           2  Nothing done.
+ Requested dihedral for addition already exists:          33          31          39          40  Nothing done.
+ Requested dihedral for addition already exists:          33          31          34           7  Nothing done.
+ Requested dihedral for addition already exists:          40          39          41          44  Nothing done.
+ Requested dihedral for addition already exists:          32          31          34           7  Nothing done.
+ Requested dihedral for addition already exists:          31          34           1           3  Nothing done.
+ Requested dihedral for addition already exists:          34          31          39          35  Nothing done.
+ Requested dihedral for addition already exists:          40          39          41          43  Nothing done.
+ Requested dihedral for addition already exists:          35          39          41          42  Nothing done.
+ Requested dihedral for addition already exists:          33          31          39          41  Nothing done.
+ Requested dihedral for addition already exists:          38          35          39          41  Nothing done.
+ Requested dihedral for addition already exists:          33          31          34           1  Nothing done.
+ Requested dihedral for addition already exists:          35          39          41          43  Nothing done.
+ Requested dihedral for addition already exists:          31          39          35          36  Nothing done.
+ Requested dihedral for addition already exists:          38          35          39          40  Nothing done.
+ Requested dihedral for addition already exists:          37          35          39          41  Nothing done.
+ Requested dihedral for addition already exists:          31          34           7           5  Nothing done.
+ Requested dihedral for addition already exists:          37          35          39          40  Nothing done.
+ Requested dihedral for addition already exists:          31          39          35          38  Nothing done.
+ Requested dihedral for addition already exists:          39          31          34           1  Nothing done.
+ Requested dihedral for addition already exists:          45           3           1           9  Nothing done.
+ Requested dihedral for addition already exists:           3          45           5           6  Nothing done.
+ Requested dihedral for addition already exists:          46          45           3           4  Nothing done.
+ Requested dihedral for addition already exists:          45           5           7           8  Nothing done.
+ Requested dihedral for addition already exists:           4           3          45           5  Nothing done.
+ Requested dihedral for addition already exists:          46          45           5           7  Nothing done.
+ Requested dihedral for addition already exists:          46          45           5           6  Nothing done.
+ Requested dihedral for addition already exists:          45           5           7           9  Nothing done.
+ Requested dihedral for addition already exists:           5          45           3           1  Nothing done.
+ Requested dihedral for addition already exists:          45           3           1           2  Nothing done.
+ Requested dihedral for addition already exists:           7           5          45           3  Nothing done.
+ Requested dihedral for addition already exists:          46          45           3           1  Nothing done.
+ Requested dihedral for addition already exists:          47           3           1           9  Nothing done.
+ Requested dihedral for addition already exists:          49          48          47           3  Nothing done.
+ Requested dihedral for addition already exists:          47           5           7           9  Nothing done.
+ Requested dihedral for addition already exists:          49          48          47           5  Nothing done.
+ Requested dihedral for addition already exists:          48          47           3           1  Nothing done.
+ Requested dihedral for addition already exists:           6           5          47           3  Nothing done.
+ Requested dihedral for addition already exists:          47           5           7           8  Nothing done.
+ Requested dihedral for addition already exists:           4           3          47           5  Nothing done.
+ Requested dihedral for addition already exists:          48          47           5           7  Nothing done.
+ Requested dihedral for addition already exists:          48          47           3           4  Nothing done.
+ Requested dihedral for addition already exists:          47           3           1           2  Nothing done.
+ Requested dihedral for addition already exists:           1           3          47           5  Nothing done.
+ Requested dihedral for addition already exists:          48          47           5           6  Nothing done.
+ Requested dihedral for addition already exists:           7           5          47           3  Nothing done.
+ Requested dihedral for addition already exists:          52          51          50           5  Nothing done.
+ Requested dihedral for addition already exists:           6           5          50           3  Nothing done.
+ Requested dihedral for addition already exists:          53          51          50           3  Nothing done.
+ Requested dihedral for addition already exists:          51          50           3           1  Nothing done.
+ Requested dihedral for addition already exists:          50           5           7           9  Nothing done.
+ Requested dihedral for addition already exists:          51          50           5           6  Nothing done.
+ Requested dihedral for addition already exists:          52          51          50           3  Nothing done.
+ Requested dihedral for addition already exists:          50           3           1           9  Nothing done.
+ Requested dihedral for addition already exists:          51          50           3           4  Nothing done.
+ Requested dihedral for addition already exists:           7           5          50           3  Nothing done.
+ Requested dihedral for addition already exists:          54          51          50           3  Nothing done.
+ Requested dihedral for addition already exists:          53          51          50           5  Nothing done.
+ Requested dihedral for addition already exists:          54          51          50           5  Nothing done.
+ Requested dihedral for addition already exists:           5          50           3           4  Nothing done.
+ Requested dihedral for addition already exists:          50           3           1           2  Nothing done.
+ Requested dihedral for addition already exists:          50           5           7           8  Nothing done.
+ Requested dihedral for addition already exists:          51          50           5           7  Nothing done.
+ Requested dihedral for addition already exists:           5          50           3           1  Nothing done.
+ Requested dihedral for addition already exists:          57          56          55           3  Nothing done.
+ Requested dihedral for addition already exists:          57          56          55           5  Nothing done.
+ Requested dihedral for addition already exists:          56          55           3           4  Nothing done.
+ Requested dihedral for addition already exists:          55           3           1           2  Nothing done.
+ Requested dihedral for addition already exists:          55           5           7           8  Nothing done.
+ Requested dihedral for addition already exists:          58          56          55           3  Nothing done.
+ Requested dihedral for addition already exists:          55           3           1           9  Nothing done.
+ Requested dihedral for addition already exists:           4           3          55           5  Nothing done.
+ Requested dihedral for addition already exists:          56          55           5           6  Nothing done.
+ Requested dihedral for addition already exists:           6           5          55           3  Nothing done.
+ Requested dihedral for addition already exists:           5          55           3           1  Nothing done.
+ Requested dihedral for addition already exists:          56          55           5           7  Nothing done.
+ Requested dihedral for addition already exists:           3          55           5           7  Nothing done.
+ Requested dihedral for addition already exists:          58          56          55           5  Nothing done.
+ Requested dihedral for addition already exists:          56          55           3           1  Nothing done.
+ Requested dihedral for addition already exists:          55           5           7           9  Nothing done.
+ Requested dihedral for addition already exists:           5          59           3           1  Nothing done.
+ Requested dihedral for addition already exists:          60          59           3           4  Nothing done.
+ Requested dihedral for addition already exists:          64          61          60          65  Nothing done.
+ Requested dihedral for addition already exists:          62          61          60          65  Nothing done.
+ Requested dihedral for addition already exists:          59           3           1           2  Nothing done.
+ Requested dihedral for addition already exists:          61          60          59           3  Nothing done.
+ Requested dihedral for addition already exists:          61          60          59           5  Nothing done.
+ Requested dihedral for addition already exists:          59           5           7           8  Nothing done.
+ Requested dihedral for addition already exists:           3          59           5           7  Nothing done.
+ Requested dihedral for addition already exists:          65          60          59           5  Nothing done.
+ Requested dihedral for addition already exists:          65          60          59           3  Nothing done.
+ Requested dihedral for addition already exists:          59           3           1           9  Nothing done.
+ Requested dihedral for addition already exists:          63          61          60          65  Nothing done.
+ Requested dihedral for addition already exists:           5          59           3           4  Nothing done.
+ Requested dihedral for addition already exists:           3          59           5           6  Nothing done.
+ Requested dihedral for addition already exists:          60          59           3           1  Nothing done.
+ Requested dihedral for addition already exists:          59          60          61          62  Nothing done.
+ Requested dihedral for addition already exists:          59          60          61          63  Nothing done.
+ Requested dihedral for addition already exists:          60          59           5           6  Nothing done.
+ Requested dihedral for addition already exists:          59           5           7           9  Nothing done.
+ Requested dihedral for addition already exists:          59          60          61          64  Nothing done.
+ Requested dihedral for addition already exists:          60          59           5           7  Nothing done.
+ Requested dihedral for addition already exists:          71          73          69          76  Nothing done.
+ Requested dihedral for addition already exists:          73          66           3           1  Nothing done.
+ Requested dihedral for addition already exists:           7           5          66           3  Nothing done.
+ Requested dihedral for addition already exists:          68          67          71          72  Nothing done.
+ Requested dihedral for addition already exists:          72          71          67          74  Nothing done.
+ Requested dihedral for addition already exists:          70          69          73          71  Nothing done.
+ Requested dihedral for addition already exists:          66          73          69          70  Nothing done.
+ Requested dihedral for addition already exists:          68          67          74          75  Nothing done.
+ Requested dihedral for addition already exists:          67          71          73          69  Nothing done.
+ Requested dihedral for addition already exists:          73          71          67          74  Nothing done.
+ Requested dihedral for addition already exists:          73          69          76          74  Nothing done.
+ Requested dihedral for addition already exists:           5          66           3           4  Nothing done.
+ Requested dihedral for addition already exists:          71          67          74          75  Nothing done.
+ Requested dihedral for addition already exists:          73          66           5           6  Nothing done.
+ Requested dihedral for addition already exists:          67          74          76          77  Nothing done.
+ Requested dihedral for addition already exists:          71          67          74          76  Nothing done.
+ Requested dihedral for addition already exists:          66           3           1           9  Nothing done.
+ Requested dihedral for addition already exists:          69          73          71          72  Nothing done.
+ Requested dihedral for addition already exists:          66           5           7           9  Nothing done.
+ Requested dihedral for addition already exists:          75          74          76          77  Nothing done.
+ Requested dihedral for addition already exists:          68          67          74          76  Nothing done.
+ Requested dihedral for addition already exists:          68          67          71          73  Nothing done.
+ Requested dihedral for addition already exists:          69          76          74          75  Nothing done.
+ Requested dihedral for addition already exists:          73          69          76          77  Nothing done.
+ Requested dihedral for addition already exists:          69          73          66           3  Nothing done.
+ Requested dihedral for addition already exists:          71          73          66           3  Nothing done.
+ Requested dihedral for addition already exists:          67          74          76          69  Nothing done.
+ Requested dihedral for addition already exists:          66           3           1           2  Nothing done.
+ Requested dihedral for addition already exists:          66          73          71          72  Nothing done.
+ Requested dihedral for addition already exists:          69          73          66           5  Nothing done.
+ Requested dihedral for addition already exists:          71          73          66           5  Nothing done.
+ Requested dihedral for addition already exists:          66           5           7           8  Nothing done.
+ Requested dihedral for addition already exists:          73          66           5           7  Nothing done.
+ Requested dihedral for addition already exists:          70          69          76          74  Nothing done.
+ Requested dihedral for addition already exists:           6           5          66           3  Nothing done.
+ Requested dihedral for addition already exists:          73          66           3           4  Nothing done.
+ Requested dihedral for addition already exists:          66          73          69          76  Nothing done.
+ Requested dihedral for addition already exists:           1           3          66           5  Nothing done.
+ Requested dihedral for addition already exists:          66          73          71          67  Nothing done.
+ Requested dihedral for addition already exists:          70          69          76          77  Nothing done.
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       77   Number of groups     =       14
+         Number of bonds         =       89   Number of angles     =      247
+         Number of dihedrals     =      610   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      395
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     delete atom select todelete end
+ SELRPN>      4 atoms have been selected out of     77
+
+ Message from MAPIC: Atom numbers are changed.
+ DELTIC:         6 bonds deleted
+ DELTIC:        36 angles deleted
+ DELTIC:       132 dihedrals deleted
+ DELTIC:        22 autogen elements deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      211
+         Number of dihedrals     =      478   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub1 show end sele site1sub2 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C100 H101
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK O103 H104 C102
+ SELRPN>      3 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      209
+         Number of dihedrals     =      470   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub1 show end sele site1sub3 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C100 H101
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C105 C106 H107 H108 H109
+ SELRPN>      5 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      207
+         Number of dihedrals     =      462   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub1 show end sele site1sub4 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C100 H101
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C111 H113 H114 C112 H115 H116 H117 C110
+ SELRPN>      8 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      205
+         Number of dihedrals     =      454   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub1 show end sele site1sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C100 H101
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C119 H123 H124 C118 C122 H126 H127 H128 C120 H125 C121 H129 H130 H131
+ SELRPN>     14 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      203
+         Number of dihedrals     =      446   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub2 show end sele site1sub3 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK O103 H104 C102
+ SELRPN>      3 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C105 C106 H107 H108 H109
+ SELRPN>      5 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      201
+         Number of dihedrals     =      438   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub2 show end sele site1sub4 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK O103 H104 C102
+ SELRPN>      3 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C111 H113 H114 C112 H115 H116 H117 C110
+ SELRPN>      8 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      199
+         Number of dihedrals     =      430   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub2 show end sele site1sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK O103 H104 C102
+ SELRPN>      3 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C119 H123 H124 C118 C122 H126 H127 H128 C120 H125 C121 H129 H130 H131
+ SELRPN>     14 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      197
+         Number of dihedrals     =      422   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub3 show end sele site1sub4 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C105 C106 H107 H108 H109
+ SELRPN>      5 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C111 H113 H114 C112 H115 H116 H117 C110
+ SELRPN>      8 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      195
+         Number of dihedrals     =      414   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub3 show end sele site1sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C105 C106 H107 H108 H109
+ SELRPN>      5 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C119 H123 H124 C118 C122 H126 H127 H128 C120 H125 C121 H129 H130 H131
+ SELRPN>     14 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      193
+         Number of dihedrals     =      406   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site1sub4 show end sele site1sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C111 H113 H114 C112 H115 H116 H117 C110
+ SELRPN>      8 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C119 H123 H124 C118 C122 H126 H127 H128 C120 H125 C121 H129 H130 H131
+ SELRPN>     14 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      191
+         Number of dihedrals     =      398   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub1 show end sele site2sub2 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C132 H133
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C134 O135 H136
+ SELRPN>      3 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      189
+         Number of dihedrals     =      390   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub1 show end sele site2sub3 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C132 H133
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C137 C138 H139 H140 H141
+ SELRPN>      5 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      187
+         Number of dihedrals     =      382   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub1 show end sele site2sub4 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C132 H133
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C142 C143 H145 O144
+ SELRPN>      4 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      185
+         Number of dihedrals     =      374   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub1 show end sele site2sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C132 H133
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C146 C147 C148 H150 H151 H152 O149
+ SELRPN>      7 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      183
+         Number of dihedrals     =      366   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub1 show end sele site2sub6 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C132 H133
+ SELRPN>      2 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C153 C157 H162 C156 H161 C155 H160 C154 C159 H164 C158 H163
+ SELRPN>     12 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      181
+         Number of dihedrals     =      358   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub2 show end sele site2sub3 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C134 O135 H136
+ SELRPN>      3 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C137 C138 H139 H140 H141
+ SELRPN>      5 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      179
+         Number of dihedrals     =      350   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub2 show end sele site2sub4 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C134 O135 H136
+ SELRPN>      3 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C142 C143 H145 O144
+ SELRPN>      4 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      177
+         Number of dihedrals     =      342   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub2 show end sele site2sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C134 O135 H136
+ SELRPN>      3 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C146 C147 C148 H150 H151 H152 O149
+ SELRPN>      7 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      175
+         Number of dihedrals     =      334   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub2 show end sele site2sub6 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C134 O135 H136
+ SELRPN>      3 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C153 C157 H162 C156 H161 C155 H160 C154 C159 H164 C158 H163
+ SELRPN>     12 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      173
+         Number of dihedrals     =      326   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub3 show end sele site2sub4 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C137 C138 H139 H140 H141
+ SELRPN>      5 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C142 C143 H145 O144
+ SELRPN>      4 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      171
+         Number of dihedrals     =      318   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub3 show end sele site2sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C137 C138 H139 H140 H141
+ SELRPN>      5 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C146 C147 C148 H150 H151 H152 O149
+ SELRPN>      7 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      169
+         Number of dihedrals     =      310   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub3 show end sele site2sub6 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C137 C138 H139 H140 H141
+ SELRPN>      5 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C153 C157 H162 C156 H161 C155 H160 C154 C159 H164 C158 H163
+ SELRPN>     12 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      167
+         Number of dihedrals     =      302   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub4 show end sele site2sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C142 C143 H145 O144
+ SELRPN>      4 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C146 C147 C148 H150 H151 H152 O149
+ SELRPN>      7 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      165
+         Number of dihedrals     =      294   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub4 show end sele site2sub6 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C142 C143 H145 O144
+ SELRPN>      4 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C153 C157 H162 C156 H161 C155 H160 C154 C159 H164 C158 H163
+ SELRPN>     12 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      163
+         Number of dihedrals     =      286   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+  
+ CHARMM>     dele connectivity sele site2sub5 show end sele site2sub6 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C146 C147 C148 H150 H151 H152 O149
+ SELRPN>      7 atoms have been selected out of     73
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG  1    UNK C153 C157 H162 C156 H161 C155 H160 C154 C159 H164 C158 H163
+ SELRPN>     12 atoms have been selected out of     73
+ DELTIC:         2 angles deleted
+ DELTIC:         8 dihedrals deleted
+ PSFSUM> PSF modified: NONBOND lists and IMAGE atoms cleared.
+ PSFSUM> Summary of the structure file counters :
+         Number of segments      =        1   Number of residues   =        1
+         Number of atoms         =       73   Number of groups     =       12
+         Number of bonds         =       83   Number of angles     =      161
+         Number of dihedrals     =      278   Number of impropers  =        2
+         Number of cross-terms   =        0   Number of autogens   =      373
+         Number of HB acceptors  =        0   Number of HB donors  =        0
+         Number of NB exclusions =        0   Total charge =   -0.00000
+  
+ Crystal Parameters : Crystal Type = CUBI
+           A     =   32.96400 B    =   32.96400 C     =   32.96400
+           Alpha =   90.00000 Beta =   90.00000 Gamma =   90.00000
+  
+ CHARMM>     open read card unit 14 name prep/cubic.xtl
+ VOPEN> Attempting to open::prep/cubic.xtl::
+ OPNLGU> Unit 14 opened for READONLY access to prep/cubic.xtl
+  
+ CHARMM>    crystal read card unit 14
+ CRYSTAL FILE BEING READ FROM UNIT    14
+ TITLE> *  CRYSTAL DEFINE CUBIC A=B=C THETA=90
+ TITLE> *
+ TITLE>  *  CRYSTAL DEFINE CUBIC A=B=C THETA=90
+ TITLE>  *
+                     CRYSTAL: CHANGING TO EXTENDED FORMAT TO HANDLE LONGER IMAGE TRANSFORMATION NAMES.
+                     THERE ARE NO ROTATIONS FOR THIS TRANSFORMATION SET
+    26 Transformations have been processed.
+
+  
+ CHARMM>    close unit 14
+ VCLOSE: Closing unit   14 with status "KEEP"
+  
+ select>     73 atoms have been selected out of      73
+ IMAGE CENTERING ON FOR SOME ATOMS
+  
+ CHARMM>     set charge = ?cgtot
+ RDCMND substituted energy or value "?CGTOT" to "-2.220446049E-16"
+ Parameter: CHARGE <- "-2.220446049E-16"
+  
+  
+ CHARMM>     
+  
+ CHARMM>     
+  
+ CHARMM>    !! BLOCK setup
+ CHARMM>    BLOCK 12
+ Block structure initialized with  12 blocks.
+ All atoms have been assigned to block 1.
+ All interaction coefficients have been set to unity.
+  Setting number of block exclusions nblock_excldPairs=0
+  
+  BLOCK>       clear
+ Block Structure has been turned off.
+  
+  BLOCK>    END
+  
+ CHARMM>    BLOCK 12
+ Block structure initialized with  12 blocks.
+ All atoms have been assigned to block 1.
+ All interaction coefficients have been set to unity.
+  Setting number of block exclusions nblock_excldPairs=0
+  
+  BLOCK>     
+  
+  BLOCK>    Call 2 sele site1sub1 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C100 H101    
+ SELRPN>      2 atoms have been selected out of     73
+ The selected atoms have been reassigned to block   2
+  
+  BLOCK>    Call 3 sele site1sub2 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK O103 H104 C102    
+ SELRPN>      3 atoms have been selected out of     73
+ The selected atoms have been reassigned to block   3
+  
+  BLOCK>    Call 4 sele site1sub3 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C105 C106 H107 H108 H109    
+ SELRPN>      5 atoms have been selected out of     73
+ The selected atoms have been reassigned to block   4
+  
+  BLOCK>    Call 5 sele site1sub4 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C111 H113 H114 C112 H115 H116 H117 C110    
+ SELRPN>      8 atoms have been selected out of     73
+ The selected atoms have been reassigned to block   5
+  
+  BLOCK>    Call 6 sele site1sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C119 H123 H124 C118 C122 H126 H127 H128 C120 H125 C121 H129 H130 H131    
+ SELRPN>     14 atoms have been selected out of     73
+ The selected atoms have been reassigned to block   6
+  
+  BLOCK>    Call 7 sele site2sub1 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C132 H133    
+ SELRPN>      2 atoms have been selected out of     73
+ The selected atoms have been reassigned to block   7
+  
+  BLOCK>    Call 8 sele site2sub2 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C134 O135 H136    
+ SELRPN>      3 atoms have been selected out of     73
+ The selected atoms have been reassigned to block   8
+  
+  BLOCK>    Call 9 sele site2sub3 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C137 C138 H139 H140 H141    
+ SELRPN>      5 atoms have been selected out of     73
+ The selected atoms have been reassigned to block   9
+  
+  BLOCK>    Call 10 sele site2sub4 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C142 C143 H145 O144    
+ SELRPN>      4 atoms have been selected out of     73
+ The selected atoms have been reassigned to block  10
+  
+  BLOCK>    Call 11 sele site2sub5 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C146 C147 C148 H150 H151 H152 O149    
+ SELRPN>      7 atoms have been selected out of     73
+ The selected atoms have been reassigned to block  11
+  
+  BLOCK>    Call 12 sele site2sub6 show end
+ The following atoms are currently set:
+SEGId RESId RESName  .. TYPEs ..
+ LIG      1        UNK C153 C157 H162 C156 H161 C155 H160 C154 C159 H164 C158 H163    
+ SELRPN>     12 atoms have been selected out of     73
+ The selected atoms have been reassigned to block  12
+  
+  BLOCK>     
+  
+  BLOCK>     
+  
+  BLOCK>    ! scat on
+  BLOCK>    ! scat k 118.4
+  BLOCK>    ! cats sele atom ?segid ?resid ?atomname .or. [list of atom names to cat]
+  BLOCK>     
+  
+  BLOCK>    qldm theta
+  
+  BLOCK>    lang temp 298.15
+  
+  BLOCK>    soft on
+Turning on MSLD soft cores
+Warning, soft cores only work with domdec
+See Hayes et al JPC B (2017) for functional form
+
+  
+  BLOCK>    pmel ex
+Enabling PME with MSLD
+Warning, only works with domdec
+See Huang, Chen, Wallace, and Shen, JCTC (2016) for a description
+
+Using second PME exclusions strategy.
+
+  
+  BLOCK>     
+  
+  BLOCK>    ldin 1 1.0  0.0  5.0  0.0  5.0
+  
+  BLOCK>    ldin 2 0.9600 0.0 5.0 0.0 5.0
+  
+  BLOCK>    ldin 3 0.0100 0.0 5.0 -4.0600000000000005 5.0
+  
+  BLOCK>    ldin 4 0.0100 0.0 5.0 0.45000000000000007 5.0
+  
+  BLOCK>    ldin 5 0.0100 0.0 5.0 -0.6 5.0
+  
+  BLOCK>    ldin 6 0.0100 0.0 5.0 -2.42 5.0
+  
+  BLOCK>    ldin 7 0.9500 0.0 5.0 0.0 5.0
+  
+  BLOCK>    ldin 8 0.0100 0.0 5.0 -6.609999999999999 5.0
+  
+  BLOCK>    ldin 9 0.0100 0.0 5.0 -2.02 5.0
+  
+  BLOCK>    ldin 10 0.0100 0.0 5.0 -0.8300000000000001 5.0
+  
+  BLOCK>    ldin 11 0.0100 0.0 5.0 -1.25 5.0
+  
+  BLOCK>    ldin 12 0.0100 0.0 5.0 -0.77 5.0
+  
+  BLOCK>     
+  
+  BLOCK>    adex 2 3
+ Number of block exclusions nblock_excldPairs=           6
+  
+  BLOCK>    adex 2 4
+ Number of block exclusions nblock_excldPairs=          16
+  
+  BLOCK>    adex 2 5
+ Number of block exclusions nblock_excldPairs=          32
+  
+  BLOCK>    adex 2 6
+ Number of block exclusions nblock_excldPairs=          60
+  
+  BLOCK>    adex 3 4
+ Number of block exclusions nblock_excldPairs=          75
+  
+  BLOCK>    adex 3 5
+ Number of block exclusions nblock_excldPairs=          99
+  
+  BLOCK>    adex 3 6
+ Number of block exclusions nblock_excldPairs=         141
+  
+  BLOCK>    adex 4 5
+ Number of block exclusions nblock_excldPairs=         181
+  
+  BLOCK>    adex 4 6
+ Number of block exclusions nblock_excldPairs=         251
+  
+  BLOCK>    adex 5 6
+ Number of block exclusions nblock_excldPairs=         363
+  
+  BLOCK>    adex 7 8
+ Number of block exclusions nblock_excldPairs=         369
+  
+  BLOCK>    adex 7 9
+ Number of block exclusions nblock_excldPairs=         379
+  
+  BLOCK>    adex 7 10
+ Number of block exclusions nblock_excldPairs=         387
+  
+  BLOCK>    adex 7 11
+ Number of block exclusions nblock_excldPairs=         401
+  
+  BLOCK>    adex 7 12
+ Number of block exclusions nblock_excldPairs=         425
+  
+  BLOCK>    adex 8 9
+ Number of block exclusions nblock_excldPairs=         440
+  
+  BLOCK>    adex 8 10
+ Number of block exclusions nblock_excldPairs=         452
+  
+  BLOCK>    adex 8 11
+ Number of block exclusions nblock_excldPairs=         473
+  
+  BLOCK>    adex 8 12
+ Number of block exclusions nblock_excldPairs=         509
+  
+  BLOCK>    adex 9 10
+ Number of block exclusions nblock_excldPairs=         529
+  
+  BLOCK>    adex 9 11
+ Number of block exclusions nblock_excldPairs=         564
+  
+  BLOCK>    adex 9 12
+ Number of block exclusions nblock_excldPairs=         624
+  
+  BLOCK>    adex 10 11
+ Number of block exclusions nblock_excldPairs=         652
+  
+  BLOCK>    adex 10 12
+ Number of block exclusions nblock_excldPairs=         700
+  
+  BLOCK>    adex 11 12
+ Number of block exclusions nblock_excldPairs=         784
+  
+  BLOCK>     
+  
+  BLOCK>     
+  
+  BLOCK>    !!rmla bond thet dihe impr
+  BLOCK>    rmla bond thet impr
+ RMLAMBDA list
+  BOND T THETA T PHI F IMPHI T CMAPF UREY-BT
+  
+  BLOCK>    msld 0  1  1  1  1  1  2  2  2  2  2  2   fnex 5.5
+ BLOCK    1 has been assigned to SITE    0
+ BLOCK    2 has been assigned to SITE    1
+ BLOCK    3 has been assigned to SITE    1
+ BLOCK    4 has been assigned to SITE    1
+ BLOCK    5 has been assigned to SITE    1
+ BLOCK    6 has been assigned to SITE    1
+ BLOCK    7 has been assigned to SITE    2
+ BLOCK    8 has been assigned to SITE    2
+ BLOCK    9 has been assigned to SITE    2
+ BLOCK   10 has been assigned to SITE    2
+ BLOCK   11 has been assigned to SITE    2
+ BLOCK   12 has been assigned to SITE    2
+   3 SITES have been assigned for Multi-site Lambda-dynamics
+ EXP function selected for MSLD simulations
+ FNEXP_FACTOR:    5.50000
+  
+  BLOCK>    msma
+>>> BLOCK MATRIX WAS REBUILT 
+  
+  BLOCK>     
+  
+  BLOCK>    ldbi 275
+ Total No. of biasing potentials is  275
+  
+  BLOCK>    ldbv 1 2 3  6  0.00 -9.2 0
+  
+  BLOCK>    ldbv 2 2 3 10 -5.56 -2.2 0
+  
+  BLOCK>    ldbv 3 2 3  8 0.017 0.37 0
+  
+  BLOCK>    ldbv 4 3 2 10 -5.56 -0.74 0
+  
+  BLOCK>    ldbv 5 3 2  8 0.017 -0.16 0
+  
+  BLOCK>    ldbv 6 2 4  6  0.00 2.07 0
+  
+  BLOCK>    ldbv 7 2 4 10 -5.56 1.01 0
+  
+  BLOCK>    ldbv 8 2 4  8 0.017 0.19000000000000003 0
+  
+  BLOCK>    ldbv 9 4 2 10 -5.56 -0.040000000000000036 0
+  
+  BLOCK>    ldbv 10 4 2  8 0.017 0.07 0
+  
+  BLOCK>    ldbv 11 2 5  6  0.00 1.57 0
+  
+  BLOCK>    ldbv 12 2 5 10 -5.56 0.32 0
+  
+  BLOCK>    ldbv 13 2 5  8 0.017 0.18000000000000002 0
+  
+  BLOCK>    ldbv 14 5 2 10 -5.56 0.43000000000000005 0
+  
+  BLOCK>    ldbv 15 5 2  8 0.017 0.28 0
+  
+  BLOCK>    ldbv 16 2 6  6  0.00 -4.6 0
+  
+  BLOCK>    ldbv 17 2 6 10 -5.56 -1.1800000000000002 0
+  
+  BLOCK>    ldbv 18 2 6  8 0.017 0.35 0
+  
+  BLOCK>    ldbv 19 6 2 10 -5.56 0.17 0
+  
+  BLOCK>    ldbv 20 6 2  8 0.017 0.55 0
+  
+  BLOCK>    ldbv 21 3 4  6  0.00 -7.529999999999999 0
+  
+  BLOCK>    ldbv 22 3 4 10 -5.56 -0.28 0
+  
+  BLOCK>    ldbv 23 3 4  8 0.017 -0.56 0
+  
+  BLOCK>    ldbv 24 4 3 10 -5.56 0.53 0
+  
+  BLOCK>    ldbv 25 4 3  8 0.017 -0.8 0
+  
+  BLOCK>    ldbv 26 3 5  6  0.00 -13.959999999999999 0
+  
+  BLOCK>    ldbv 27 3 5 10 -5.56 -0.22 0
+  
+  BLOCK>    ldbv 28 3 5  8 0.017 0.06 0
+  
+  BLOCK>    ldbv 29 5 3 10 -5.56 -3.27 0
+  
+  BLOCK>    ldbv 30 5 3  8 0.017 0.8700000000000001 0
+  
+  BLOCK>    ldbv 31 3 6  6  0.00 -7.35 0
+  
+  BLOCK>    ldbv 32 3 6 10 -5.56 -0.7 0
+  
+  BLOCK>    ldbv 33 3 6  8 0.017 -1.9700000000000002 0
+  
+  BLOCK>    ldbv 34 6 3 10 -5.56 -4.01 0
+  
+  BLOCK>    ldbv 35 6 3  8 0.017 -0.73 0
+  
+  BLOCK>    ldbv 36 4 5  6  0.00 1.67 0
+  
+  BLOCK>    ldbv 37 4 5 10 -5.56 0.9500000000000001 0
+  
+  BLOCK>    ldbv 38 4 5  8 0.017 0.62 0
+  
+  BLOCK>    ldbv 39 5 4 10 -5.56 0.6599999999999999 0
+  
+  BLOCK>    ldbv 40 5 4  8 0.017 1.13 0
+  
+  BLOCK>    ldbv 41 4 6  6  0.00 -4.6899999999999995 0
+  
+  BLOCK>    ldbv 42 4 6 10 -5.56 -1.82 0
+  
+  BLOCK>    ldbv 43 4 6  8 0.017 -0.6799999999999999 0
+  
+  BLOCK>    ldbv 44 6 4 10 -5.56 3.01 0
+  
+  BLOCK>    ldbv 45 6 4  8 0.017 0.72 0
+  
+  BLOCK>    ldbv 46 5 6  6  0.00 0.8300000000000001 0
+  
+  BLOCK>    ldbv 47 5 6 10 -5.56 -0.18 0
+  
+  BLOCK>    ldbv 48 5 6  8 0.017 -0.7 0
+  
+  BLOCK>    ldbv 49 6 5 10 -5.56 0.55 0
+  
+  BLOCK>    ldbv 50 6 5  8 0.017 0.22 0
+  
+  BLOCK>    ldbv 51 2 7  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 52 2 7 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 53 2 7  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 54 7 2 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 55 7 2  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 56 2 8  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 57 2 8 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 58 2 8  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 59 8 2 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 60 8 2  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 61 2 9  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 62 2 9 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 63 2 9  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 64 9 2 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 65 9 2  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 66 2 10  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 67 2 10 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 68 2 10  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 69 10 2 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 70 10 2  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 71 2 11  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 72 2 11 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 73 2 11  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 74 11 2 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 75 11 2  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 76 2 12  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 77 2 12 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 78 2 12  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 79 12 2 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 80 12 2  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 81 3 7  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 82 3 7 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 83 3 7  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 84 7 3 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 85 7 3  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 86 3 8  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 87 3 8 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 88 3 8  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 89 8 3 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 90 8 3  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 91 3 9  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 92 3 9 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 93 3 9  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 94 9 3 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 95 9 3  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 96 3 10  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 97 3 10 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 98 3 10  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 99 10 3 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 100 10 3  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 101 3 11  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 102 3 11 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 103 3 11  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 104 11 3 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 105 11 3  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 106 3 12  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 107 3 12 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 108 3 12  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 109 12 3 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 110 12 3  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 111 4 7  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 112 4 7 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 113 4 7  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 114 7 4 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 115 7 4  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 116 4 8  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 117 4 8 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 118 4 8  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 119 8 4 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 120 8 4  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 121 4 9  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 122 4 9 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 123 4 9  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 124 9 4 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 125 9 4  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 126 4 10  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 127 4 10 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 128 4 10  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 129 10 4 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 130 10 4  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 131 4 11  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 132 4 11 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 133 4 11  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 134 11 4 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 135 11 4  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 136 4 12  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 137 4 12 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 138 4 12  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 139 12 4 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 140 12 4  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 141 5 7  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 142 5 7 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 143 5 7  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 144 7 5 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 145 7 5  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 146 5 8  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 147 5 8 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 148 5 8  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 149 8 5 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 150 8 5  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 151 5 9  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 152 5 9 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 153 5 9  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 154 9 5 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 155 9 5  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 156 5 10  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 157 5 10 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 158 5 10  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 159 10 5 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 160 10 5  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 161 5 11  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 162 5 11 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 163 5 11  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 164 11 5 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 165 11 5  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 166 5 12  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 167 5 12 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 168 5 12  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 169 12 5 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 170 12 5  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 171 6 7  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 172 6 7 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 173 6 7  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 174 7 6 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 175 7 6  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 176 6 8  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 177 6 8 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 178 6 8  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 179 8 6 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 180 8 6  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 181 6 9  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 182 6 9 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 183 6 9  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 184 9 6 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 185 9 6  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 186 6 10  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 187 6 10 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 188 6 10  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 189 10 6 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 190 10 6  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 191 6 11  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 192 6 11 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 193 6 11  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 194 11 6 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 195 11 6  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 196 6 12  6  0.00 -0.0 0
+  
+  BLOCK>    ldbv 197 6 12 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 198 6 12  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 199 12 6 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 200 12 6  8 0.017 -0.0 0
+  
+  BLOCK>    ldbv 201 7 8  6  0.00 -11.18 0
+  
+  BLOCK>    ldbv 202 7 8 10 -5.56 -0.53 0
+  
+  BLOCK>    ldbv 203 7 8  8 0.017 0.13 0
+  
+  BLOCK>    ldbv 204 8 7 10 -5.56 -1.2 0
+  
+  BLOCK>    ldbv 205 8 7  8 0.017 -0.38999999999999996 0
+  
+  BLOCK>    ldbv 206 7 9  6  0.00 1.36 0
+  
+  BLOCK>    ldbv 207 7 9 10 -5.56 -0.08000000000000007 0
+  
+  BLOCK>    ldbv 208 7 9  8 0.017 0.42 0
+  
+  BLOCK>    ldbv 209 9 7 10 -5.56 1.7200000000000002 0
+  
+  BLOCK>    ldbv 210 9 7  8 0.017 0.81 0
+  
+  BLOCK>    ldbv 211 7 10  6  0.00 1.16 0
+  
+  BLOCK>    ldbv 212 7 10 10 -5.56 0.38999999999999996 0
+  
+  BLOCK>    ldbv 213 7 10  8 0.017 0.32 0
+  
+  BLOCK>    ldbv 214 10 7 10 -5.56 0.47 0
+  
+  BLOCK>    ldbv 215 10 7  8 0.017 0.6 0
+  
+  BLOCK>    ldbv 216 7 11  6  0.00 0.87 0
+  
+  BLOCK>    ldbv 217 7 11 10 -5.56 0.19 0
+  
+  BLOCK>    ldbv 218 7 11  8 0.017 0.15 0
+  
+  BLOCK>    ldbv 219 11 7 10 -5.56 0.23 0
+  
+  BLOCK>    ldbv 220 11 7  8 0.017 0.39 0
+  
+  BLOCK>    ldbv 221 7 12  6  0.00 2.0 0
+  
+  BLOCK>    ldbv 222 7 12 10 -5.56 0.34 0
+  
+  BLOCK>    ldbv 223 7 12  8 0.017 0.1 0
+  
+  BLOCK>    ldbv 224 12 7 10 -5.56 0.6499999999999999 0
+  
+  BLOCK>    ldbv 225 12 7  8 0.017 0.96 0
+  
+  BLOCK>    ldbv 226 8 9  6  0.00 -5.65 0
+  
+  BLOCK>    ldbv 227 8 9 10 -5.56 0.6300000000000001 0
+  
+  BLOCK>    ldbv 228 8 9  8 0.017 -1.94 0
+  
+  BLOCK>    ldbv 229 9 8 10 -5.56 0.050000000000000044 0
+  
+  BLOCK>    ldbv 230 9 8  8 0.017 -1.1 0
+  
+  BLOCK>    ldbv 231 8 10  6  0.00 -15.469999999999999 0
+  
+  BLOCK>    ldbv 232 8 10 10 -5.56 -0.9400000000000001 0
+  
+  BLOCK>    ldbv 233 8 10  8 0.017 -0.23 0
+  
+  BLOCK>    ldbv 234 10 8 10 -5.56 -3.6 0
+  
+  BLOCK>    ldbv 235 10 8  8 0.017 0.63 0
+  
+  BLOCK>    ldbv 236 8 11  6  0.00 -14.040000000000001 0
+  
+  BLOCK>    ldbv 237 8 11 10 -5.56 -0.63 0
+  
+  BLOCK>    ldbv 238 8 11  8 0.017 -0.15000000000000002 0
+  
+  BLOCK>    ldbv 239 11 8 10 -5.56 -3.6100000000000003 0
+  
+  BLOCK>    ldbv 240 11 8  8 0.017 -0.11 0
+  
+  BLOCK>    ldbv 241 8 12  6  0.00 -17.52 0
+  
+  BLOCK>    ldbv 242 8 12 10 -5.56 -1.1 0
+  
+  BLOCK>    ldbv 243 8 12  8 0.017 -0.26 0
+  
+  BLOCK>    ldbv 244 12 8 10 -5.56 -4.96 0
+  
+  BLOCK>    ldbv 245 12 8  8 0.017 -0.38999999999999996 0
+  
+  BLOCK>    ldbv 246 9 10  6  0.00 -0.73 0
+  
+  BLOCK>    ldbv 247 9 10 10 -5.56 0.30000000000000004 0
+  
+  BLOCK>    ldbv 248 9 10  8 0.017 0.25 0
+  
+  BLOCK>    ldbv 249 10 9 10 -5.56 -0.18 0
+  
+  BLOCK>    ldbv 250 10 9  8 0.017 0.09000000000000001 0
+  
+  BLOCK>    ldbv 251 9 11  6  0.00 3.8899999999999997 0
+  
+  BLOCK>    ldbv 252 9 11 10 -5.56 0.67 0
+  
+  BLOCK>    ldbv 253 9 11  8 0.017 0.22 0
+  
+  BLOCK>    ldbv 254 11 9 10 -5.56 1.19 0
+  
+  BLOCK>    ldbv 255 11 9  8 0.017 0.9500000000000001 0
+  
+  BLOCK>    ldbv 256 9 12  6  0.00 -1.2 0
+  
+  BLOCK>    ldbv 257 9 12 10 -5.56 -0.18000000000000002 0
+  
+  BLOCK>    ldbv 258 9 12  8 0.017 -0.11 0
+  
+  BLOCK>    ldbv 259 12 9 10 -5.56 -0.32 0
+  
+  BLOCK>    ldbv 260 12 9  8 0.017 -0.1 0
+  
+  BLOCK>    ldbv 261 10 11  6  0.00 0.34 0
+  
+  BLOCK>    ldbv 262 10 11 10 -5.56 0.1 0
+  
+  BLOCK>    ldbv 263 10 11  8 0.017 0.15 0
+  
+  BLOCK>    ldbv 264 11 10 10 -5.56 0.08 0
+  
+  BLOCK>    ldbv 265 11 10  8 0.017 0.05 0
+  
+  BLOCK>    ldbv 266 10 12  6  0.00 0.03 0
+  
+  BLOCK>    ldbv 267 10 12 10 -5.56 -0.0 0
+  
+  BLOCK>    ldbv 268 10 12  8 0.017 -0.03 0
+  
+  BLOCK>    ldbv 269 12 10 10 -5.56 0.019999999999999997 0
+  
+  BLOCK>    ldbv 270 12 10  8 0.017 0.04 0
+  
+  BLOCK>    ldbv 271 11 12  6  0.00 -0.2 0
+  
+  BLOCK>    ldbv 272 11 12 10 -5.56 -0.06 0
+  
+  BLOCK>    ldbv 273 11 12  8 0.017 -0.09 0
+  
+  BLOCK>    ldbv 274 12 11 10 -5.56 -0.06 0
+  
+  BLOCK>    ldbv 275 12 11  8 0.017 -0.04 0
+  
+  BLOCK>    END
+ Matrix of Interaction Coefficients
+ 
+    1.00000
+    0.96000   0.96000
+    0.01000   0.00000   0.01000
+    0.01000   0.00000   0.00000   0.01000
+    0.01000   0.00000   0.00000   0.00000   0.01000
+    0.01000   0.00000   0.00000   0.00000   0.00000   0.01000
+    0.95000   0.91200   0.00950   0.00950   0.00950   0.00950   0.95000
+    0.01000   0.00960   0.00010   0.00010   0.00010   0.00010   0.00000   0.01000
+    0.01000   0.00960   0.00010   0.00010   0.00010   0.00010   0.00000   0.00000   0.01000
+    0.01000   0.00960   0.00010   0.00010   0.00010   0.00010   0.00000   0.00000   0.00000   0.01000
+    0.01000   0.00960   0.00010   0.00010   0.00010   0.00010   0.00000   0.00000   0.00000   0.00000   0.01000
+    0.01000   0.00960   0.00010   0.00010   0.00010   0.00010   0.00000   0.00000   0.00000   0.00000   0.00000   0.01000
+ Matrix of BOND Interaction Coefficients
+ 
+    1.00000
+    1.00000   1.00000
+    1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+ Matrix of ANGLE Interaction Coefficients
+ 
+    1.00000
+    1.00000   1.00000
+    1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+ Matrix of DIHE Interaction Coefficients
+ 
+    1.00000
+    1.00000   1.00000
+    1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+ Matrix of CROSS Interaction Coefficients
+ 
+    1.00000
+    1.00000   1.00000
+    1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+ Matrix of ELEC Interaction Coefficients
+ 
+    1.00000
+    1.00000   1.00000
+    1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+ Matrix of VDW Interaction Coefficients
+ 
+    1.00000
+    1.00000   1.00000
+    1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+    1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000   1.00000
+  
+ CHARMM>     
+  
+  
+ CHARMM>     nbonds cutnb 12.0 -
+ CHARMM>     cutim 12.0 -
+ CHARMM>     ctonnb 9.0 -
+ CHARMM>     ctofnb 10.0 -
+ CHARMM>     atom -
+ CHARMM>     vatom -
+ CHARMM>     cdie -
+ CHARMM>     eps 1.0 -
+ CHARMM>     inbfrq -1 -
+ CHARMM>     imgfrq -1 -
+ CHARMM>     switch -
+ CHARMM>     vfswitch -
+ CHARMM>     ewald -
+ CHARMM>     pmewald -
+ CHARMM>     kappa 0.32 -
+ CHARMM>     fftx 32 -
+ CHARMM>     ffty 32 -
+ CHARMM>     fftz 32 -
+ CHARMM>     order 6
+
+ SELECTED IMAGES ATOMS BEING CENTERED ABOUT  0.000000  0.000000  0.000000
+
+ <MKIMAT2>: updating the image atom lists and remapping
+ Transformation   Atoms  Groups  Residues  Min-Distance
+    1  N1N1N1R1 has       0       0       0       45.91
+    2  N1Z0N1R1 has       0       0       0       40.57
+    3  N1P1N1R1 has       0       0       0       45.67
+    4  Z0N1N1R1 has       0       0       0       35.54
+    5  Z0Z0N1R1 has       0       0       0       28.06
+    6  Z0P1N1R1 has       0       0       0       35.03
+    7  N1N1Z0R1 has       0       0       0       35.84
+    8  N1Z0Z0R1 has       0       0       0       28.67
+    9  N1P1Z0R1 has       0       0       0       36.02
+   10  Z0N1Z0R1 has       0       0       0       20.97
+   12  N1N1P1R1 has       0       0       0       45.52
+   13  N1Z0P1R1 has       0       0       0       40.41
+   14  N1P1P1R1 has       0       0       0       46.83
+ Total of   73 atoms and   12 groups and    1 residues were included
+
+ <PME> Total heap storage needed =       80731
+ Fill Ewald table: Number of points=     10000 EWXmax=    3.360000
+ fill erfc table: linear inter has rms error = 0.688344D-08 maximum error = 0.136719D-07
+ fill erfc table: cubic spline has rms error = 0.199973D-11 maximum error = 0.535849D-11
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SWITch   VATOm    VFSWIt  
+     BYGRoup  NOEXtnd  EWALd   
+ CUTNB  = 12.000 CTEXNB =999.000 CTONNB =  9.000 CTOFNB = 10.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ PME EWALD OPTIONS: KAPPA  =  0.320  QCOR =  0.000  Bspline order = 6
+ FFTX=  32  FFTY=  32  FFTZ=  32
+                Using FFTW
+                Real-to-Complex FFT
+                Using Column FFT 
+ There are        0 atom  pairs and        0 atom  exclusions.
+ There are        0 group pairs and        0 group exclusions.
+ <MAKINB>: Ran out of space. RESIZING
+ <MAKINB>: Ran out of space. RESIZING
+ <MAKINB>: Ran out of space. RESIZING
+ <MAKINB> with mode   5 found   1019 exclusions and    207 interactions(1-4)
+ <MAKGRP> found     66 group exclusions.
+ <MAKGRP> found      0 image group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR     2629 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+     1606 ATOM PAIRS WERE FOUND FOR ATOM LIST
+        2 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+ SPACE FOR      466 ATOM PAIRS AND        0 GROUP PAIRS
+
+ Image nonbond list generation found:
+        0 ATOM PAIRS WERE FOUND FOR ATOM LIST
+        0 ATOM PAIRS WERE FOUND FOR ATOM SELF LIST
+        0 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+  
+ CHARMM>     
+  
+
+ SELECTED IMAGES ATOMS BEING CENTERED ABOUT  0.000000  0.000000  0.000000
+
+ <MKIMAT2>: updating the image atom lists and remapping
+ Transformation   Atoms  Groups  Residues  Min-Distance
+    1  N1N1N1R1 has       0       0       0       45.91
+    2  N1Z0N1R1 has       0       0       0       40.57
+    3  N1P1N1R1 has       0       0       0       45.67
+    4  Z0N1N1R1 has       0       0       0       35.54
+    5  Z0Z0N1R1 has       0       0       0       28.06
+    6  Z0P1N1R1 has       0       0       0       35.03
+    7  N1N1Z0R1 has       0       0       0       35.84
+    8  N1Z0Z0R1 has       0       0       0       28.67
+    9  N1P1Z0R1 has       0       0       0       36.02
+   10  Z0N1Z0R1 has       0       0       0       20.97
+   12  N1N1P1R1 has       0       0       0       45.52
+   13  N1Z0P1R1 has       0       0       0       40.41
+   14  N1P1P1R1 has       0       0       0       46.83
+ Total of   73 atoms and   12 groups and    1 residues were included
+
+ <MAKGRP> found      0 image group exclusions.
+
+ NONBOND OPTION FLAGS: 
+     ELEC     VDW      ATOMs    CDIElec  SWITch   VATOm    VFSWIt  
+     BYGRoup  NOEXtnd  EWALd   
+ CUTNB  = 12.000 CTEXNB =999.000 CTONNB =  9.000 CTOFNB = 10.000
+ CGONNB =  0.000 CGOFNB = 10.000
+ WMIN   =  1.500 WRNMXD =  0.500 E14FAC =  1.000 EPS    =  1.000
+ NBXMOD =      5
+ PME EWALD OPTIONS: KAPPA  =  0.320  QCOR =  0.000  Bspline order = 6
+ FFTX=  32  FFTY=  32  FFTZ=  32
+                Using FFTW
+                Real-to-Complex FFT
+                Using Column FFT 
+ There are     1606 atom  pairs and     1226 atom  exclusions.
+ There are        0 group pairs and       66 group exclusions.
+ Generating nonbond list with Exclusion mode = 5
+ == PRIMARY == SPACE FOR     2629 ATOM PAIRS AND        0 GROUP PAIRS
+
+ General atom nonbond list generation found:
+     1606 ATOM PAIRS WERE FOUND FOR ATOM LIST
+        2 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+ SPACE FOR      466 ATOM PAIRS AND        0 GROUP PAIRS
+
+ Image nonbond list generation found:
+        0 ATOM PAIRS WERE FOUND FOR ATOM LIST
+        0 ATOM PAIRS WERE FOUND FOR ATOM SELF LIST
+        0 GROUP PAIRS REQUIRED ATOM SEARCHES
+
+Splitting recip cores into (y by z):   1 by    1
+ENER ENR:  Eval#     ENERgy      Delta-E         GRMS
+ENER INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+ENER EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ENER EWALD:          EWKSum       EWSElf       EWEXcl       EWQCor       EWUTil
+ ----------       ---------    ---------    ---------    ---------    ---------
+ENER>        0    145.32404      0.00000     20.07412
+ENER INTERN>       23.83323      9.05709      0.00000      0.05034      0.00010
+ENER EXTERN>       11.13322      1.52771      0.00000      0.00000      0.00000
+Creating a copy of system
+allocating kcmap=0x5605d73393a0
+allocating kcmap=0x5605d7339380
+allocating kcmap=0x5605d73393a0
+allocating kcmap=0x5605d7339380
+allocating kcmap=0x5605d73393a0
+allocating kcmap=0x5605d7339380
+PME grid(0) size: 32
+PME grid(1) size: 32
+PME grid(2) size: 32
+The following parameters are set heuristically at /home/rhaye/CHARMMUCI/dev-release/source/blade/src/domdec/domdec.cu:109, and can cause errors if set too low
+maxBlocks=38
+maxPartnersPerBlock=162
+freqDomdec=10 (how many steps before domain reset)
+cullPad=1.73008 (spatial padding for considering which blocks could interact
+maxBlockExclCount=338 (can reallocate dynamically with "run setvariable domdecheuristic off")
+ENER EWALD>         0.93092     -9.24967    106.85674      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ CHARMM>     read coor card -
+ CHARMM>     name prep/minimized.crd -
+ CHARMM>     resid
+ VOPEN> Attempting to open::prep/minimized.crd::
+          SPATIAL COORDINATES BEING READ FROM UNIT 91
+ TITLE> * EXECUTING CHARMM SCRIPT FROM PYTHON
+ TITLE> *  DATE:     8/ 1/23     19:28:58      CREATED BY USER: RHAYE
+ TITLE> *
+
+ ** WARNING ** Coordinates were overwritten for    73 atoms.
+ *** LEVEL  2 WARNING *** BOMLEV IS   -1
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+ api_shake> SHAKE parameters: TOL =   0.1000D-06 MXITer =    500
+
+              37 constraints will held by SHAKE.
+ FSSHKINI: Fast shake initialized with      37 bond contraints and        0 water constraints (3-center).
+ FSSHKINI:       37 constraints are in groups of:        0
+ FSSHKINI:     15 2-body (CH),      2 3-body(CH2),      6 4-body(CH3),      0 >4-body. 
+ FSSHKINI: Fast shake initialized with      37 bond contraints and        0 water constraints (3-center).
+ FSSHKINI:       37 constraints are in groups of:        0
+ FSSHKINI:     15 2-body (CH),      2 3-body(CH2),      6 4-body(CH3),      0 >4-body. 
+  
+ CHARMM>     energy blade
+Assuming fbeta =    0.00489
+
+      ***** LEVEL  1 WARNING FROM BLaDe *****
+      ***** PME being used for electrostatics in BLaDE
+      ******************************************
+      BOMLEV ( -1) IS NOT REACHED. WRNLEV IS  5
+
+
+      ***** LEVEL  1 WARNING FROM BLaDe *****
+      ***** VFSWITCH being used for vdW switching in BLaDE
+      ******************************************
+      BOMLEV ( -1) IS NOT REACHED. WRNLEV IS  5
+
+Found pme kappa =    0.32000
+Found ctofnb =   10.00000 ctonnb =    9.00000
+Warning: Both elec and vdw energies placed in vdw
+ENER ENR:  Eval#     ENERgy      Delta-E         GRMS
+ENER INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+ENER EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+ENER EWALD:          EWKSum       EWSElf       EWEXcl       EWQCor       EWUTil
+ ----------       ---------    ---------    ---------    ---------    ---------
+ENER>        0     16.24524    129.07880      0.63128
+ENER INTERN>        1.13340      1.42647      0.00000      0.05229      0.00004
+ENER EXTERN>       12.51443      0.00000      0.00000      0.00000      0.00000
+ENER EWALD>         0.91463     -9.24967      8.26929      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+  
+ VOPEN> Attempting to open::dcd/14benz_heat.dcd::
+ VOPEN> Attempting to open::res/14benz_heat.res::
+ VOPEN> Attempting to open::res/14benz_heat.lmd::
+ VOPEN> Attempting to open::../run2/res/14benz_flat.res::
+  
+ CHARMM>     dynamics leap -
+ CHARMM>     langevin -
+ CHARMM>     timestep 0.002 -
+ CHARMM>     nsavc 1000 -
+ CHARMM>     nsavl 10 -
+ CHARMM>     nprint 1000 -
+ CHARMM>     iprfrq 1000 -
+ CHARMM>     ntrfrq 0 -
+ CHARMM>     firstt 298.15 -
+ CHARMM>     finalt 298.15 -
+ CHARMM>     tstruct 298.15 -
+ CHARMM>     tbath 298.15 -
+ CHARMM>     iasors 1 -
+ CHARMM>     iasvel 1 -
+ CHARMM>     iscvel 0 -
+ CHARMM>     iscale 0 -
+ CHARMM>     ihtfrq 0 -
+ CHARMM>     ieqfrq 0 -
+ CHARMM>     ichecw 0 -
+ CHARMM>     inbfrq -1 -
+ CHARMM>     imgfrq -1 -
+ CHARMM>     ihbfrq 0 -
+ CHARMM>     ilbfrq 0 -
+ CHARMM>     echeck -1 -
+ CHARMM>     blade  -
+ CHARMM>     restart -
+ CHARMM>     iunrea 4 -
+ CHARMM>     nstep 13000 -
+ CHARMM>     isvfrq 13000 -
+ CHARMM>     iunwri 2 -
+ CHARMM>     iuncrd 1 -
+ CHARMM>     iunldm 3
+  IUNREA =  4         IUNWRI =  2          IUNOS = -1
+  IUNCRD =  1         IUNVEL = -1          KUNIT = -1
+  IUNLDM =  3
+ TITLE>  * EXECUTING CHARMM SCRIPT FROM PYTHON
+ TITLE>  *  DATE:     8/ 1/23     19:29:31      CREATED BY USER: rhaye
+ TITLE>  *
+ READYN> dynamics restart file was read. Current step=  104000
+ NSTEP  = 39000  JHSTRT =     0
+ PRNHBD: CUToff Hydrogen Bond  distance =    0.5000   Angle =   90.0000
+         CuT switching ON HB dist. =     3.5000  OFf HB dist. =    4.0000
+Destroying a copy of system
+Creating a copy of system
+allocating kcmap=0x5605d76399d0
+allocating kcmap=0x5605d76399b0
+allocating kcmap=0x5605d76399b0
+allocating kcmap=0x5605d76399b0
+allocating kcmap=0x5605d76399b0
+allocating kcmap=0x5605d76399b0
+PME grid(0) size: 32
+PME grid(1) size: 32
+PME grid(2) size: 32
+The following parameters are set heuristically at /home/rhaye/CHARMMUCI/dev-release/source/blade/src/domdec/domdec.cu:109, and can cause errors if set too low
+maxBlocks=38
+maxPartnersPerBlock=162
+freqDomdec=10 (how many steps before domain reset)
+cullPad=3.44948 (spatial padding for considering which blocks could interact
+maxBlockExclCount=338 (can reallocate dynamically with "run setvariable domdecheuristic off")
+         CuT switching ON Hb Angle =    50.0000  OFf Hb Angle =   70.0000
+         ACCEptor antecedents included
+         All hydrogen bonds for each hydrogen will be found
+         Hydrogen bonds between excluded atoms will be kept
+
+ DCNTRL> Langevin integration requested.
+ DCNTRL>  BLaDE interface requested for energy and dynamics calculations.
+ DCNTRL>  NVT dynamics through BLaDE interface requested using Langevin heatbath.
+ DCNTRL>  thermostate using reference temperature  298.15  K.
+   NSTEP =    13000    NSAVC =     1000    NSAVV =       10
+  ISCALE =        0   ISCVEL =        0   IASORS =        1
+  IASVEL =        1   ICHECW =        0   NTRFRQ =        0
+  IHTFRQ =        0   IEQFRQ =        0   NPRINT =     1000
+  INBFRQ =       -1   IHBFRQ =        0   IPRFRQ =    13000
+  ILBFRQ =        0   IMGFRQ =       -1
+  ISVFRQ =    13000   NCYCLE =    13000    NSNOS =       10
+  FIRSTT =   298.150  TEMINC =     5.000  TSTRUC =   298.150
+  FINALT =   298.150  TWINDH =    10.000  TWINDL =   -10.000
+
+  TIME STEP =  4.09097E-02 AKMA       2.00000E-03 PS
+
+  RANDOM NUM. GEN. SEED(S) = -495417310 -1556910530 937535916 752097878 79670577 -872522098 1222048879 -1707880219
+
+           SHAKE TOLERANCE =     0.10000E-06
+ NUMBER OF DEGREES OF FREEDOM =    193
+ **** Warning ****  The following extraneous characters
+ were found while command processing in DCNTRL
+ INBFRQ -1  IHBFRQ 0
+Assuming fbeta =    0.00489
+
+      ***** LEVEL  1 WARNING FROM BLaDe *****
+      ***** PME being used for electrostatics in BLaDE
+      ******************************************
+      BOMLEV ( -1) IS NOT REACHED. WRNLEV IS  5
+
+
+      ***** LEVEL  1 WARNING FROM BLaDe *****
+      ***** VFSWITCH being used for vdW switching in BLaDE
+      ******************************************
+      BOMLEV ( -1) IS NOT REACHED. WRNLEV IS  5
+
+Found pme kappa =    0.32000
+Found ctofnb =   10.00000 ctonnb =    9.00000
+Warning: Both elec and vdw energies placed in vdw
+BLaDE: Velocities from restart file
+DYNA DYN: Step         Time      TOTEner        TOTKe       ENERgy  TEMPerature
+DYNA PROP:             GRMS      HFCTote        HFCKe       EHFCor        VIRKe
+DYNA INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+DYNA EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+DYNA EWALD:          EWKSum       EWSElf       EWEXcl       EWQCor       EWUTil
+DYNA PRESS:            VIRE         VIRI       PRESSE       PRESSI       VOLUme
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>        0    208.00000     98.57123     58.19949     40.37174    303.49548
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.52625     28.01731      0.00000      3.99613      1.39708
+DYNA EXTERN>        7.10757      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.79972    -47.22019     23.17105      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     1000    210.00000     98.68959     55.47506     43.21454    289.28827
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       15.46200     30.77608      0.00000      4.79872      0.05946
+DYNA EXTERN>        6.29649      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.42936    -43.68093     25.15155      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     2000    212.00000     97.50848     59.35861     38.14988    309.54000
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       11.90871     26.04929      0.00000      5.65246      0.59566
+DYNA EXTERN>        9.99286      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.56475    -43.64545     20.93930      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     3000    214.00000     96.16161     57.83495     38.32666    301.59453
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       12.88687     29.68033      0.00000      3.16966      0.53429
+DYNA EXTERN>        8.76062      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.67229    -44.84755     20.53074      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     4000    216.00000    101.82019     64.14696     37.67323    334.51002
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>        8.73911     28.95440      0.00000      6.35121      0.80179
+DYNA EXTERN>       10.35620      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.16593    -20.70646      3.93176      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     5000    218.00000    103.69633     58.89680     44.79953    307.13180
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       17.40653     27.55396      0.00000      3.22134      1.63845
+DYNA EXTERN>        7.59868      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.63028    -45.65234     28.13568      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     6000    220.00000    107.90226     59.81911     48.08314    311.94143
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.31129     33.06549      0.00000      4.58884      0.27025
+DYNA EXTERN>        7.50040      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.32961    -45.31865     28.39268      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     7000    222.00000    106.36133     64.73222     41.62911    337.56204
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.76443     30.55390      0.00000      3.12089      0.17270
+DYNA EXTERN>        6.49410      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         0.97589    -19.75875      5.24078      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     8000    224.00000    107.19772     55.38777     51.80996    288.83308
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       13.01556     36.94677      0.00000      5.01231      0.27327
+DYNA EXTERN>        9.89644      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.34655    -34.62142     17.50950      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     9000    226.00000    110.21604     62.00061     48.21543    323.31737
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       15.91038     28.41994      0.00000      4.83006      0.16048
+DYNA EXTERN>       12.17416      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.05329    -18.67268      3.74599      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    10000    228.00000    109.40642     68.67754     40.72888    358.13584
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       11.95189     27.52324      0.00000      3.50577      0.47992
+DYNA EXTERN>        9.96499      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.33955    -38.25782     20.03746      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    11000    230.00000    108.58535     61.15248     47.43287    318.89459
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       18.70510     32.91384      0.00000      5.17582      0.44397
+DYNA EXTERN>        6.31531      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.22220    -27.57124     10.37587      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    12000    232.00000    106.50058     58.43103     48.06956    304.70290
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.48632     33.71445      0.00000      3.26113      0.06509
+DYNA EXTERN>        7.16150      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.75826    -52.09835     33.25422      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    13000    234.00000    109.92235     64.38106     45.54129    335.73080
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       18.22715     26.44045      0.00000      4.18848      0.12181
+DYNA EXTERN>       10.50455      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         0.91033    -16.55325      2.30543      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+     13   COORDINATE SETS STARTING FROM
+     STEP NO   105000   FOR EVERY  1000  STEPS
+     WRITTEN ON UNIT    1
+
+ VCLOSE: Closing unit    1 with status "KEEP"
+
+        1300   LAMBDA SETS STARTING FROM
+     STEP NO     117000   FOR EVERY    10  STEPS
+     WRITTEN ON UNIT    3
+
+ VCLOSE: Closing unit    3 with status "KEEP"
+ WRIDYN: RESTart file was written at step  117000
+ VCLOSE: Closing unit    2 with status "KEEP"
+
+     DETAILS ABOUT CENTRE OF MASS
+     POSITION          :    1.3461143        3.1890645       -16.218867    
+     VELOCITY          :   3.77805321E-02   1.54378546E-02   4.64711716E-02
+     ANGULAR MOMENTUM  :   -35.216722        119.52089        128.56361    
+     KINETIC ENERGY    :   0.92885868    
+Destroying a copy of system
+Creating a copy of system
+allocating kcmap=0x5605d733dd50
+allocating kcmap=0x5605d733dd30
+allocating kcmap=0x5605d733dd30
+allocating kcmap=0x5605d733dd30
+allocating kcmap=0x5605d733dd30
+allocating kcmap=0x5605d733dd30
+PME grid(0) size: 32
+PME grid(1) size: 32
+PME grid(2) size: 32
+The following parameters are set heuristically at /home/rhaye/CHARMMUCI/dev-release/source/blade/src/domdec/domdec.cu:109, and can cause errors if set too low
+maxBlocks=38
+maxPartnersPerBlock=162
+freqDomdec=10 (how many steps before domain reset)
+cullPad=3.44948 (spatial padding for considering which blocks could interact
+maxBlockExclCount=338 (can reallocate dynamically with "run setvariable domdecheuristic off")
+  
+ CHARMM>     
+  
+ VCLOSE: Closing unit    4 with status "KEEP"
+ VCLOSE: Closing unit    1 with status "KEEP"
+ VCLOSE: Closing unit    2 with status "KEEP"
+ VCLOSE: Closing unit    3 with status "KEEP"
+  
+ CHARMM>     write name dcd/14benz_fframe.equil.pdb -
+ CHARMM>     coor pdb
+ VOPEN> Attempting to open::dcd/14benz_fframe.equil.pdb::
+ RDTITL>  
+ RDTITL> No title read.
+  Write CHARMM-pdb format
+ VCLOSE: Closing unit   91 with status "KEEP"
+  
+ CHARMM>     
+  
+ VOPEN> Attempting to open::dcd/14benz_flat.dcd::
+ VOPEN> Attempting to open::res/14benz_flat.res::
+ VOPEN> Attempting to open::res/14benz_heat.res::
+ VOPEN> Attempting to open::res/14benz_flat.lmd::
+  
+ CHARMM>     dynamics leap -
+ CHARMM>     langevin -
+ CHARMM>     timestep 0.002 -
+ CHARMM>     nsavc 1000 -
+ CHARMM>     nsavl 10 -
+ CHARMM>     nprint 1000 -
+ CHARMM>     iprfrq 1000 -
+ CHARMM>     ntrfrq 0 -
+ CHARMM>     firstt 298.15 -
+ CHARMM>     finalt 298.15 -
+ CHARMM>     tstruct 298.15 -
+ CHARMM>     tbath 298.15 -
+ CHARMM>     iasors 1 -
+ CHARMM>     iasvel 1 -
+ CHARMM>     iscvel 0 -
+ CHARMM>     iscale 0 -
+ CHARMM>     ihtfrq 0 -
+ CHARMM>     ieqfrq 0 -
+ CHARMM>     ichecw 0 -
+ CHARMM>     inbfrq -1 -
+ CHARMM>     imgfrq -1 -
+ CHARMM>     ihbfrq 0 -
+ CHARMM>     ilbfrq 0 -
+ CHARMM>     echeck -1 -
+ CHARMM>     blade  -
+ CHARMM>     restart -
+ CHARMM>     iunrea 4 -
+ CHARMM>     nstep 39000 -
+ CHARMM>     isvfrq 39000 -
+ CHARMM>     iunwri 2 -
+ CHARMM>     iuncrd 1 -
+ CHARMM>     iunldm 3
+  IUNREA =  4         IUNWRI =  2          IUNOS = -1
+  IUNCRD =  1         IUNVEL = -1          KUNIT = -1
+  IUNLDM =  3
+ TITLE>  * EXECUTING CHARMM SCRIPT FROM PYTHON
+ TITLE>  *  DATE:     8/ 1/23     19:30:14      CREATED BY USER: rhaye
+ TITLE>  *
+ READYN> dynamics restart file was read. Current step=  117000
+ NSTEP  = 13000  JHSTRT =     0
+ PRNHBD: CUToff Hydrogen Bond  distance =    0.5000   Angle =   90.0000
+         CuT switching ON HB dist. =     3.5000  OFf HB dist. =    4.0000
+         CuT switching ON Hb Angle =    50.0000  OFf Hb Angle =   70.0000
+         ACCEptor antecedents included
+         All hydrogen bonds for each hydrogen will be found
+         Hydrogen bonds between excluded atoms will be kept
+
+ DCNTRL> Langevin integration requested.
+ DCNTRL>  BLaDE interface requested for energy and dynamics calculations.
+ DCNTRL>  NVT dynamics through BLaDE interface requested using Langevin heatbath.
+ DCNTRL>  thermostate using reference temperature  298.15  K.
+   NSTEP =    39000    NSAVC =     1000    NSAVV =       10
+  ISCALE =        0   ISCVEL =        0   IASORS =        1
+  IASVEL =        1   ICHECW =        0   NTRFRQ =        0
+  IHTFRQ =        0   IEQFRQ =        0   NPRINT =     1000
+  INBFRQ =       -1   IHBFRQ =        0   IPRFRQ =    39000
+  ILBFRQ =        0   IMGFRQ =       -1
+  ISVFRQ =    39000   NCYCLE =    39000    NSNOS =       10
+  FIRSTT =   298.150  TEMINC =     5.000  TSTRUC =   298.150
+  FINALT =   298.150  TWINDH =    10.000  TWINDL =   -10.000
+
+  TIME STEP =  4.09097E-02 AKMA       2.00000E-03 PS
+
+  RANDOM NUM. GEN. SEED(S) = -495417310 -1556910530 937535916 752097878 79670577 -872522098 1222048879 -1707880219
+
+           SHAKE TOLERANCE =     0.10000E-06
+ NUMBER OF DEGREES OF FREEDOM =    193
+ **** Warning ****  The following extraneous characters
+ were found while command processing in DCNTRL
+ INBFRQ -1  IHBFRQ 0
+Assuming fbeta =    0.00489
+
+      ***** LEVEL  1 WARNING FROM BLaDe *****
+      ***** PME being used for electrostatics in BLaDE
+      ******************************************
+      BOMLEV ( -1) IS NOT REACHED. WRNLEV IS  5
+
+
+      ***** LEVEL  1 WARNING FROM BLaDe *****
+      ***** VFSWITCH being used for vdW switching in BLaDE
+      ******************************************
+      BOMLEV ( -1) IS NOT REACHED. WRNLEV IS  5
+
+Found pme kappa =    0.32000
+Found ctofnb =   10.00000 ctonnb =    9.00000
+Warning: Both elec and vdw energies placed in vdw
+BLaDE: Velocities from restart file
+DYNA DYN: Step         Time      TOTEner        TOTKe       ENERgy  TEMPerature
+DYNA PROP:             GRMS      HFCTote        HFCKe       EHFCor        VIRKe
+DYNA INTERN:          BONDs       ANGLes       UREY-b    DIHEdrals    IMPRopers
+DYNA EXTERN:        VDWaals         ELEC       HBONds          ASP         USER
+DYNA EWALD:          EWKSum       EWSElf       EWEXcl       EWQCor       EWUTil
+DYNA PRESS:            VIRE         VIRI       PRESSE       PRESSI       VOLUme
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>        0    234.00000    109.89956     64.35828     45.54128    335.61200
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       18.22715     26.44044      0.00000      4.18848      0.12181
+DYNA EXTERN>       10.50455      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         0.91033    -16.55325      2.30543      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     1000    236.00000    129.94374     67.31807     62.62567    351.04657
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       18.24771     40.21191      0.00000      8.33088      0.61092
+DYNA EXTERN>        7.49296      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.29021    -39.65220     21.45216      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     2000    238.00000    120.40877     71.11610     49.29266    370.85235
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.04161     34.93344      0.00000      3.43835      0.09466
+DYNA EXTERN>        7.36652      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.61305    -57.45237     37.98108      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     3000    240.00000    109.67134     68.46986     41.20148    357.05288
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>        9.44823     33.61048      0.00000      5.26500      0.75771
+DYNA EXTERN>       10.44534      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.46280    -36.22981     13.93721      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     4000    242.00000    116.78524     61.94563     54.83961    323.03066
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       21.26145     31.67479      0.00000      9.27253      1.87523
+DYNA EXTERN>        7.31782      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.46370    -39.84331     18.62957      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     5000    244.00000    105.87732     52.05245     53.82487    271.44026
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       11.50454     38.07009      0.00000      5.19885      2.92105
+DYNA EXTERN>       11.88315      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.76982    -47.53068     23.18782      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     6000    246.00000    115.50522     59.48543     56.01978    310.20136
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       19.11518     36.89136      0.00000      4.21578      0.23883
+DYNA EXTERN>        6.84845      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.34270    -42.81403     24.50333      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     7000    248.00000    113.61447     67.52695     46.08751    352.13585
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>        9.72734     33.86243      0.00000      6.93248      0.44731
+DYNA EXTERN>        7.40555      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.44104    -39.86646     23.63783      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     8000    250.00000    110.43226     63.45591     46.97636    330.90637
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>        6.89762     33.08206      0.00000      9.21805      0.88706
+DYNA EXTERN>        8.46134      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.43671    -43.24175     25.21993      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>     9000    252.00000    111.42453     59.56784     51.85668    310.63110
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       19.73680     32.27980      0.00000      2.76677      0.15282
+DYNA EXTERN>        7.89716      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.61003    -44.57874     25.83551      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    10000    254.00000    113.40942     62.86869     50.54073    327.84417
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       18.65269     29.10635      0.00000      7.06267      0.12801
+DYNA EXTERN>        9.41638      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.02180    -22.75134      6.86037      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    11000    256.00000    117.19087     70.47792     46.71295    367.52438
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.56262     30.52447      0.00000      5.75170      0.84829
+DYNA EXTERN>        8.93244      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.06486    -22.47898      6.40614      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    12000    258.00000    108.51271     57.19569     51.31702    298.26094
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       15.51180     38.57626      0.00000      3.79760      0.05587
+DYNA EXTERN>        5.24720      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.35638    -46.50410     27.92910      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    13000    260.00000    108.38289     62.19201     46.19088    324.31547
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       16.54531     30.76201      0.00000      5.65023      0.30763
+DYNA EXTERN>       10.36280      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.39698    -25.15902      4.25654      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    14000    262.00000    101.83581     54.91457     46.92124    286.36550
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       12.03850     36.16116      0.00000      6.60582      0.29686
+DYNA EXTERN>        9.99275      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.52979    -34.16292     11.25641      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    15000    264.00000    101.68354     59.84880     41.83475    312.09621
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       10.59055     31.51276      0.00000      6.74604      0.22952
+DYNA EXTERN>        7.74828      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.55451    -41.36587     21.55642      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    16000    266.00000    100.95781     63.77618     37.18163    332.57650
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       11.35077     28.57433      0.00000      4.19057      1.14838
+DYNA EXTERN>        9.63147      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.30380    -27.44963      5.71998      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    17000    268.00000     99.42287     51.31509     48.10779    267.59509
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       18.60798     34.11479      0.00000      6.40805      0.32960
+DYNA EXTERN>        6.60767      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.40081    -38.08487     16.51418      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    18000    270.00000     96.81953     53.06238     43.75715    276.70677
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       13.30910     34.31366      0.00000      3.73718      0.31970
+DYNA EXTERN>        8.58436      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.76825    -44.59217     20.02582      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    19000    272.00000     96.13522     58.29719     37.83803    304.00497
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>        7.04781     29.25284      0.00000      3.40269      1.01603
+DYNA EXTERN>        9.31184      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.39382    -45.45277     26.70108      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    20000    274.00000    105.31078     57.30888     48.00190    298.85121
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       18.17422     30.43303      0.00000      4.15765      0.05877
+DYNA EXTERN>        6.07857      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.68768    -47.82284     30.07841      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    21000    276.00000    105.74611     63.03647     42.70964    328.71913
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>        9.05398     32.99369      0.00000      6.23490      0.37342
+DYNA EXTERN>       11.96760      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.31951    -23.55930      5.26676      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    22000    278.00000    112.97763     63.42159     49.55605    330.72739
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       15.31751     30.41261      0.00000      6.44323      0.18655
+DYNA EXTERN>       10.82423      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.22415    -29.74952     13.79443      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    23000    280.00000    109.80594     53.17323     56.63272    277.28481
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.02609     37.20201      0.00000      8.14179      0.10944
+DYNA EXTERN>        7.17286      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         0.99738    -44.70341     32.19104      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    24000    282.00000    113.61983     70.01204     43.60780    365.09493
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       12.01597     29.18555      0.00000      8.73011      0.86465
+DYNA EXTERN>       10.90034      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.40671    -28.39367      9.08095      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    25000    284.00000    107.75652     55.87262     51.88389    291.36148
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       13.01447     37.59100      0.00000      3.39625      0.55318
+DYNA EXTERN>        8.79967      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.41929    -45.97810     29.02235      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    26000    286.00000    107.78477     59.05848     48.72629    307.97489
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       12.79640     33.49329      0.00000      3.65426      1.33932
+DYNA EXTERN>        8.05669      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.87766    -57.83677     37.93938      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    27000    288.00000    107.58358     62.24621     45.33737    324.59810
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.83402     29.81837      0.00000      3.68274      0.11635
+DYNA EXTERN>        7.27337      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.76390    -49.14413     29.99627      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    28000    290.00000    104.37532     67.48740     36.88792    351.92960
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       10.77177     24.14137      0.00000      3.77124      0.73433
+DYNA EXTERN>       11.06759      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.14265    -20.48751      5.15403      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    29000    292.00000    107.27387     61.91923     45.35464    322.89300
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       13.91126     29.60566      0.00000      2.69486      0.39674
+DYNA EXTERN>        9.59903      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.57744    -44.88500     26.32982      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    30000    294.00000    100.50177     58.29554     42.20623    303.99635
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       12.25986     29.91127      0.00000      6.47125      0.16730
+DYNA EXTERN>       10.49256      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.36898    -25.51302      4.84150      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    31000    296.00000    106.58382     55.10825     51.47556    287.37549
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.04566     31.76885      0.00000      4.83593      0.22169
+DYNA EXTERN>       10.00723      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.87773    -57.19659     37.32587      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    32000    298.00000    104.56322     60.51388     44.04935    315.56444
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       12.21164     31.89562      0.00000      2.23986      0.41187
+DYNA EXTERN>        8.23306      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.52024    -51.13864     31.78545      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    33000    300.00000    101.20245     61.67132     39.53113    321.60022
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>        9.43462     27.00788      0.00000      1.04697      0.30499
+DYNA EXTERN>       13.42770      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.08222    -21.00720      6.46591      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    34000    302.00000    107.52370     57.21355     50.31015    298.35406
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.02624     36.07461      0.00000      5.49119      1.19611
+DYNA EXTERN>       11.27929      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.13619    -21.44002      3.06297      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    35000    304.00000    106.60655     60.87077     45.73578    317.42556
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       10.55533     37.16106      0.00000      5.77809      1.16307
+DYNA EXTERN>        9.19380      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.53541    -36.93843     13.61419      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    36000    306.00000    105.45724     62.88793     42.56932    327.94451
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       12.29691     28.21404      0.00000      8.19172      0.28630
+DYNA EXTERN>       10.37774      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.78953    -44.76821     21.41978      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    37000    308.00000    102.06025     55.77642     46.28383    290.85981
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       14.38070     31.81356      0.00000      3.50021      0.52450
+DYNA EXTERN>        8.12216      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.42016    -46.74426     28.74403      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    38000    310.00000    102.83974     59.40575     43.43400    309.78582
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       17.24242     26.90515      0.00000      2.83069      1.29700
+DYNA EXTERN>        6.59047      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.42975    -45.99074     27.93759      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+DYNA>    39000    312.00000     99.63052     56.43645     43.19407    294.30168
+DYNA PROP>          0.00000      0.00000      0.00000      0.00000      0.00000
+DYNA INTERN>       11.39455     31.98233      0.00000      4.95900      0.25739
+DYNA EXTERN>        8.59341      0.00000      0.00000      0.00000      0.00000
+DYNA EWALD>         1.04783    -21.11086      5.36890      0.00000      0.00000
+DYNA PRESS>         0.00000      0.00000      0.00000      0.00000      0.00000
+ ----------       ---------    ---------    ---------    ---------    ---------
+
+     39   COORDINATE SETS STARTING FROM
+     STEP NO   118000   FOR EVERY  1000  STEPS
+     WRITTEN ON UNIT    1
+
+ VCLOSE: Closing unit    1 with status "KEEP"
+
+        3900   LAMBDA SETS STARTING FROM
+     STEP NO     156000   FOR EVERY    10  STEPS
+     WRITTEN ON UNIT    3
+
+ VCLOSE: Closing unit    3 with status "KEEP"
+ WRIDYN: RESTart file was written at step  156000
+ VCLOSE: Closing unit    2 with status "KEEP"
+
+     DETAILS ABOUT CENTRE OF MASS
+     POSITION          :   -15.868060       -2.7349094       0.49676824    
+     VELOCITY          :  -3.64723718E-03  -3.30551255E-02  -2.12394727E-02
+     ANGULAR MOMENTUM  :    33.322961        99.112958       -57.812519    
+     KINETIC ENERGY    :   0.37808815    
+  
+ CHARMM>     
+  
+ VCLOSE: Closing unit    1 with status "KEEP"
+ VCLOSE: Closing unit    2 with status "KEEP"
+ VCLOSE: Closing unit    3 with status "KEEP"
+  
+ CHARMM>     stop
+ VCLOSE: Closing unit    4 with status "KEEP"
+ VCLOSE: Closing unit   90 with status "KEEP"
+$$$$$$  New timer profile $$$$$
+   Shake Setup                     0.00 Other:            0.00
+   First List                      0.00 Other:            0.00
+   Dynamics total                  0.01 Other:            0.00
+   List time                       0.00 Other:            0.00
+            Direct Ewald time               0.00 Other:            0.00
+               Fill charge grid                0.00 Other:            0.00
+               Scalar sum                      0.00 Other:            0.00
+               Grad sum                        0.00 Other:            0.00
+                  FFTcomm                         0.00 Other:            0.00
+               FFT                             0.00 Other:            0.00
+            Recip Ewald time                0.00 Other:            0.00
+         Ewald time                      0.00 Other:            0.00
+      Nonbond force                   0.00 Other:            0.00
+         Bond energy                     0.00 Other:            0.00
+         Angle energy                    0.00 Other:            0.00
+         Dihedral energy                 0.00 Other:            0.00
+         Restraints energy               0.00 Other:            0.00
+      INTRNL energy                   0.00 Other:            0.00
+   Energy time                     0.03 Other:            0.03
+   BLaDE overhead                  0.21 Other:            0.00
+ Total time                      9.04 Other:            8.78
+
+                    NORMAL TERMINATION BY NORMAL STOP
+                    MOST SEVERE WARNING WAS AT LEVEL  1
+
+                    $$$$$ JOB ACCOUNTING INFORMATION $$$$$
+                     ELAPSED TIME:     9.04  SECONDS 
+                         CPU TIME:     8.91  SECONDS 
