@@ -21,3 +21,4 @@
 - pyCHARMM compiled with BLaDE (--with-blade)
 - pyALF 
 - GPU device with CUDA
+- MMTSB
