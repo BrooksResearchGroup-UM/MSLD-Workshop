@@ -1,0 +1,43 @@
+* Stream files to convert to renormalized charges
+* (LFC 3/23)
+*
+
+scalar charge set 0.094 sele atom LIG 1 C001 end
+scalar charge set 0.09 sele atom LIG 1 H002 end
+scalar charge set -0.627 sele atom LIG 1 O003 end
+scalar charge set 0.414 sele atom LIG 1 H004 end
+scalar charge set -0.001 sele atom LIG 1 C005 end
+scalar charge set 0.09 sele atom LIG 1 H006 end
+scalar charge set 0.09 sele atom LIG 1 H007 end
+scalar charge set -0.493 sele atom LIG 1 N008 end
+scalar charge set 0.336 sele atom LIG 1 H009 end
+scalar charge set 0.406 sele atom LIG 1 C010 end
+scalar charge set -0.756 sele atom LIG 1 N011 end
+scalar charge set 0.531 sele atom LIG 1 C012 end
+scalar charge set 0.122 sele atom LIG 1 H013 end
+scalar charge set -0.611 sele atom LIG 1 N014 end
+scalar charge set 0.335 sele atom LIG 1 C015 end
+scalar charge set 0.0 sele atom LIG 1 C016 end
+scalar charge set -0.174 sele atom LIG 1 C017 end
+scalar charge set 0.12 sele atom LIG 1 H018 end
+scalar charge set 0.018 sele atom LIG 1 C019 end
+scalar charge set -0.115 sele atom LIG 1 C020 end
+scalar charge set 0.115 sele atom LIG 1 H021 end
+scalar charge set -0.115 sele atom LIG 1 C022 end
+scalar charge set 0.115 sele atom LIG 1 H023 end
+scalar charge set -0.115 sele atom LIG 1 C024 end
+scalar charge set 0.115 sele atom LIG 1 H025 end
+scalar charge set -0.1075 sele atom LIG 1 C026 end
+scalar charge set 0.115 sele atom LIG 1 H027 end
+scalar charge set -0.1075 sele atom LIG 1 C028 end
+scalar charge set 0.115 sele atom LIG 1 H029 end
+scalar charge set -0.107 sele atom LIG 1 C030 end
+scalar charge set 0.115 sele atom LIG 1 H031 end
+scalar charge set -0.107 sele atom LIG 1 C032 end
+scalar charge set 0.115 sele atom LIG 1 H033 end
+scalar charge set -0.1175 sele atom LIG 1 C034 end
+scalar charge set 0.1125 sele atom LIG 1 H035 end
+scalar charge set -0.1175 sele atom LIG 1 C036 end
+scalar charge set 0.1125 sele atom LIG 1 H037 end
+scalar charge set -0.1175 sele atom LIG 1 C038 end
+scalar charge set 0.1125 sele atom LIG 1 H039 end
