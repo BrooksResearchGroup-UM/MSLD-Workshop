@@ -31,12 +31,6 @@ read.sequence_pdb('prep/full_ligand.pdb')
 gen.new_segment(ligseg,setup_ic=True)
 read.pdb('prep/full_ligand.pdb',resid=True)
 
-solvated=True
-if solvated==True:
-  read.sequence_pdb('prep/solvent.pdb')
-  gen.new_segment('WT00',setup_ic=True,angle=False, dihedral=False)
-  read.pdb('prep/solvent.pdb',resid=True)
-
 # bomblev -1  ! JZV
 
 #  Hybrid Ligand Setup
@@ -48,7 +42,7 @@ for i in range(len(nsubs)):
 # (3) add atoms for each substituent
 pycharmm.lingo.charmm_script('ic generate')
 
-pycharmm.lingo.charmm_script('autogen nopatch') # Don't autogen every step
+# pycharmm.lingo.charmm_script('autogen nopatch') # Don't autogen every step
 for i in range(len(nsubs)):
   for j in range(nsubs[i]):
     pycharmm.lingo.charmm_script(f'patch p{i+1}_{j+1} {ligseg} {resnum} setup')
@@ -85,6 +79,12 @@ for site in range(nsites):
         for sub2 in range(sub1+1,nsubs[site]):
             pycharmm.lingo.charmm_script('dele connectivity sele {} show end sele {} show end'
             .format(f'site{site+1}sub{sub1+1}',f'site{site+1}sub{sub2+1}'))
+
+solvated=True
+if solvated==True:
+  read.sequence_pdb('prep/solvent.pdb')
+  gen.new_segment('WT00',setup_ic=True,angle=False, dihedral=False)
+  read.pdb('prep/solvent.pdb',resid=True)
 
 
 # # write out psf, crd, pdb files
