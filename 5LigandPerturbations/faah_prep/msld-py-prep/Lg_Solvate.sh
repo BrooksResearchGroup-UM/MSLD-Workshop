@@ -14,7 +14,7 @@ if [[ $cutoff == '' ]] ; then
 fi
 echo "Using a solvate cutoff of $cutoff"
 
-name=`more build*/name`
+name=`cat build*/name`
 
 InDir=./build.${name}
 OutDir=solv_prep
