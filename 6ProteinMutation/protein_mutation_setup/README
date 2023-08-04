@@ -1,9 +1,0 @@
-This example illustrates the setup of mutations to T16 in protein G (pbd code 1pga). Before one can set up the MSLD calculation, one must set up the MD calculation without mutations first.
-
-The setup of the MD calculation is demonstrated in two ways, first in mdsetup a collection of scripts sets up the system. The same system is set up using CHARMM-GUI in the mdcharmmgui directory.
-
-The setup of MSLD is done on the mdsetup result inside msldsetup, and on the CHARMM-GUI result in msldcharmmgui.
-
-The aa_stream directory contains the alchemical information used in the msld setup and calculation, and contains a detailed README on the components and their usage.
-
-The output of system setup is a directory called prep that can be used with pyALF, available for download at www.github.com/ryanleehayes/alf
