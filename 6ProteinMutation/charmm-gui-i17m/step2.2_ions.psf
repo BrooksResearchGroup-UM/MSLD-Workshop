@@ -1,0 +1,50 @@
+PSF EXT CMAP XPLOR
+
+         5 !NTITLE
+* SET NIONTYPES = 1                                                             
+* SET NPOSTOT = 3                                                               
+* SET NNEGTOT = 5                                                               
+* SET NIONTOT = 8                                                               
+*  DATE:     8/ 4/23      3: 4:12      CREATED BY USER: apache                  
+
+         8 !NATOM
+         1 IONS     1        SOD      SOD      SOD       1.00000       22.9898           0
+         2 IONS     2        SOD      SOD      SOD       1.00000       22.9898           0
+         3 IONS     3        SOD      SOD      SOD       1.00000       22.9898           0
+         4 IONS     4        CLA      CLA      CLA      -1.00000       35.4500           0
+         5 IONS     5        CLA      CLA      CLA      -1.00000       35.4500           0
+         6 IONS     6        CLA      CLA      CLA      -1.00000       35.4500           0
+         7 IONS     7        CLA      CLA      CLA      -1.00000       35.4500           0
+         8 IONS     8        CLA      CLA      CLA      -1.00000       35.4500           0
+
+         0 !NBOND: bonds
+
+
+         0 !NTHETA: angles
+
+
+         0 !NPHI: dihedrals
+
+
+         0 !NIMPHI: impropers
+
+
+         0 !NDON: donors
+
+
+         0 !NACC: acceptors
+
+
+         0 !NNB
+
+         0         0         0         0         0         0         0         0
+
+         8         0 !NGRP NST2
+         0         2         0         1         2         0         2         2         0
+         3         2         0         4         2         0         5         2         0
+         6         2         0         7         2         0
+
+         0         0 !NUMLP NUMLPH
+
+         0 !NCRTERM: cross-terms
+

@@ -1,0 +1,20 @@
+CHARMM-GUI output:
+charmm-gui-fold
+charmm-gui-i17m
+charmm-gui-i27m
+charmm-gui-l33m
+
+Tools for setting up protein systems from CHARMM-GUI:
+Setup.py
+aa_stream
+charmm-gui-tools
+
+Tools customized for folded and l33m-third site peptide
+fold
+l33m
+
+Results from an old run for final comparison:
+prerun
+
+Figures for the jupyter notebook
+Figures

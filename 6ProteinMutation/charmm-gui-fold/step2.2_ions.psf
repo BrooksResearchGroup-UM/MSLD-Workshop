@@ -1,0 +1,130 @@
+PSF EXT CMAP XPLOR
+
+         5 !NTITLE
+* SET NIONTYPES = 1                                                             
+* SET NPOSTOT = 27                                                              
+* SET NNEGTOT = 36                                                              
+* SET NIONTOT = 63                                                              
+*  DATE:     8/ 4/23      2:38:26      CREATED BY USER: apache                  
+
+        63 !NATOM
+         1 IONS     1        SOD      SOD      SOD       1.00000       22.9898           0
+         2 IONS     2        SOD      SOD      SOD       1.00000       22.9898           0
+         3 IONS     3        SOD      SOD      SOD       1.00000       22.9898           0
+         4 IONS     4        SOD      SOD      SOD       1.00000       22.9898           0
+         5 IONS     5        SOD      SOD      SOD       1.00000       22.9898           0
+         6 IONS     6        SOD      SOD      SOD       1.00000       22.9898           0
+         7 IONS     7        SOD      SOD      SOD       1.00000       22.9898           0
+         8 IONS     8        SOD      SOD      SOD       1.00000       22.9898           0
+         9 IONS     9        SOD      SOD      SOD       1.00000       22.9898           0
+        10 IONS     10       SOD      SOD      SOD       1.00000       22.9898           0
+        11 IONS     11       SOD      SOD      SOD       1.00000       22.9898           0
+        12 IONS     12       SOD      SOD      SOD       1.00000       22.9898           0
+        13 IONS     13       SOD      SOD      SOD       1.00000       22.9898           0
+        14 IONS     14       SOD      SOD      SOD       1.00000       22.9898           0
+        15 IONS     15       SOD      SOD      SOD       1.00000       22.9898           0
+        16 IONS     16       SOD      SOD      SOD       1.00000       22.9898           0
+        17 IONS     17       SOD      SOD      SOD       1.00000       22.9898           0
+        18 IONS     18       SOD      SOD      SOD       1.00000       22.9898           0
+        19 IONS     19       SOD      SOD      SOD       1.00000       22.9898           0
+        20 IONS     20       SOD      SOD      SOD       1.00000       22.9898           0
+        21 IONS     21       SOD      SOD      SOD       1.00000       22.9898           0
+        22 IONS     22       SOD      SOD      SOD       1.00000       22.9898           0
+        23 IONS     23       SOD      SOD      SOD       1.00000       22.9898           0
+        24 IONS     24       SOD      SOD      SOD       1.00000       22.9898           0
+        25 IONS     25       SOD      SOD      SOD       1.00000       22.9898           0
+        26 IONS     26       SOD      SOD      SOD       1.00000       22.9898           0
+        27 IONS     27       SOD      SOD      SOD       1.00000       22.9898           0
+        28 IONS     28       CLA      CLA      CLA      -1.00000       35.4500           0
+        29 IONS     29       CLA      CLA      CLA      -1.00000       35.4500           0
+        30 IONS     30       CLA      CLA      CLA      -1.00000       35.4500           0
+        31 IONS     31       CLA      CLA      CLA      -1.00000       35.4500           0
+        32 IONS     32       CLA      CLA      CLA      -1.00000       35.4500           0
+        33 IONS     33       CLA      CLA      CLA      -1.00000       35.4500           0
+        34 IONS     34       CLA      CLA      CLA      -1.00000       35.4500           0
+        35 IONS     35       CLA      CLA      CLA      -1.00000       35.4500           0
+        36 IONS     36       CLA      CLA      CLA      -1.00000       35.4500           0
+        37 IONS     37       CLA      CLA      CLA      -1.00000       35.4500           0
+        38 IONS     38       CLA      CLA      CLA      -1.00000       35.4500           0
+        39 IONS     39       CLA      CLA      CLA      -1.00000       35.4500           0
+        40 IONS     40       CLA      CLA      CLA      -1.00000       35.4500           0
+        41 IONS     41       CLA      CLA      CLA      -1.00000       35.4500           0
+        42 IONS     42       CLA      CLA      CLA      -1.00000       35.4500           0
+        43 IONS     43       CLA      CLA      CLA      -1.00000       35.4500           0
+        44 IONS     44       CLA      CLA      CLA      -1.00000       35.4500           0
+        45 IONS     45       CLA      CLA      CLA      -1.00000       35.4500           0
+        46 IONS     46       CLA      CLA      CLA      -1.00000       35.4500           0
+        47 IONS     47       CLA      CLA      CLA      -1.00000       35.4500           0
+        48 IONS     48       CLA      CLA      CLA      -1.00000       35.4500           0
+        49 IONS     49       CLA      CLA      CLA      -1.00000       35.4500           0
+        50 IONS     50       CLA      CLA      CLA      -1.00000       35.4500           0
+        51 IONS     51       CLA      CLA      CLA      -1.00000       35.4500           0
+        52 IONS     52       CLA      CLA      CLA      -1.00000       35.4500           0
+        53 IONS     53       CLA      CLA      CLA      -1.00000       35.4500           0
+        54 IONS     54       CLA      CLA      CLA      -1.00000       35.4500           0
+        55 IONS     55       CLA      CLA      CLA      -1.00000       35.4500           0
+        56 IONS     56       CLA      CLA      CLA      -1.00000       35.4500           0
+        57 IONS     57       CLA      CLA      CLA      -1.00000       35.4500           0
+        58 IONS     58       CLA      CLA      CLA      -1.00000       35.4500           0
+        59 IONS     59       CLA      CLA      CLA      -1.00000       35.4500           0
+        60 IONS     60       CLA      CLA      CLA      -1.00000       35.4500           0
+        61 IONS     61       CLA      CLA      CLA      -1.00000       35.4500           0
+        62 IONS     62       CLA      CLA      CLA      -1.00000       35.4500           0
+        63 IONS     63       CLA      CLA      CLA      -1.00000       35.4500           0
+
+         0 !NBOND: bonds
+
+
+         0 !NTHETA: angles
+
+
+         0 !NPHI: dihedrals
+
+
+         0 !NIMPHI: impropers
+
+
+         0 !NDON: donors
+
+
+         0 !NACC: acceptors
+
+
+         0 !NNB
+
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0
+
+        63         0 !NGRP NST2
+         0         2         0         1         2         0         2         2         0
+         3         2         0         4         2         0         5         2         0
+         6         2         0         7         2         0         8         2         0
+         9         2         0        10         2         0        11         2         0
+        12         2         0        13         2         0        14         2         0
+        15         2         0        16         2         0        17         2         0
+        18         2         0        19         2         0        20         2         0
+        21         2         0        22         2         0        23         2         0
+        24         2         0        25         2         0        26         2         0
+        27         2         0        28         2         0        29         2         0
+        30         2         0        31         2         0        32         2         0
+        33         2         0        34         2         0        35         2         0
+        36         2         0        37         2         0        38         2         0
+        39         2         0        40         2         0        41         2         0
+        42         2         0        43         2         0        44         2         0
+        45         2         0        46         2         0        47         2         0
+        48         2         0        49         2         0        50         2         0
+        51         2         0        52         2         0        53         2         0
+        54         2         0        55         2         0        56         2         0
+        57         2         0        58         2         0        59         2         0
+        60         2         0        61         2         0        62         2         0
+
+         0         0 !NUMLP NUMLPH
+
+         0 !NCRTERM: cross-terms
+

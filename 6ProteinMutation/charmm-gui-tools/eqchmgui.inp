@@ -1,0 +1,118 @@
+* Equilibrate CHARMM structure
+* 
+
+DIMENS CHSIZE 5000000 MAXRES 3000000
+
+! Read topology and parameter files
+system "ln -s prep/toppar toppar"
+stream prep/toppar.str
+
+! Read PSF
+open read unit 10 card name prep/step3_pbcsetup.psf
+read psf  unit 10 card
+
+!Read Coordinate
+open read unit 10 card name prep/step3_pbcsetup.crd
+read coor unit 10 card
+
+! ---------------------------------------------------------------------------- !
+echo BEGIN DUAL VERSION SUPPORT
+delete atom select segid WATA .or. segid SOLV .or. segid IONS end
+
+define morewater select resname TIP3 end
+if ?nsel .gt. 0 then
+  echo ERROR: Missed a water segment
+  stop
+endif
+
+read sequ coor resid segid SOLV name prep/step3_pbcsetup.crd
+generate SOLV first none last none setup noangl nodihe
+read sequ coor resid segid IONS name prep/step3_pbcsetup.crd
+generate IONS setup
+
+open read unit 10 card name prep/step3_pbcsetup.crd
+read coor unit 10 card
+echo END DUAL VERSION SUPPORT
+! ---------------------------------------------------------------------------- !
+
+!
+! Setup PBC (Periodic Boundary Condition)
+!
+
+stream prep/step3_pbcsetup.str
+
+open read unit 10 card name prep/crystal_image.str
+CRYSTAL DEFINE @XTLtype @A @B @C @alpha @beta @gamma
+CRYSTAL READ UNIT 10 CARD
+
+
+!Image centering by residue
+IMAGE BYRESID XCEN @xcen YCEN @ycen ZCEN @zcen sele resname TIP3 end
+IMAGE BYRESID XCEN @xcen YCEN @ycen ZCEN @zcen sele segid IONS end
+
+!
+! Nonbonded Options
+!
+
+stream prep/nbond.str
+
+!
+! Minimization
+!
+
+cons harm force 0.1 sele .not. resname TIP3 end
+
+mini SD   nstep 100 nprint 5
+
+!
+! Dynamics
+!
+
+shake bonh param fast
+scalar fbeta set 0.1 sele all end
+
+set nsteps = 50000 ! 500000
+set temp = 298.15
+
+! NVT
+dynamics langevin start -
+  blade -
+  timestep 0.002 nstep @nsteps - 
+  nprint 1000 iprfrq 1000 nsavc 1000 isvfrq @nsteps -
+  iunread -1 iuncrd -1 iunwri -1 -
+  firstt @temp finalt @temp tstruc @temp tbath @temp -
+  ichecw 0 ihtfrq 0 ieqfrq 0 iasors 1 iasvel 1 iscvel 0 ilbfrq 0 -
+  inbfrq -1 imgfrq -1 ntrfrq 0 echeck -1
+
+cons harm clear
+
+! NPT
+calc pmass = ?natom * 0.12
+dynamics cpt start -
+  blade prmc iprs 100 pref 1 prdv 100 -
+  timestep 0.002 nstep @nsteps -
+  nprint 1000 iprfrq 1000 nsavc 1000 isvfrq @nsteps -
+  iunread -1 iuncrd -1 iunwri -1 -
+  firstt @temp finalt @temp tstruc @temp tbath @temp -
+  pconstant pmass @pmass pref 1.0 pgamma 20.0 -
+  hoover reft @temp tmass 1000 -
+  ichecw 0 ihtfrq 0 ieqfrq 0 iasors 1 iasvel 1 iscvel 0 ilbfrq 0 -
+  inbfrq -1 imgfrq -1 ntrfrq 0 echeck -1
+
+! open write unit 10 card name prep/eqchmgui.crd
+! write coor unit 10 card
+! close unit 10
+write coor card name prep/eqchmgui.crd
+
+write psf card name prep/eqchmgui.psf
+! * after dynamics psf
+! *
+
+system "cp prep/step3_pbcsetup.str prep/eqchmguipbc.str"
+open unit 11 name prep/eqchmguipbc.str append formatted
+echu 11
+echo set A = ?XTLA
+echo set B = ?XTLB
+echo set C = ?XTLC
+
+stop
