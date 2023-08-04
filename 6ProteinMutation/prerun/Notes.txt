@@ -1,0 +1,2 @@
+Results from long runs from original publication saved in
+/dfs8/rhayes1_lab/rhayes1/archives/2022_rhaye_gollum_home/46_ProteinMutation/pme/8_17_27_33
