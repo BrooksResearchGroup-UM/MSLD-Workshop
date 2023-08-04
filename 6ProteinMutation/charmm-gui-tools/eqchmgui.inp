@@ -17,7 +17,7 @@ read coor unit 10 card
 
 ! ---------------------------------------------------------------------------- !
 echo BEGIN DUAL VERSION SUPPORT
-delete atom select segid SOLV .or. segid IONS end
+delete atom select segid WATA .or. segid SOLV .or. segid IONS end
 
 define morewater select resname TIP3 end
 if ?nsel .gt. 0 then
@@ -25,6 +25,8 @@ if ?nsel .gt. 0 then
   stop
 endif
 
+read sequ coor resid segid WATA name prep/step3_pbcsetup.crd
+generate WATA first none last none setup noangl nodihe
 read sequ coor resid segid SOLV name prep/step3_pbcsetup.crd
 generate SOLV first none last none setup noangl nodihe
 read sequ coor resid segid IONS name prep/step3_pbcsetup.crd

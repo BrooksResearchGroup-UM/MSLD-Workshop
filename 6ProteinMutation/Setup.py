@@ -54,14 +54,14 @@ os.chdir(gotcwd)
 
 # msld setup
 
-shutil.copy(tooldir+'/generic.inp',setupdir+'/prep/name.inp')
+shutil.copy(tooldir+'/generic.inp',setupdir+'/prep/fold.inp')
 
 alf_info_str="""
 import numpy as np
 import os
 alf_info={}
-alf_info['name']='name'
-alf_info['nsubs']=[2]
+alf_info['name']='fold'
+alf_info['nsubs']=[2,2,2]
 alf_info['nblocks']=np.sum(alf_info['nsubs'])
 alf_info['ncentral']=0
 alf_info['nreps']=1
@@ -76,10 +76,18 @@ fp.close()
 alchemical_definitions_str="""
 ! List all mutation sites and mutants at each site
 ! j is hsp
-set resid1 = 16
-set s1seq1 = 0 ! t
-set s1seq2 = a
+set resid1 = 17
+set s1seq1 = 0 ! i
+set s1seq2 = m
 set segid1 = PROA
+set resid2 = 27
+set s2seq1 = 0 ! i
+set s2seq2 = m
+set segid2 = PROA
+set resid3 = 33
+set s3seq1 = 0 ! l
+set s3seq2 = m
+set segid3 = PROA
 
 ! Set the terminal properties of any segid mutated above
 set nterdel_proa = 0 ! 0 means don't do it
@@ -87,7 +95,7 @@ set nterres_proa = 1
 set ntercap_proa = nter
 set nterc_proa = 2 ! 2 nter, 3 cter, 4 ace, 5 ct3
 set cterdel_proa = 0 ! 0 means don't do it
-set cterres_proa = 56
+set cterres_proa = 162
 set ctercap_proa = cter
 set cterc_proa = 3  ! 2 nter, 3 cter, 4 ace, 5 ct3
 
