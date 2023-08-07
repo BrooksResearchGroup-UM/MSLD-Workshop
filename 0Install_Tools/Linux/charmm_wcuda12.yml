@@ -45,4 +45,6 @@ dependencies:
   - nglview
   - jsonpickle
   - pymol-open-source
+  - pymbar
+  - seaborn
 prefix: /home/brookscl/.conda/envs/charmm_wcuda12  # This corresponds to the path to this environment
