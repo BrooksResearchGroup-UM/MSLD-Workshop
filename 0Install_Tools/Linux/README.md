@@ -169,8 +169,8 @@ dependencies:
 <blockquote>
  
 ```csh 
-export CONDA_OVERRIDE_CUDA="12.9" # enables build on head nodes w/o GPU
-setenv CONDA_OVERRIDE_CODA 12.9   # enables build on head nodes w/o GPU
+export CONDA_OVERRIDE_CUDA="12.6" # enables build on head nodes w/o GPU
+setenv CONDA_OVERRIDE_CODA 12.6   # enables build on head nodes w/o GPU
 conda env create -n <your_charmm_environment_name> -f charmm_gpu_env.yml
 ```
 
@@ -215,10 +215,9 @@ setenv FFTW_HOME $CONDA_PREFIX # csh syntax
 ../configure --with-blade --with-fftdock --without-mpi --as-library  -D nvcc_ptx_target=52 -p <pycharmm_install_path>
 make -j install
 cd <charmm_root>
-pip install `pwd`/tool/pycharmm  # Installs the pyCHARMM modules in your current environment
 export CHARMM_LIB_DIR=<pycharmm_install_path>/lib # bash syntax
 setenv CHARMM_LIB_DIR <pycharmm_install_path>/lib # csh syntax
-conda env config vars set CHARMM_LIB_DIR=<pycharmm_install_path>/lib  # every time when this conda environment (charmm_wcuda12) is activated, the environmental variable CHARMM_LIB_DIR is there automatically.
+conda env config vars set CHARMM_LIB_DIR=<pycharmm_install_path>/lib  # every time when this conda environment (charmm_gpu_env) is activated, the environmental variable CHARMM_LIB_DIR is there automatically.
 ```
 
 </blockquote>
@@ -232,7 +231,7 @@ conda env config vars set CHARMM_LIB_DIR=<pycharmm_install_path>/lib  # every ti
 <blockquote>
 
 ```bash
-conda activate charmm_wcuda12
+conda activate charmm_gpu_env
 cd <alf_root>
 export ALF_SOURCE_DIR=`pwd` # bash syntax
 setenv ALF_SOURCE_DIR `pwd` # csh syntax
