@@ -1,0 +1,107 @@
+# File charmm_gpu_env.yml
+name: charmm_gpu_env
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  # =====================================================
+  # CUDA 12.9 Toolkit (PINNED - do not update)
+  # =====================================================
+  - cuda-version=12.9.*
+  - cuda-toolkit=12.9.*
+  - cuda-cudart
+  - cuda-nvcc
+  - cuda-libraries
+  - cuda-nvrtc
+  - cudnn
+  # =====================================================
+  # Compilers (GCC 12.x for CHARMM compatibility)
+  # =====================================================
+  - gcc=12.2.0
+  - gxx=12.2.0
+  - gfortran=12.2.0
+  - binutils
+  - make
+  - cmake
+  # =====================================================
+  # MPI (OpenMPI with CUDA awareness)
+  # =====================================================
+  - openmpi>=5.0.8
+  - mpi4py
+  # =====================================================
+  # Python
+  # =====================================================
+  - python=3.12
+  # =====================================================
+  # OpenMM (includes CUDA platform when cuda-toolkit present)
+  # =====================================================
+  - openmm>=8.2
+  - openmm-torch=*=*cuda129*
+  # =====================================================
+  # Math libraries needed for CHARMM
+  # =====================================================
+  - fftw
+  - clfft
+  # =====================================================
+  # TorchANI for support of ML  QM/ML potentials
+  # =====================================================
+  - torchani=*=*cuda129*
+  # =====================================================
+  # Utilities usefull for CHARMM/pyCHARMM
+  # =====================================================
+  - readline
+  - scipy
+  - jsonpickle
+  - pip
+  - pdoc
+  # =====================================================
+  # Jupyter & Development
+  # =====================================================
+  - jupyter
+  - ipywidgets
+  - ipympl
+  - ipyparallel
+##########################################################
+##########################################################
+# The above is required or highly desired for basic CHARMM
+# pyCHARMM build on a Linux cluster supporting CUDA
+##########################################################
+# File chm_addon.txt
+##########################################################
+# What's below this line is recommended for building
+# modeling/computational workflows and their analyses
+# with CHARMM/pyCHARMM
+##########################################################
+# =====================================================
+# MD Analysis & Simulation Tools
+# =====================================================
+  - mdanalysis
+  - mdtraj
+  - biopython
+  - parmed
+  - pdbfixer
+# =====================================================
+# Free Energy & Enhanced Sampling
+# =====================================================
+  - pymbar
+  - alchemlyb
+# =====================================================
+# Visualization
+# =====================================================
+  - matplotlib
+  - nglview
+  - py3dmol
+  - pymol-open-source
+# =====================================================
+# Chemistry Tools
+# =====================================================
+  - rdkit
+  - openbabel
+  - mendeleev
+# =====================================================
+# pip Tools
+# =====================================================
+  - pip:
+    - crimm
+    - fastmbar
