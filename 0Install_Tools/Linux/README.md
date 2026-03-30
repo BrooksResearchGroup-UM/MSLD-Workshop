@@ -55,7 +55,7 @@ Specifying that the Driver Version is 525.85.05. Thus, as seen from the table be
 `charmm_gpu_env.yml`
  
 ```YAML
-# File charmm_gpu_env.yml
+# File charmm_env.yml
 name: charmm_gpu_env
 channels:
   - conda-forge
@@ -63,10 +63,10 @@ channels:
   - pytorch
 dependencies:
   # =====================================================
-  # CUDA 12.6 Toolkit (PINNED - do not update)
+  # CUDA 12.9 Toolkit (PINNED - do not update)
   # =====================================================
-  - cuda-version=12.6.*
-  - cuda-toolkit=12.6.*
+  - cuda-version=12.9.*
+  - cuda-toolkit=12.9.*
   - cuda-cudart
   - cuda-nvcc
   - cuda-libraries
@@ -93,8 +93,9 @@ dependencies:
   # =====================================================
   # OpenMM (includes CUDA platform when cuda-toolkit present)
   # =====================================================
-  - openmm>=8.2
-  - openmm-torch=*=*cuda126*
+  - openmm>=8.4
+  - openmm-torch=*=*cuda129*
+  - openmm-ml
   # =====================================================
   # Math libraries needed for CHARMM
   # =====================================================
@@ -103,7 +104,7 @@ dependencies:
   # =====================================================
   # TorchANI for support of ML  QM/ML potentials
   # =====================================================
-  - torchani=*=*cuda126*
+  - torchani=*=*cuda129*
   # =====================================================
   # Utilities usefull for CHARMM/pyCHARMM
   # =====================================================
@@ -169,8 +170,8 @@ dependencies:
 <blockquote>
  
 ```csh 
-export CONDA_OVERRIDE_CUDA="12.6" # enables build on head nodes w/o GPU
-setenv CONDA_OVERRIDE_CODA 12.6   # enables build on head nodes w/o GPU
+export CONDA_OVERRIDE_CUDA="12.9" # enables build on head nodes w/o GPU
+setenv CONDA_OVERRIDE_CODA 12.9   # enables build on head nodes w/o GPU
 conda env create -n <your_charmm_environment_name> -f charmm_gpu_env.yml
 ```
 
